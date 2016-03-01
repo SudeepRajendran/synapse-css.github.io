@@ -1,0 +1,54 @@
+body {
+    background-color: #F2F2F2;
+    font-family: HelveticaNeue, Helvetica, Arial, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background-color: #f2f2f2;
+    font-size: 16px;
+}
+
+.header{
+
+}
+.main-menu{
+    height: 60px;
+    background-color: #4673a7;
+    color: white;
+    font-size: 16px;
+}
+
+.main-menu a{
+    color:white;
+    text-decoration: none;
+}
+
+
+.main-menu-item{
+    padding-left: 16px;
+    padding-right: 16px;
+    display: table-cell;
+    height: 60px;
+    vertical-align: middle;
+    border-right: 1px solid rgba(0,0,0,.2);
+}
+
+.leftmost-main-menu-item{
+    border-left: 1px solid rgba(0,0,0,.2);
+}
+
+
+.main-sub-menu{
+    background-color: #E3E3E3;
+}
+
+.main-navigation{
+}
+
+@font-face {
+    font-family: HelveticaNeue;
+    src: url(../fonts/HelveticaNeueLTStd-Lt.otf);
+    src: url(../fonts/HelveticaNeueLTStd-Lt/helveticaneueltstd-lt.eot?v=4.2.0);
+    src: url(../fonts/HelveticaNeueLTStd-Lt/helveticaneueltstd-lt.eot?#iefix&v=4.2.0) format("embedded-opentype"), url(../fonts/HelveticaNeueLTStd-Lt/helveticaneueltstd-lt.woff?v=4.2.0) format("woff"), url(../fonts/HelveticaNeueLTStd-Lt/helveticaneueltstd-lt.ttf?v=4.2.0) format("truetype"), url(../fonts/HelveticaNeueLTStd-Lt/helveticaneueltstd-lt.svg?v=4.2.0#fontawesomeregular) format("svg");
+    font-weight: 400;
+    font-style: normal;
+}
