@@ -5,10 +5,18 @@ body {
     padding: 0px;
     background-color: #f2f2f2;
     font-size: 16px;
+    min-width: 1170px;
 }
 
 .header{
 
+}
+
+.main-menu-items{
+    display: table-cell;
+    float: left;
+    margin: 0px;
+    padding: 0px;
 }
 .main-menu{
     height: 60px;
@@ -24,8 +32,8 @@ body {
 
 
 .main-menu-item{
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 13px;
+    padding-right: 13px;
     display: table-cell;
     height: 60px;
     vertical-align: middle;
@@ -42,6 +50,50 @@ body {
 }
 
 .main-navigation{
+}
+
+.my-account{
+    vertical-align: middle;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 60px;
+    display: table-cell;
+    border-right: 1px solid rgba(0,0,0,.2);
+}
+
+.my-account a:after{
+    padding-left: 4px;
+    content: url('../images/icon/dashboard_icons/header-arrow-base.png');
+}
+
+.alerts{
+    vertical-align: middle;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 60px;
+    display: table-cell;
+    border-right: 1px solid rgba(0,0,0,.2);
+}
+
+.help{
+    vertical-align: middle;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 60px;
+    display: table-cell;
+}
+
+.right-side-main-menu{
+    vertical-align: middle;
+    display: table-cell;
+    float: right;
+    height: 60px;
+}
+
+.disabled-main-menu a{
+    color: rgba(255,255,255,.2);
+    cursor: default;
+
 }
 
 @font-face {
