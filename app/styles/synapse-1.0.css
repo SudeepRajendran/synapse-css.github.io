@@ -18,6 +18,12 @@ body {
     margin: 0px;
     padding: 0px;
 }
+
+.main-menu-list{
+    display: table-cell;
+    margin: 0px;
+    padding: 0px;
+}
 .main-menu{
     height: 60px;
     background-color: #4673a7;
@@ -90,10 +96,30 @@ body {
     height: 60px;
 }
 
-.disabled-main-menu a{
+.left-side-main-menu{
+    vertical-align: middle;
+    display: table-cell;
+    height: 60px;
+}
+
+.disabledmainmenu {
     color: rgba(255,255,255,.2);
     cursor: default;
 
+}
+
+a.disabledmainmenu{
+    color: rgba(255,255,255,.2);
+    cursor: default;
+
+}
+
+.logo{
+    display: table-cell;
+}
+
+.campus-name{
+    display: table-cell;
 }
 
 @font-face {
