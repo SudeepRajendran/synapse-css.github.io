@@ -1,9 +1,63 @@
+a.button{
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 2px;
+    border: 0;
+    background-color: #666666;
+}
+a.button:hover{
+    background-color: #777777;
+}
+
+a.button:active{
+    background-color: #333333;
+}
+
+a.button-primary{
+    background-color: #4673a7;
+}
+
+a.button-primary:hover{
+    background-color: #1e73d5;
+}
+
+a.button-primary:active{
+    background-color: #4673a7;
+}
+
+
+.buttons{
+    width: 80%;
+    margin: 0 auto;
+    text-align: right;
+}
+
+
 .help {
     display:table-cell;
     height:60px;
     padding-left:10px;
     padding-right:10px;
     vertical-align:middle;
+}
+
+.jumbo-header{
+    background-color: #faad00;
+    margin: 0 auto;
+    width: 60%;
+    border-radius: 20px;
+    padding-bottom: 10px;
+}
+.jumbo-header h1{
+    text-align: center;
+    font-size: 40px;
+    padding: 10px;
+}
+
+.jumbo-header p{
+    margin: 10px;
 }
 
 .left-side-main-menu {
@@ -17,6 +71,7 @@
 }
 
 .logo,.campus-name {
+    padding: 5px;
     display:table-cell;
 }
 
@@ -63,7 +118,7 @@
 
 .sub-menu {
     background-color:#e3e3e3;
-    border-bottom:1px solid #3a3734;
+    border-bottom:1px solid #cccccc;
     color:#4673a7;
     font-size:16px;
     height:60px;
