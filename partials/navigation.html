@@ -4,28 +4,30 @@
 </div>
 
 <div>
-    <h1>Navigation Bar</h1>
-    <p>The navigation bar is affixed to the top of the page, allowing for easy access to all application areas without further required scrolling.</p>
-    <h1>Main Navigation</h1>
-    <p>Main navigation relies on an object in application scope - for example menuItems - that contains the following
-        information found below. Any time any additions to main navigation should take place, add it to this navigation
-        menu as well as the angular js routes.</p>
-    <pre class="codeblock">
-        <code>
-        $scope.menuItems = {
-            navigation: {
-                url: '#/navigation',
-                disabled: false,
-                text: 'Navigation'
-            },
-        .
-        .
-        .
-        }
-        </code>
-    </pre>
+        <a name="main"></a>
+        <h1>Navigation Bar</h1>
+        <p>The navigation bar is affixed to the top of the page, allowing for easy access to all application areas without further required scrolling.</p>
+        <h1>Main Navigation</h1>
+        <p>Main navigation relies on an object in application scope - for example menuItems - that contains the following
+            information found below. Any time any additions to main navigation should take place, add it to this navigation
+            menu as well as the angular js routes.</p>
+        <pre class="codeblock">
+            <code>
+            $scope.menuItems = {
+                navigation: {
+                    url: '#/navigation',
+                    disabled: false,
+                    text: 'Navigation'
+                },
+            .
+            .
+            .
+            }
+            </code>
+        </pre>
 </div>
 <div>
+    <a name="sub" class="page-anchor"></a>
     <h1>Sub Navigation</h1>
     <p>Sub navigation relies on an object in application scope - for example submenuItems - that contains the following
         information found below, based on an array. Any time the route changes, it looks for the submenu items in this
