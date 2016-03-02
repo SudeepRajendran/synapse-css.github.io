@@ -1,0 +1,25 @@
+.jumbo-header {
+    background-color: #56c3ee;
+    border-radius: 20px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    width: 60%;
+}
+
+.jumbo-header h1 {
+    font-size: 40px;
+    padding: 10px;
+    text-align: center;
+}
+
+.jumbo-header p {
+    margin: 10px;
+}
+
+.codeblock {
+    width: 80%;
+    margin: 0px auto;
+    background-color: #333333;
+    color: white;
+    border-radius: 20px;
+}

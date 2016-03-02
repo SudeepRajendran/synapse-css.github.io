@@ -1,39 +1,20 @@
-a.button{
-    color: white;
-    font-size: 16px;
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 2px;
-    border: 0;
-    background-color: #666666;
-}
-a.button:hover{
-    background-color: #777777;
+#content {
+    margin-top:140px;
+    padding:0 5px;
 }
 
-a.button:active{
-    background-color: #333333;
+#header {
+    min-width:1170px;
+    position:fixed;
+    top:0;
+    width:100%;
 }
 
-a.button-primary{
-    background-color: #4673a7;
+.buttons {
+    margin:0 auto;
+    text-align:right;
+    width:80%;
 }
-
-a.button-primary:hover{
-    background-color: #1e73d5;
-}
-
-a.button-primary:active{
-    background-color: #4673a7;
-}
-
-
-.buttons{
-    width: 80%;
-    margin: 0 auto;
-    text-align: right;
-}
-
 
 .help {
     display:table-cell;
@@ -43,24 +24,7 @@ a.button-primary:active{
     vertical-align:middle;
 }
 
-.jumbo-header{
-    background-color: #faad00;
-    margin: 0 auto;
-    width: 60%;
-    border-radius: 20px;
-    padding-bottom: 10px;
-}
-.jumbo-header h1{
-    text-align: center;
-    font-size: 40px;
-    padding: 10px;
-}
-
-.jumbo-header p{
-    margin: 10px;
-}
-
-.left-side-main-menu {
+.left-side-main-menu,.sub-menu-item {
     display:table-cell;
     height:60px;
     vertical-align:middle;
@@ -71,8 +35,8 @@ a.button-primary:active{
 }
 
 .logo,.campus-name {
-    padding: 5px;
     display:table-cell;
+    padding:5px;
 }
 
 .main-menu {
@@ -89,7 +53,7 @@ a.button-primary:active{
     text-decoration:none;
 }
 
-.main-menu-disabled,a.main-menu-disabled {
+.main-menu-disabled,a.main-menu-disabled,.sub-menu-disabled,a.sub-menu-disabled {
     color:rgba(255,255,255,.2);
     cursor:default;
 }
@@ -110,51 +74,7 @@ a.button-primary:active{
     padding:0;
 }
 
-.main-menu-list {
-    display:table-cell;
-    margin:0;
-    padding:0;
-}
-
-.sub-menu {
-    background-color:#e3e3e3;
-    border-bottom:1px solid #cccccc;
-    color:#4673a7;
-    font-size:16px;
-    height:60px;
-}
-
-.sub-menu a {
-    color:#4673a7;
-    text-decoration:none;
-}
-
-.sub-menu-disabled,a.sub-menu-disabled {
-    color:rgba(255,255,255,.2);
-    cursor:default;
-}
-
-.sub-menu-item {
-    display:table-cell;
-    height:60px;
-    vertical-align:middle;
-}
-
-.sub-menu-link {
-    padding-left: 13px;
-    padding-right: 13px;
-    border-right: 1px solid rgba(0,0,0,.2);
-}
-
-.sub-menu-items {
-    display:table-cell;
-    float:left;
-    margin:0;
-    margin-left: 150px;
-    padding:0;
-}
-
-.sub-menu-list {
+.main-menu-list,.sub-menu-list {
     display:table-cell;
     margin:0;
     padding:0;
@@ -181,11 +101,63 @@ a.button-primary:active{
     vertical-align:middle;
 }
 
+.sub-menu {
+    background-color:#e3e3e3;
+    border-bottom:1px solid #ccc;
+    color:#4673a7;
+    font-size:16px;
+    height:60px;
+}
+
+.sub-menu a {
+    color:#4673a7;
+    text-decoration:none;
+}
+
+.sub-menu-items {
+    display:table-cell;
+    float:left;
+    margin:0 0 0 150px;
+    padding:0;
+}
+
+.sub-menu-link {
+    border-right:1px solid rgba(0,0,0,.2);
+    padding-left:13px;
+    padding-right:13px;
+}
+
 @font-face {
     font-family:HelveticaNeue;
     font-style:normal;
     font-weight:400;
     src:url(../fonts/HelveticaNeueLTStd-Lt/helveticaneueltstd-lt.eot?#iefix&v=4.2.0) format(embedded-opentype), url(../fonts/HelveticaNeueLTStd-Lt/helveticaneueltstd-lt.woff?v=4.2.0) format(woff), url(../fonts/HelveticaNeueLTStd-Lt/helveticaneueltstd-lt.ttf?v=4.2.0) format(truetype), url(../fonts/HelveticaNeueLTStd-Lt/helveticaneueltstd-lt.svg?v=4.2.0#fontawesomeregular) format(svg);
+}
+
+a.button {
+    background-color:#666;
+    border:0;
+    border-radius:2px;
+    color:#FFF;
+    font-size:16px;
+    padding:10px;
+    text-decoration:none;
+}
+
+a.button-primary,a.button-primary:active {
+    background-color:#4673a7;
+}
+
+a.button-primary:hover {
+    background-color:#1e73d5;
+}
+
+a.button:active {
+    background-color:#333;
+}
+
+a.button:hover {
+    background-color:#777;
 }
 
 body {

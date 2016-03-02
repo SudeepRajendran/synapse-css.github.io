@@ -1,1 +1,44 @@
-<p>Details about how the navbars should be styled will go here.</p>
+<div class="jumbo-header">
+    <h1>Navigation</h1>
+    <p>Details about how the navigation bar works in the application</p>
+</div>
+
+<div>
+    <h1>Main Navigation</h1>
+    <pre class="codeblock">
+        <code>
+        $scope.menuItems = {
+            navigation: {
+                url: '#/navigation',
+                disabled: false,
+                text: 'Navigation'
+            },
+            .
+            .
+            .
+        }
+        </code>
+    </pre>
+</div>
+<div>
+    <h1>Sub Navigation</h1>
+    <pre class="codeblock">
+        <code>
+            availableSubMenuItems = {
+                '/navigation': [{
+                    url: '#/navigation#main',
+                    disabled: false,
+                    text: 'Main Navigation'
+                }, {
+                    url: '#/navigation#sub',
+                    disabled: false,
+                    text: 'Sub Navigation'
+                }]
+            }
+
+            $scope.$on('$routeChangeSuccess', function(){
+                $scope.submenuItems = availableSubMenuItems[$scope.$location.path()];
+            });
+        </code>
+    </pre>
+</div>
