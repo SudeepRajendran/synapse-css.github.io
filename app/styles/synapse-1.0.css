@@ -1,132 +1,143 @@
-body {
-    background-color: #F2F2F2;
-    font-family: HelveticaNeue, Helvetica, Arial, sans-serif;
-    margin: 0px;
-    padding: 0px;
-    background-color: #f2f2f2;
-    font-size: 16px;
-    min-width: 1170px;
+.help {
+    display:table-cell;
+    height:60px;
+    padding-left:10px;
+    padding-right:10px;
+    vertical-align:middle;
 }
 
-.header{
-
+.left-side-main-menu {
+    display:table-cell;
+    height:60px;
+    vertical-align:middle;
 }
 
-.main-menu-items{
-    display: table-cell;
-    float: left;
-    margin: 0px;
-    padding: 0px;
+.leftmost-main-menu-item {
+    border-left:1px solid rgba(0,0,0,.2);
 }
 
-.main-menu-list{
-    display: table-cell;
-    margin: 0px;
-    padding: 0px;
-}
-.main-menu{
-    height: 60px;
-    background-color: #4673a7;
-    color: white;
-    font-size: 16px;
+.logo,.campus-name {
+    display:table-cell;
 }
 
-.main-menu a{
-    color:white;
-    text-decoration: none;
+.main-menu {
+    background-color:#4673a7;
+    border-bottom:1px solid #3a3734;
+    border-top:1px solid #aaa9a6;
+    color:#FFF;
+    font-size:16px;
+    height:60px;
 }
 
+.main-menu a {
+    color:#FFF;
+    text-decoration:none;
+}
 
-.main-menu-item{
+.main-menu-disabled,a.main-menu-disabled {
+    color:rgba(255,255,255,.2);
+    cursor:default;
+}
+
+.main-menu-item {
+    border-right:1px solid rgba(0,0,0,.2);
+    display:table-cell;
+    height:60px;
+    padding-left:13px;
+    padding-right:13px;
+    vertical-align:middle;
+}
+
+.main-menu-items {
+    display:table-cell;
+    float:left;
+    margin:0;
+    padding:0;
+}
+
+.main-menu-list {
+    display:table-cell;
+    margin:0;
+    padding:0;
+}
+
+.sub-menu {
+    background-color:#e3e3e3;
+    border-bottom:1px solid #3a3734;
+    color:#4673a7;
+    font-size:16px;
+    height:60px;
+}
+
+.sub-menu a {
+    color:#4673a7;
+    text-decoration:none;
+}
+
+.sub-menu-disabled,a.sub-menu-disabled {
+    color:rgba(255,255,255,.2);
+    cursor:default;
+}
+
+.sub-menu-item {
+    display:table-cell;
+    height:60px;
+    vertical-align:middle;
+}
+
+.sub-menu-link {
     padding-left: 13px;
     padding-right: 13px;
-    display: table-cell;
-    height: 60px;
-    vertical-align: middle;
     border-right: 1px solid rgba(0,0,0,.2);
 }
 
-.leftmost-main-menu-item{
-    border-left: 1px solid rgba(0,0,0,.2);
+.sub-menu-items {
+    display:table-cell;
+    float:left;
+    margin:0;
+    margin-left: 150px;
+    padding:0;
 }
 
-
-.main-sub-menu{
-    background-color: #E3E3E3;
+.sub-menu-list {
+    display:table-cell;
+    margin:0;
+    padding:0;
 }
 
-.main-navigation{
+.my-account a:after {
+    content:url('../images/icon/dashboard_icons/header-arrow-base.png');
+    padding-left:4px;
 }
 
-.my-account{
-    vertical-align: middle;
-    padding-left: 10px;
-    padding-right: 10px;
-    height: 60px;
-    display: table-cell;
-    border-right: 1px solid rgba(0,0,0,.2);
+.my-account,.alerts {
+    border-right:1px solid rgba(0,0,0,.2);
+    display:table-cell;
+    height:60px;
+    padding-left:10px;
+    padding-right:10px;
+    vertical-align:middle;
 }
 
-.my-account a:after{
-    padding-left: 4px;
-    content: url('../images/icon/dashboard_icons/header-arrow-base.png');
-}
-
-.alerts{
-    vertical-align: middle;
-    padding-left: 10px;
-    padding-right: 10px;
-    height: 60px;
-    display: table-cell;
-    border-right: 1px solid rgba(0,0,0,.2);
-}
-
-.help{
-    vertical-align: middle;
-    padding-left: 10px;
-    padding-right: 10px;
-    height: 60px;
-    display: table-cell;
-}
-
-.right-side-main-menu{
-    vertical-align: middle;
-    display: table-cell;
-    float: right;
-    height: 60px;
-}
-
-.left-side-main-menu{
-    vertical-align: middle;
-    display: table-cell;
-    height: 60px;
-}
-
-.disabledmainmenu {
-    color: rgba(255,255,255,.2);
-    cursor: default;
-
-}
-
-a.disabledmainmenu{
-    color: rgba(255,255,255,.2);
-    cursor: default;
-
-}
-
-.logo{
-    display: table-cell;
-}
-
-.campus-name{
-    display: table-cell;
+.right-side-main-menu {
+    display:table-cell;
+    float:right;
+    height:60px;
+    vertical-align:middle;
 }
 
 @font-face {
-    font-family: HelveticaNeue;
-    src: url(../fonts/HelveticaNeueLTStd-Lt.otf);
-    src: url(../fonts/HelveticaNeueLTStd-Lt/helveticaneueltstd-lt.eot?v=4.2.0);
-    src: url(../fonts/HelveticaNeueLTStd-Lt/helveticaneueltstd-lt.eot?#iefix&v=4.2.0) format("embedded-opentype"), url(../fonts/HelveticaNeueLTStd-Lt/helveticaneueltstd-lt.woff?v=4.2.0) format("woff"), url(../fonts/HelveticaNeueLTStd-Lt/helveticaneueltstd-lt.ttf?v=4.2.0) format("truetype"), url(../fonts/HelveticaNeueLTStd-Lt/helveticaneueltstd-lt.svg?v=4.2.0#fontawesomeregular) format("svg");
-    font-weight: 400;
-    font-style: normal;
+    font-family:HelveticaNeue;
+    font-style:normal;
+    font-weight:400;
+    src:url(../fonts/HelveticaNeueLTStd-Lt/helveticaneueltstd-lt.eot?#iefix&v=4.2.0) format(embedded-opentype), url(../fonts/HelveticaNeueLTStd-Lt/helveticaneueltstd-lt.woff?v=4.2.0) format(woff), url(../fonts/HelveticaNeueLTStd-Lt/helveticaneueltstd-lt.ttf?v=4.2.0) format(truetype), url(../fonts/HelveticaNeueLTStd-Lt/helveticaneueltstd-lt.svg?v=4.2.0#fontawesomeregular) format(svg);
+}
+
+body {
+    background-color:#f2f2f2;
+    font-family:HelveticaNeue, Helvetica, Arial, sans-serif;
+    font-size:16px;
+    margin:0;
+    min-width:1170px;
+    padding:0;
 }
