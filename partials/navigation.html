@@ -4,7 +4,12 @@
 </div>
 
 <div>
+    <h1>Navigation Bar</h1>
+    <p>The navigation bar is affixed to the top of the page, allowing for easy access to all application areas without further required scrolling.</p>
     <h1>Main Navigation</h1>
+    <p>Main navigation relies on an object in application scope - for example menuItems - that contains the following
+        information found below. Any time any additions to main navigation should take place, add it to this navigation
+        menu as well as the angular js routes.</p>
     <pre class="codeblock">
         <code>
         $scope.menuItems = {
@@ -13,19 +18,23 @@
                 disabled: false,
                 text: 'Navigation'
             },
-            .
-            .
-            .
+        .
+        .
+        .
         }
         </code>
     </pre>
 </div>
 <div>
     <h1>Sub Navigation</h1>
+    <p>Sub navigation relies on an object in application scope - for example submenuItems - that contains the following
+        information found below, based on an array. Any time the route changes, it looks for the submenu items in this
+        array and adds each of the items in the matched key into the sub navigation menu</p>
     <pre class="codeblock">
         <code>
-            availableSubMenuItems = {
-                '/navigation': [{
+        availableSubMenuItems = {
+            '/navigation': [
+                {
                     url: '#/navigation#main',
                     disabled: false,
                     text: 'Main Navigation'
@@ -33,12 +42,13 @@
                     url: '#/navigation#sub',
                     disabled: false,
                     text: 'Sub Navigation'
-                }]
-            }
+                }
+            ]
+        }
 
-            $scope.$on('$routeChangeSuccess', function(){
-                $scope.submenuItems = availableSubMenuItems[$scope.$location.path()];
-            });
+        $scope.$on('$routeChangeSuccess', function(){
+            $scope.submenuItems = availableSubMenuItems[$scope.$location.path()];
+        });
         </code>
     </pre>
 </div>
