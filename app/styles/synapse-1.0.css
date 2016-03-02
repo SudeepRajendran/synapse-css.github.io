@@ -39,6 +39,10 @@
     padding:5px;
 }
 
+.logo img{
+    vertical-align: middle;
+}
+
 .main-menu {
     background-color:#4673a7;
     border-bottom:1px solid #3a3734;
