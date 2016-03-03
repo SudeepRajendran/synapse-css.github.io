@@ -176,12 +176,14 @@ a.button:hover {
 
 .row {
     clear: both;
-    padding: 0 10px;
+    padding-bottom: 25px;
 }
 
 .col {
     float: left;
-    margin: 0 1% 0 0;
+    padding: 0;
+    margin-right:1.5%;
+    box-sizing: border-box;
 }
 
 .col img {
@@ -190,56 +192,56 @@ a.button:hover {
     display: block;
 }
 
-.col.last {
-    margin: 0px;
+.col.last{
+    margin:0;
 }
 
 .col-1 {
-    width: 7.33333333%;
+    width: 6.95%;
 }
 
 .col-2 {
-    width: 14.666666666666667%;
+    width: 15.4%;
 }
 
 .col-3 {
-    width: 24%;
+    width: 23.85%;
 }
 
 .col-4 {
-    width: 32.33333333%;
+    width: 32.3%;
 }
 
 .col-5 {
-    width: 40.66666666666666667%;
+    width: 40.75%;
 }
 
 .col-6 {
-    width: 49%;
+    width: 49.2%;
 }
 
 .col-7 {
-    width: 57.33333333333%;
+    width: 57.65%;
 }
 
 .col-8 {
-    width: 65.66666666666666667%;
+    width: 66.1%;
 }
 
 .col-9 {
-    width: 74%;
+    width: 74.55%;
 }
 
 .col-10 {
-    width: 82.3333333333333%;
+    width: 83%;
 }
 
 .col-11 {
-    width: 90.66666666666667%;
+    width: 91.45%;
 }
 
 .col-12 {
-    width: 99%;
+    width: 100%;
     margin: 0;
 }
 

@@ -24,3 +24,13 @@
     border-radius: 20px;
     padding: 0px 25px;
 }
+
+#exampleGrid .row{
+}
+
+#exampleGrid .col{
+    background-color: rgba(255,0,0,.2);
+    font-size: 12px;
+    vertical-align: middle;
+    text-align: center;
+}

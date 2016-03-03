@@ -2,7 +2,10 @@ var synapseCss = angular.module('synapseCss', ['ngRoute']);
 synapseCss.config(['$routeProvider', function ($routeProvider) {
     $routeProvider.when('/navigation', {
         templateUrl: 'partials/navigation.html',
-        controller: 'mainController',
+        controller: 'mainController'
+    }).when('/grid', {
+        templateUrl: 'partials/grid.html',
+        controller: 'mainController'
     }).otherwise({
         templateUrl: 'partials/home.html',
         controller: 'mainController'
@@ -20,6 +23,11 @@ synapseCss.controller('mainController', function ($scope, $route, $routeParams, 
             url: '#/navigation',
             disabled: false,
             text: 'Navigation'
+        },
+        grid: {
+            url: '#/grid',
+            disabled: false,
+            text: 'Grid System'
         },
         menus: {
             url: '#/menus',
@@ -50,8 +58,8 @@ synapseCss.controller('mainController', function ($scope, $route, $routeParams, 
             url: '#/modals',
             disabled: true,
             text: 'Modals'
-        },
-    }
+        }
+    };
     availableSubMenuItems = {
         '/navigation': [{
             url: '#/navigation#main',
@@ -62,7 +70,7 @@ synapseCss.controller('mainController', function ($scope, $route, $routeParams, 
             disabled: false,
             text: 'Sub Navigation'
         }]
-    }
+    };
 
     $scope.$on('$routeChangeSuccess', function(){
         $scope.submenuItems = availableSubMenuItems[$scope.$location.path()];
