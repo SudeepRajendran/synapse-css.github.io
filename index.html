@@ -17,11 +17,17 @@
 <div id="header">
     <div ng-include="'partials/mainnav.html'"></div>
 </div>
-<div id="content">
-    <div ng-view="" autoscroll=""></div>
+<div class="row">
+    <div class="col col-12">
+        <div id="content" ng-view="" autoscroll=""></div>
+    </div>
 </div>
-<div id="footer">
-    <img src="app/images/Skyfactor-Mapworks-login.png" height="20px" />
+<div class="row">
+    <div class="col col-12">
+        <div id="footer">
+            <img src="app/images/Skyfactor-Mapworks-login.png" height="50px"/>
+        </div>
+    </div>
 </div>
 </body>
 </html>

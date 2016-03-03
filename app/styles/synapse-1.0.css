@@ -1,16 +1,12 @@
 #content {
-    margin-bottom: 80px;
     margin-top: 140px;
     padding: 0 5px;
+    min-height:600px;
 }
 
 #footer {
     background-color: #f2f2f2;
     border-top: 1px solid #888;
-    bottom: 0;
-    min-width: 1170px;
-    position: fixed;
-    width: 100%;
 }
 
 #header {
@@ -31,12 +27,6 @@
     float: left;
     margin-right: 1.5%;
     padding: 0;
-}
-
-.col img {
-    display: block;
-    height: auto;
-    width: 100%;
 }
 
 .col-1 {
