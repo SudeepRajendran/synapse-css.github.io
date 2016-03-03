@@ -125,10 +125,11 @@
     text-decoration: none;
 }
 
-.main-menu-disabled, a.main-menu-disabled, .sub-menu-disabled, a.sub-menu-disabled {
+.main-menu-item.disabled a{
     color: rgba(255, 255, 255, .2);
     cursor: default;
 }
+
 
 .main-menu-item {
     border-right: 1px solid rgba(0, 0, 0, .2);
@@ -137,6 +138,16 @@
     padding-left: 13px;
     padding-right: 13px;
     vertical-align: middle;
+}
+
+
+
+.main-menu-item:hover{
+    background-color: #36587f;
+}
+
+.main-menu-item.disabled:hover {
+    background-color: #4673a7;
 }
 
 .main-menu-items {
