@@ -69,7 +69,17 @@ synapseCss.controller('mainController', function ($scope, $route, $routeParams, 
             url: '#/navigation#sub',
             disabled: false,
             text: 'Sub Navigation'
+        }],
+        '/grid': [{
+            url: '#/grid#syntax',
+            disabled: false,
+            text: 'Grid Syntax'
+        }, {
+            url: '#/grid#layout',
+            disabled: false,
+            text: 'Example Grid Layout'
         }]
+
     };
 
     $scope.$on('$routeChangeSuccess', function(){

@@ -2,8 +2,9 @@
     <div class="main-menu">
         <div class="main-menu-items">
             <div class="logo"><a href="#"><img src="app/images/Skyfactor-Mapworks-Logo-(2-Color-White).png"  width="110"/></a></div>
+            <div class="campus-name"><a href="#">Synapse CSS</a></div>
             <ul class="main-menu-list">
-                <li class="main-menu-item" ng-class="{'leftmost-main-menu-item':$index===0}"
+                <li class="main-menu-item" ng-class="{first:$first}"
                     ng-repeat="link in menuItems"><a ng-class="{'main-menu-disabled':link.disabled}"
                                                      ng-href="{{link.disabled ? '' : link.url }}">{{link.text}}</a></li>
             </ul>
@@ -17,8 +18,8 @@
     <div class="sub-menu">
         <div class="sub-menu-items">
             <ul class="sub-menu-list">
-                <li class="sub-menu-item" ng-class="{'rightmost-sub-menu-item':$last}"
-                    ng-repeat="subLink in submenuItems"><a class="sub-menu-link" ng-class="{'disabled-sub-menu':subLink.disabled}"
+                <li class="sub-menu-item"
+                    ng-repeat="subLink in submenuItems"><a class="sub-menu-link" ng-class="[{'disabled-sub-menu':subLink.disabled},{last:$last}]"
                                                            ng-href="{{subLink.disabled ? '' : subLink.url }}">{{subLink.text}}</a>
                 </li>
             </ul>
