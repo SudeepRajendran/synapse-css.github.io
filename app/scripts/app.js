@@ -69,6 +69,18 @@ synapseCss.controller('mainController', function ($scope, $route, $routeParams, 
             url: '#/navigation#sub',
             disabled: false,
             text: 'Sub Navigation'
+        }, {
+            url: '#/navigation#myaccount',
+            disabled: false,
+            text: 'My Account'
+        }, {
+            url: '#/navigation#alerts',
+            disabled: false,
+            text: 'Alerts'
+        }, {
+            url: '#/navigation#help',
+            disabled: false,
+            text: 'Help'
         }],
         '/grid': [{
             url: '#/grid#syntax',

@@ -3,7 +3,6 @@
     border-radius: 20px;
     margin: 0 auto;
     padding-bottom: 10px;
-    width: 60%;
 }
 
 .jumbo-header h1 {
@@ -17,7 +16,6 @@
 }
 
 .codeblock {
-    width: 80%;
     margin: 0px auto;
     background-color: #333333;
     color: white;
@@ -33,4 +31,12 @@
     font-size: 12px;
     vertical-align: middle;
     text-align: center;
+}
+
+.html-example{
+    background-color: white;
+    min-height: 150px;
+    padding: 10px;
+    border-radius: 20px;
+
 }

@@ -1,7 +1,7 @@
 #content {
     margin-top: 140px;
+    min-height: 600px;
     padding: 0 5px;
-    min-height:600px;
 }
 
 #footer {
@@ -27,6 +27,7 @@
     float: left;
     margin-right: 1.5%;
     padding: 0;
+    min-height: 10px;
 }
 
 .col-1 {
@@ -96,10 +97,6 @@
     vertical-align: middle;
 }
 
-.main-menu-item.first {
-    border-left: 1px solid rgba(0, 0, 0, .2);
-}
-
 .logo img {
     vertical-align: middle;
 }
@@ -125,11 +122,33 @@
     text-decoration: none;
 }
 
-.main-menu-item.disabled a{
-    color: rgba(255, 255, 255, .2);
-    cursor: default;
+.main-menu-dropdown {
+    width: 158px;
+    background-color: white;
+    clear: both;
+    float:right;
+    margin-right: 42px;
+    padding: 20px 0;
+    border-radius: 6px;
+    box-shadow: -1px -1px 5px black;
+    margin-top: -15px;
 }
 
+.main-menu-dropdown-link {
+    padding: 10px 20px;
+    font-weight: bold;
+    color: black;
+}
+
+.main-menu-dropdown-links {
+    list-style-type: none;
+    padding: 0;
+}
+
+.main-menu-dropdown-link.a{
+    color: black;
+    text-decoration: none;
+}
 
 .main-menu-item {
     border-right: 1px solid rgba(0, 0, 0, .2);
@@ -140,14 +159,21 @@
     vertical-align: middle;
 }
 
-
-
-.main-menu-item:hover{
-    background-color: #36587f;
+.main-menu-item.disabled a {
+    color: rgba(255, 255, 255, .2);
+    cursor: default;
 }
 
-.main-menu-item.disabled:hover {
+.main-menu-item.disabled:hover, a.button-primary, a.button-primary:active {
     background-color: #4673a7;
+}
+
+.main-menu-item.first {
+    border-left: 1px solid rgba(0, 0, 0, .2);
+}
+
+.main-menu-item:hover {
+    background-color: #36587f;
 }
 
 .main-menu-items {
@@ -164,7 +190,7 @@
     padding: 0;
 }
 
-.my-account a:after {
+.my-account-link a:after {
     content: url('../images/icon/dashboard_icons/header-arrow-base.png');
     padding-left: 4px;
 }
@@ -235,10 +261,6 @@ a.button {
     font-size: 16px;
     padding: 10px;
     text-decoration: none;
-}
-
-a.button-primary, a.button-primary:active {
-    background-color: #4673a7;
 }
 
 a.button-primary:hover {
