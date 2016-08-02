@@ -1,0 +1,1 @@
+var synapseCss = angular.module('synapseCss',['ui.router','ui.bootstrap']);

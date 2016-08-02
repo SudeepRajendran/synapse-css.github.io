@@ -1,0 +1,71 @@
+@import '../../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap';
+$blue-color: #4673a7;
+$dark-blue-color: #375b85;
+$black-color: #444;
+$white-color: #fff;
+//Header Styling
+.main-header {
+    .navbar-default {
+        border: none;
+        .navbar-header {
+            min-width: 300px;
+            .navbar-brand {
+                height: auto;
+                padding: 8px 15px;
+            }
+        }
+        .navbar-collapse {
+            background: $blue-color;
+            min-height: 60px;
+            border-bottom: 1px solid $black-color;
+        }
+    }
+}
+
+.navbar-default {
+    .navbar-nav {
+        > li {
+            > a {
+                display: table-cell;
+                height: 60px;
+                vertical-align: middle;
+                color: $white-color;
+                border-left: 1px solid rgba(0, 0, 0, .2);
+                &:hover, &:focus{
+                    color: $white-color;
+                    background: $dark-blue-color;
+                }
+            }
+            &.active{
+               > a{
+                   color: $white-color;
+                    background: $dark-blue-color;
+                   &:hover, &:focus{
+                    color: $white-color;
+                    background: $dark-blue-color;
+                   }
+                }
+            }
+        }
+        > .open{
+               > a{
+                    color: $white-color;
+                    background: $dark-blue-color;
+                   &:hover, &:focus{
+                    color: $white-color;
+                    background: $dark-blue-color;
+                   }
+                }
+            }
+    }
+}
+
+.main-header{
+    .navbar-default {
+        .dropdown-menu{
+            li{
+                margin: 8px 0;
+            }
+        }
+    }
+}

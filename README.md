@@ -1,1 +1,0 @@
-# synapse-css.github.io
