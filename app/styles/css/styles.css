@@ -5843,4 +5843,53 @@ button.close {
 .main-header .navbar-default .dropdown-menu li {
   margin: 8px 0; }
 
+.notifications-holder {
+  background: none repeat scroll 0 0 #fff;
+  border: 1px solid #d4d4d4;
+  border-radius: 4px;
+  position: absolute;
+  right: -1px;
+  width: 391px !important;
+  z-index: 9999; }
+  .notifications-holder .notification-header {
+    background: none repeat scroll 0 0 #f2f2f2;
+    height: 39px;
+    line-height: 39px;
+    padding: 0 11px;
+    position: relative; }
+    .notifications-holder .notification-header .close-icon {
+      background: url("../../images/close-base@2x.png") no-repeat scroll center transparent;
+      background-size: 24px;
+      border: medium none;
+      display: block;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      width: 24px;
+      right: 11px; }
+      .notifications-holder .notification-header .close-icon:focus, .notifications-holder .notification-header .close-icon:active {
+        background: url("./../images/close-pressed@2x.png") no-repeat scroll center transparent;
+        background-size: 24px; }
+
+.notifications-holder .notifications-list {
+  list-style: outside none none;
+  padding: 0; }
+  .notifications-holder .notifications-list > li {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    display: block; }
+    .notifications-holder .notifications-list > li a {
+      color: #333;
+      display: block;
+      font-size: 14px;
+      line-height: 16.8px;
+      padding: 13px 24px 10px; }
+      .notifications-holder .notifications-list > li a .blue-text {
+        color: #1f73d4; }
+      .notifications-holder .notifications-list > li a:hover {
+        text-decoration: none; }
+  .notifications-holder .notifications-list .notification-date {
+    display: block;
+    color: #797878;
+    font-size: 12px; }
+
 /*# sourceMappingURL=styles.css.map */
