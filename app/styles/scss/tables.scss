@@ -1,0 +1,97 @@
+.table {
+    &.custom-table {
+        thead {
+            background: #eff5fc;
+            th {
+                font-size: 10px;
+                font-weight: 700;
+                color: #424242;
+                height: 32px;
+                text-align: left;
+                text-transform: uppercase;
+                padding-left: 15px!important;
+                border-right: 1px solid #fff;
+                &.sortable {
+                    background: #d7e6f7;
+                    cursor: pointer;
+                    .caret {
+                        position: relative;
+                        top: 4px;
+                        margin-right: 15px;
+                    }
+                    &.dsc {
+                        .caret {
+                            -webkit-transform: rotate(180deg);
+                            transform: rotate(180deg);
+                        }
+                    }
+                }
+            }
+        }
+        tbody {
+            tr {
+                &:first-child {
+                    td {
+                        border-top: none;
+                    }
+                }
+            }
+            .action{
+                width: 200px;
+            }
+            td {
+                padding: 15px;
+                height: 56px;
+                border-top: 1px solid #F3F3F3;
+                border-right: 1px solid #F3F3F3;
+                font-size: 13px;
+                font-family: HelveticaNeue;
+                color: #666;
+                &:last-child {
+                    border-right: none;
+                }
+                input[type="text"] {
+                    width: 100%;
+                    border: 1px solid transparent;
+                    height: 30px;
+                    outline: none;
+                    &:focus {
+                        border: 1px solid #1e73d5;
+                    }
+                }
+                .icons-list {
+                    margin: 0;
+                    text-align: center;
+                    display: inline-block;
+                    li {
+                        padding: 0;
+                        margin: 0;
+                        border-right: 1px solid #ccc;
+                        padding-right: 10px;
+                        margin-right: 10px;
+                        &:last-child{
+                            border: none;
+                        }
+                    }
+                    .icon {
+                        display: block;
+                        width: 24px;
+                        height: 24px;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: 24px;
+                        &.send-icon {
+                            background-image: url(../../images/icon/setup_icons/setup-table-action-sendlink-base.png);
+                        }
+                        &.edit-icon {
+                            background-image: url(../../images/icon/setup_icons/setup-table-action-edit-base.png);
+                        }
+                        &.refresh-icon {
+                            background-image: url(../../images/icon/setup_icons/setup-table-action-renew-base.png);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

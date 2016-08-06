@@ -1,0 +1,137 @@
+<div class="container tables-page">
+    <div class="row">
+        <article class="col-md-12">
+            <h2>Tables</h2>
+            <h4>1) Table/Single Text Row</h4>
+            <div class="table-responsive">
+                <table class="table  custom-table" ng-init="sortType = true">
+                    <thead>
+                        <tr>
+                            <th class="action">ID</th>
+                            <th>Campus Name</th>
+                            <th class="sortable" ng-click="sortType = !sortType" ng-class="sortType ? 'asc' : 'dsc'">Domain <span class="caret pull-right"></span></th>
+                            <th class="action">Menu</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="action">1</td>
+                            <td><strong>Campus1</strong></td>
+                            <td>Campus.m.c</td>
+                            <td class="action">
+                                <ul class="list-inline icons-list">
+                                    <li>
+                                        <a href="javascript:void(0);" class="icon send-icon"></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" class="icon edit-icon"></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" class="icon refresh-icon"></a>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td><strong>Campus1</strong></td>
+                            <td>Campus.m.c</td>
+                            <td>
+                                <ul class="list-inline icons-list">
+                                    <li>
+                                        <a href="javascript:void(0);" class="icon send-icon"></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" class="icon edit-icon"></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" class="icon refresh-icon"></a>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td><strong>Campus1</strong></td>
+                            <td>Campus.m.c</td>
+                            <td>
+                                <ul class="list-inline icons-list">
+                                    <li>
+                                        <a href="javascript:void(0);" class="icon send-icon"></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" class="icon edit-icon"></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" class="icon refresh-icon"></a>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <h4>2) Table with search</h4>
+            <div class="table-responsive">
+                <table class="table  custom-table" ng-init="sortType = true">
+                    <thead>
+                        <tr>
+                            <th class="action">ID</th>
+                            <th>Campus Name</th>
+                            <th class="sortable" ng-click="sortType = !sortType" ng-class="sortType ? 'asc' : 'dsc'">Domain <span class="caret pull-right"></span></th>
+                            <th class="action">Menu</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="action">
+                                <input type="text" placeholder="Search by ID" />
+                            </td>
+                            <td>
+                                <input type="text" placeholder="Search by Campus" />
+                            </td>
+                            <td></td>
+                            <td class="action"></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td><strong>Campus1</strong></td>
+                            <td>Campus.m.c</td>
+                            <td>
+                                <ul class="list-inline icons-list">
+                                    <li>
+                                        <a href="javascript:void(0);" class="icon send-icon"></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" class="icon edit-icon"></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" class="icon refresh-icon"></a>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td><strong>Campus1</strong></td>
+                            <td>Campus.m.c</td>
+                            <td>
+                                <ul class="list-inline icons-list">
+                                    <li>
+                                        <a href="javascript:void(0);" class="icon send-icon"></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" class="icon edit-icon"></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" class="icon refresh-icon"></a>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </article>
+    </div>
+</div>
