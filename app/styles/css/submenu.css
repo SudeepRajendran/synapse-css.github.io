@@ -1,0 +1,32 @@
+.submenuHolder {
+  background: #E3E3E3;
+  border-bottom: 1px solid #ccc;
+  height: 60px; }
+  .submenuHolder .submenu ul {
+    margin: 0;
+    padding: 0; }
+    .submenuHolder .submenu ul a {
+      display: table-cell;
+      height: 60px;
+      vertical-align: middle;
+      padding: 0 19px;
+      margin: 0;
+      color: #335480;
+      font-size: 13px;
+      position: relative; }
+      .submenuHolder .submenu ul a:hover {
+        color: #1E73D5;
+        text-decoration: none; }
+      .submenuHolder .submenu ul a.is-active, .submenuHolder .submenu ul a:active, .submenuHolder .submenu ul a:focus {
+        color: #666;
+        text-decoration: none; }
+        .submenuHolder .submenu ul a.is-active:after, .submenuHolder .submenu ul a:active:after, .submenuHolder .submenu ul a:focus:after {
+          position: absolute;
+          content: "";
+          width: 100%;
+          height: 3px;
+          left: 0;
+          bottom: 0;
+          background: #4673a7; }
+
+/*# sourceMappingURL=submenu.css.map */
