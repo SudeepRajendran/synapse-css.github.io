@@ -1,0 +1,49 @@
+.icon {  //all 24x24 icons
+    @include bg-values(24px, 24px);
+    &.send-icon {
+        background-image: url(../../images/icon/setup_icons/setup-table-action-sendlink-base.png);
+    }
+    &.edit-icon {
+        background-image: url(../../images/icon/setup_icons/setup-table-action-edit-base.png);
+    }
+    &.refresh-icon {
+        background-image: url(../../images/icon/setup_icons/setup-table-action-renew-base.png);
+    }
+}
+
+
+.risk-icon{
+    @include bg-values(32px, 32px);
+    &.risk-grey{
+        background-image: url(../../images/icon/search_icons/risk-level-icon-gray.png);
+    }
+    &.risk-g{
+        background-image: url(../../images/icon/search_icons/risk-level-icon-g.png);
+    }
+    &.risk-r1{
+        background-image: url(../../images/icon/search_icons/risk-level-icon-r1.png);
+    }
+    &.risk-r2{
+        background-image: url(../../images/icon/search_icons/risk-level-icon-r2.png);
+    }
+}
+
+
+.intent-icon{
+    @include bg-values(24px, 24px);
+    &.grey{
+        background-image: url(../../images/icon/search_icons/intent-to-leave-icons-dark-grey.png);
+    }
+    &.stated{
+        background-image: url(../../images/icon/search_icons/leave-intent-stay-stated.png);
+    }
+}
+
+
+.table-more-menu-icon{
+    @include bg-values(12px, 7px);
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    background-image: url(../../images/icon/search_icons/table-menu-dropdown-arrow-base.png);
+}

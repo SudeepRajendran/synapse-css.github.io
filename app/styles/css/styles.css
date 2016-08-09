@@ -1,8 +1,4 @@
 @charset "UTF-8";
-@font-face {
-  font-family: 'HelveticaNeueLTStd45Light';
-  src: url("../../fonts/HelveticaNeueLTStd-Lt/helveticaneueltstd-lt.eot");
-  src: url("../../fonts/HelveticaNeueLTStd-Lt/helveticaneueltstd-lt.eot") format("embedded-opentype"), url("../../fonts/HelveticaNeueLTStd-Lt/helveticaneueltstd-lt.woff2") format("woff2"), url("../../fonts/HelveticaNeueLTStd-Lt/helveticaneueltstd-lt.woff") format("woff"), url("../../fonts/HelveticaNeueLTStd-Lt/helveticaneueltstd-lt.ttf") format("truetype"), url("../../fonts/HelveticaNeueLTStd-Lt/helveticaneueltstd-lt.svg#HelveticaNeueLTStd45Light") format("svg"); }
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
@@ -5810,6 +5806,164 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
+/* Account for fixed navbar */
+body, .navbar-fixed-top, .navbar-fixed-bottom {
+  min-width: 1170px; }
+
+/* Don't let the lead text change font-size. */
+.lead {
+  font-size: 16px; }
+
+/* Finesse the page header spacing */
+.page-header {
+  margin-bottom: 30px; }
+  .page-header .lead {
+    margin-bottom: 10px; }
+
+/* Non-responsive overrides
+ *
+ * Utilize the following CSS to disable the responsive-ness of the container,
+ * grid system, and navbar.
+ */
+/* Reset the container */
+.container, .container-fluid, .container-flued {
+  min-width: 1170px;
+  max-width: none !important; }
+
+.container {
+  width: 92% !important; }
+  .container .navbar-header, .container .navbar-collapse {
+    margin-right: 0;
+    margin-left: 0; }
+
+/* Always float the navbar header */
+.navbar-header {
+  float: left; }
+
+/* Undo the collapsing navbar */
+.navbar-collapse {
+  display: block !important;
+  height: auto !important;
+  padding-bottom: 0;
+  overflow: visible !important;
+  visibility: visible !important; }
+
+.navbar-toggle {
+  display: none; }
+
+.navbar-collapse {
+  border-top: 0; }
+
+.navbar-brand {
+  margin-left: -15px; }
+
+/* Always apply the floated nav */
+.navbar-nav {
+  float: left;
+  margin: 0; }
+  .navbar-nav > li {
+    float: left; }
+    .navbar-nav > li > a {
+      padding: 15px; }
+  .navbar-nav.navbar-right {
+    float: right; }
+
+/* Redeclare since we override the float above */
+/* Undo custom dropdowns */
+.navbar .navbar-nav .open .dropdown-menu {
+  position: absolute;
+  float: left;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-width: 0 1px 1px;
+  border-radius: 0 0 4px 4px;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175); }
+
+/* Undo form expansion */
+.navbar-form {
+  float: left;
+  width: auto;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-right: 0;
+  margin-left: 0;
+  border: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+  .navbar-form .form-group {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle; }
+  .navbar-form .form-control {
+    display: inline-block;
+    width: auto;
+    vertical-align: middle; }
+  .navbar-form .form-control-static {
+    display: inline-block; }
+  .navbar-form .input-group {
+    display: inline-table;
+    vertical-align: middle; }
+    .navbar-form .input-group .input-group-addon, .navbar-form .input-group .input-group-btn, .navbar-form .input-group .form-control {
+      width: auto; }
+    .navbar-form .input-group > .form-control {
+      width: 100%; }
+  .navbar-form .control-label {
+    margin-bottom: 0;
+    vertical-align: middle; }
+  .navbar-form .radio, .navbar-form .checkbox {
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0;
+    vertical-align: middle; }
+  .navbar-form .radio label, .navbar-form .checkbox label {
+    padding-left: 0; }
+  .navbar-form .radio input[type="radio"], .navbar-form .checkbox input[type="checkbox"] {
+    position: relative;
+    margin-left: 0; }
+  .navbar-form .has-feedback .form-control-feedback {
+    top: 0; }
+
+/* Copy-pasted from forms.less since we mixin the .form-inline styles. */
+/* Undo inline form compaction on small screens */
+.form-inline .form-group {
+  display: inline-block;
+  margin-bottom: 0;
+  vertical-align: middle; }
+.form-inline .form-control {
+  display: inline-block;
+  width: auto;
+  vertical-align: middle; }
+.form-inline .form-control-static {
+  display: inline-block; }
+.form-inline .input-group {
+  display: inline-table;
+  vertical-align: middle; }
+  .form-inline .input-group .input-group-addon, .form-inline .input-group .input-group-btn, .form-inline .input-group .form-control {
+    width: auto; }
+  .form-inline .input-group > .form-control {
+    width: 100%; }
+.form-inline .control-label {
+  margin-bottom: 0;
+  vertical-align: middle; }
+.form-inline .radio, .form-inline .checkbox {
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 0;
+  vertical-align: middle; }
+.form-inline .radio label, .form-inline .checkbox label {
+  padding-left: 0; }
+.form-inline .radio input[type="radio"], .form-inline .checkbox input[type="checkbox"] {
+  position: relative;
+  margin-left: 0; }
+.form-inline .has-feedback .form-control-feedback {
+  top: 0; }
+
+@font-face {
+  font-family: 'HelveticaNeueLTStd45Light';
+  src: url("../../../fonts/HelveticaNeueLTStd-Lt.otf");
+  src: url("../../../fonts/HelveticaNeueLTStd-Lt/helveticaneueltstd-lt.eot") format("embedded-opentype"), url("../../../fonts/HelveticaNeueLTStd-Lt/helveticaneueltstd-lt.woff2") format("woff2"), url("../../../fonts/HelveticaNeueLTStd-Lt/helveticaneueltstd-lt.woff") format("woff"), url("../../../fonts/HelveticaNeueLTStd-Lt/helveticaneueltstd-lt.ttf") format("truetype"), url("../../../fonts/HelveticaNeueLTStd-Lt/helveticaneueltstd-lt.svg#HelveticaNeueLTStd45Light") format("svg"); }
 .main-header .navbar-default {
   background: #4673a7;
   border: none;
@@ -5849,11 +6003,6 @@ button.close {
   .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
     color: #fff;
     background: #375b85; }
-
-.main-header .navbar-default .dropdown-menu > li {
-  margin: 8px 0; }
-  .main-header .navbar-default .dropdown-menu > li > a:hover, .main-header .navbar-default .dropdown-menu > li > a:focus {
-    color: #428bca; }
 
 .notifications-holder {
   background: none repeat scroll 0 0 #fff;
@@ -5935,6 +6084,73 @@ button.close {
           bottom: 0;
           background: #4673a7; }
 
+h2 {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  font-size: 24px;
+  font-weight: light;
+  color: #333; }
+
+h4 {
+  margin: 10px 0 20px;
+  font-size: 20px;
+  position: relative;
+  color: #333; }
+
+.icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 24px 24px; }
+  .icon.send-icon {
+    background-image: url(../../images/icon/setup_icons/setup-table-action-sendlink-base.png); }
+  .icon.edit-icon {
+    background-image: url(../../images/icon/setup_icons/setup-table-action-edit-base.png); }
+  .icon.refresh-icon {
+    background-image: url(../../images/icon/setup_icons/setup-table-action-renew-base.png); }
+
+.risk-icon {
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 32px 32px; }
+  .risk-icon.risk-grey {
+    background-image: url(../../images/icon/search_icons/risk-level-icon-gray.png); }
+  .risk-icon.risk-g {
+    background-image: url(../../images/icon/search_icons/risk-level-icon-g.png); }
+  .risk-icon.risk-r1 {
+    background-image: url(../../images/icon/search_icons/risk-level-icon-r1.png); }
+  .risk-icon.risk-r2 {
+    background-image: url(../../images/icon/search_icons/risk-level-icon-r2.png); }
+
+.intent-icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 24px 24px; }
+  .intent-icon.grey {
+    background-image: url(../../images/icon/search_icons/intent-to-leave-icons-dark-grey.png); }
+  .intent-icon.stated {
+    background-image: url(../../images/icon/search_icons/leave-intent-stay-stated.png); }
+
+.table-more-menu-icon {
+  display: block;
+  width: 12px;
+  height: 7px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 12px 7px;
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  background-image: url(../../images/icon/search_icons/table-menu-dropdown-arrow-base.png); }
+
 .table.custom-table thead {
   background: #eff5fc; }
   .table.custom-table thead th {
@@ -5946,6 +6162,8 @@ button.close {
     text-transform: uppercase;
     padding-left: 15px !important;
     border-right: 1px solid #fff; }
+    .table.custom-table thead th:last-child {
+      border-right: none; }
     .table.custom-table thead th.sortable {
       background: #d7e6f7;
       cursor: pointer; }
@@ -5956,8 +6174,10 @@ button.close {
       .table.custom-table thead th.sortable.dsc .caret {
         -webkit-transform: rotate(180deg);
         transform: rotate(180deg); }
-.table.custom-table tbody tr:first-child td {
-  border-top: none; }
+.table.custom-table tbody tr {
+  background: #fff; }
+  .table.custom-table tbody tr:first-child td {
+    border-top: none; }
 .table.custom-table tbody .action {
   width: 200px; }
 .table.custom-table tbody td {
@@ -5989,37 +6209,59 @@ button.close {
       margin-right: 10px; }
       .table.custom-table tbody td .icons-list li:last-child {
         border: none; }
-    .table.custom-table tbody td .icons-list .icon {
-      display: block;
-      width: 24px;
-      height: 24px;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: 24px; }
-      .table.custom-table tbody td .icons-list .icon.send-icon {
-        background-image: url(../../images/icon/setup_icons/setup-table-action-sendlink-base.png); }
-      .table.custom-table tbody td .icons-list .icon.edit-icon {
-        background-image: url(../../images/icon/setup_icons/setup-table-action-edit-base.png); }
-      .table.custom-table tbody td .icons-list .icon.refresh-icon {
-        background-image: url(../../images/icon/setup_icons/setup-table-action-renew-base.png); }
+  .table.custom-table tbody td.drop-down-holder {
+    text-align: center;
+    vertical-align: middle; }
+.table.custom-table th,
+.table.custom-table td {
+  vertical-align: middle; }
+  .table.custom-table th .checkbox,
+  .table.custom-table td .checkbox {
+    margin: 0; }
+.table.table-hover tr:hover {
+  background: #EFEFEF; }
+
+.table-responsive.with-dropdown {
+  overflow: visible; }
+
+.checkbox input {
+  display: none; }
+  .checkbox input + label {
+    padding-left: 20px;
+    line-height: 20px;
+    background: url(../../images/icon/search_icons/checkbox-unchecked.png) no-repeat left center;
+    background-size: 17px; }
+  .checkbox input:checked + label {
+    background: url(../../images/icon/search_icons/checkbox-checked.png) no-repeat left center;
+    background-size: 17px; }
+
+.dropdown-menu > li {
+  margin: 8px 0; }
+  .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+    color: #428bca !important; }
+
+table .drop-down-holder .dropdown-menu {
+  left: auto;
+  right: -50px; }
 
 body {
-  font-family: 'HelveticaNeueLTStd45Light'; }
+  font-family: 'HelveticaNeueLTStd45Light', Helvetica, Arial, sans-serif;
+  background: #F2F2F2; }
 
 .page {
   padding-top: 15px; }
 
-h2 {
-  padding-top: 10px;
-  padding-bottom: 20px;
-  font-size: 24px;
-  font-weight: light;
-  color: #333; }
+.white-bg {
+  background: #fff; }
 
-h4 {
-  margin: 10px 0 20px;
-  font-size: 20px;
-  position: relative;
-  color: #333; }
+.section {
+  margin-bottom: 60px; }
+
+.search-result {
+  padding: 22px; }
+  .search-result p {
+    margin: 0; }
+    .search-result p span {
+      font-size: 18px; }
 
 /*# sourceMappingURL=styles.css.map */

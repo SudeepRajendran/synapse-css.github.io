@@ -1,0 +1,16 @@
+//Checkbox styling
+.checkbox {
+    input {
+        display: none;
+        +label {
+            padding-left: 20px;
+            line-height: 20px;
+            background: url(../../images/icon/search_icons/checkbox-unchecked.png) no-repeat left center;
+            background-size: 17px;
+        }
+        &:checked + label{
+            background: url(../../images/icon/search_icons/checkbox-checked.png) no-repeat left center;
+            background-size: 17px;
+        }
+    }
+}

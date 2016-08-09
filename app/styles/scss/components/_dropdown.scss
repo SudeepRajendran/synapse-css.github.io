@@ -1,0 +1,21 @@
+.dropdown-menu {
+    > li {
+        margin: 8px 0;
+        > a {
+            &:hover,
+            &:focus {
+                color: #428bca !important;
+            }
+        }
+    }
+}
+
+//Inside tables
+table{
+    .drop-down-holder{
+        .dropdown-menu {
+            left: auto;
+            right: -50px;
+        }
+    }
+}
