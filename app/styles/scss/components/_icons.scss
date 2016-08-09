@@ -1,13 +1,13 @@
 .icon {  //all 24x24 icons
     @include bg-values(24px, 24px);
     &.send-icon {
-        background-image: url(../../images/icon/setup_icons/setup-table-action-sendlink-base.png);
+        background-image: url(../../images/send_link_base.png);
     }
     &.edit-icon {
-        background-image: url(../../images/icon/setup_icons/setup-table-action-edit-base.png);
+        background-image: url(../../images/edit_base.png);
     }
     &.refresh-icon {
-        background-image: url(../../images/icon/setup_icons/setup-table-action-renew-base.png);
+        background-image: url(../../images/quick_renew_base.png);
     }
 }
 

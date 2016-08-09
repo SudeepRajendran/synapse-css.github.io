@@ -8,9 +8,27 @@
             background: url(../../images/icon/search_icons/checkbox-unchecked.png) no-repeat left center;
             background-size: 17px;
         }
-        &:checked + label{
+        &:checked + label {
             background: url(../../images/icon/search_icons/checkbox-checked.png) no-repeat left center;
             background-size: 17px;
         }
+    }
+}
+
+//select box styling
+select {
+    &.form-control {
+        @include border-radius(0px);
+        border: 1px solid #acacac;
+        color: #1e73d5;
+        background: url("../../images/icon/setup_icons/selector-arrow-base.png") no-repeat 97% center;
+        background-position: right 10px center;
+        background-color: #FFFFFF;
+        text-align: left;
+        font-weight: bold;
+        height: 34px;
+        padding-right: 30px;
+        -webkit-appearance: none;
+        appearance: none;
     }
 }

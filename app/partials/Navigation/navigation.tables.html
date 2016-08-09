@@ -2,136 +2,271 @@
     <div class="row">
         <article class="col-md-12">
             <h2>Tables</h2>
-            <h4>1) Table/Single Text Row</h4>
-            <div class="table-responsive">
-                <table class="table  custom-table" ng-init="sortType = true">
-                    <thead>
-                        <tr>
-                            <th class="action">ID</th>
-                            <th>Campus Name</th>
-                            <th class="sortable" ng-click="sortType = !sortType" ng-class="sortType ? 'asc' : 'dsc'">Domain <span class="caret pull-right"></span></th>
-                            <th class="action">Menu</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="action">1</td>
-                            <td><strong>Campus1</strong></td>
-                            <td>Campus.m.c</td>
-                            <td class="action">
-                                <ul class="list-inline icons-list">
-                                    <li>
-                                        <a href="javascript:void(0);" class="icon send-icon"></a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);" class="icon edit-icon"></a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);" class="icon refresh-icon"></a>
-                                    </li>
-                                </ul>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td><strong>Campus1</strong></td>
-                            <td>Campus.m.c</td>
-                            <td>
-                                <ul class="list-inline icons-list">
-                                    <li>
-                                        <a href="javascript:void(0);" class="icon send-icon"></a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);" class="icon edit-icon"></a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);" class="icon refresh-icon"></a>
-                                    </li>
-                                </ul>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td><strong>Campus1</strong></td>
-                            <td>Campus.m.c</td>
-                            <td>
-                                <ul class="list-inline icons-list">
-                                    <li>
-                                        <a href="javascript:void(0);" class="icon send-icon"></a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);" class="icon edit-icon"></a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);" class="icon refresh-icon"></a>
-                                    </li>
-                                </ul>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <h4>2) Table with search</h4>
-            <div class="table-responsive">
-                <table class="table  custom-table" ng-init="sortType = true">
-                    <thead>
-                        <tr>
-                            <th class="action">ID</th>
-                            <th>Campus Name</th>
-                            <th class="sortable" ng-click="sortType = !sortType" ng-class="sortType ? 'asc' : 'dsc'">Domain <span class="caret pull-right"></span></th>
-                            <th class="action">Menu</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="action">
-                                <input type="text" placeholder="Search by ID" />
-                            </td>
-                            <td>
-                                <input type="text" placeholder="Search by Campus" />
-                            </td>
-                            <td></td>
-                            <td class="action"></td>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td><strong>Campus1</strong></td>
-                            <td>Campus.m.c</td>
-                            <td>
-                                <ul class="list-inline icons-list">
-                                    <li>
-                                        <a href="javascript:void(0);" class="icon send-icon"></a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);" class="icon edit-icon"></a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);" class="icon refresh-icon"></a>
-                                    </li>
-                                </ul>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td><strong>Campus1</strong></td>
-                            <td>Campus.m.c</td>
-                            <td>
-                                <ul class="list-inline icons-list">
-                                    <li>
-                                        <a href="javascript:void(0);" class="icon send-icon"></a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);" class="icon edit-icon"></a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);" class="icon refresh-icon"></a>
-                                    </li>
-                                </ul>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+            <section class="section">
+                <h4>1) Search Table</h4>
+                <div class="white-bg search-result">
+                    <p>This search identified <span>1430</span> students </p>
+                </div>
+                <div class="table-responsive with-dropdown">
+                    <table class="table  custom-table" ng-init="sortType = true">
+                        <thead>
+                            <tr>
+                                <th>
+                                    <div class="checkbox">
+                                        <input type="checkbox" id="check"/>
+                                        <label for="check"></label>
+                                    </div>
+                                </th>
+                                <th>Student Name</th>
+                                <th>Risk</th>
+                                <th>Intent to leave</th>
+                                <th>Class Standing</th>
+                                <th>Activities logged</th>
+                                <th>Last activity</th>
+                                <th class="drop-down-holder">Menu</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="checkbox">
+                                        <input type="checkbox" id="check1"/>
+                                        <label for="check1"></label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <a href="#">Student name</a>
+                                </td>
+                                <td>
+                                    <a href="#" class="risk-icon risk-grey"></a>
+                                </td>
+                                <td>
+                                    <a href="#" class="intent-icon grey"></a>
+                                </td>
+                                <td>1st Year/Freshman</td>
+                                <td>1</td>
+                                <td>07/28/2016 - Referral</td>
+                                <td class="drop-down-holder">
+                                    <span uib-dropdown>
+                                        <a href="javascript:void(0);" uib-dropdown-toggle class="table-more-menu-icon"></a>
+                                        <ul class="dropdown-menu" uib-dropdown-menu>
+                                            <li><a href="#">Set/Change Primary Campus Connection</a></li>
+                                            <li><a href="#">Remove Primary Campus Connection</a></li>
+                                            <li><a href="#">Add to Static List</a></li>
+                                        </ul>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="checkbox">
+                                        <input type="checkbox" id="check2"/>
+                                        <label for="check2"></label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <a href="#">Student name</a>
+                                </td>
+                                <td>
+                                    <a href="#" class="risk-icon risk-g"></a>
+                                </td>
+                                <td>
+                                    <a href="#" class="intent-icon stated"></a>
+                                </td>
+                                <td>1st Year/Freshman</td>
+                                <td>1</td>
+                                <td>07/28/2016 - Referral</td>
+                                <td class="drop-down-holder">
+                                    <span uib-dropdown>
+                                        <a href="javascript:void(0);" uib-dropdown-toggle class="table-more-menu-icon"></a>
+                                        <ul class="dropdown-menu" uib-dropdown-menu>
+                                            <li><a href="#">Set/Change Primary Campus Connection</a></li>
+                                            <li><a href="#">Remove Primary Campus Connection</a></li>
+                                            <li><a href="#">Add to Static List</a></li>
+                                        </ul>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="checkbox">
+                                        <input type="checkbox" id="check3"/>
+                                        <label for="check3"></label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <a href="#">Student name</a>
+                                </td>
+                                <td>
+                                    <a href="#" class="risk-icon risk-r1"></a>
+                                </td>
+                                <td>
+                                    <a href="#" class="intent-icon grey"></a>
+                                </td>
+                                <td>1st Year/Freshman</td>
+                                <td>1</td>
+                                <td>07/28/2016 - Referral</td>
+                                <td class="drop-down-holder">
+                                    <span uib-dropdown>
+                                        <a href="javascript:void(0);" uib-dropdown-toggle class="table-more-menu-icon"></a>
+                                        <ul class="dropdown-menu" uib-dropdown-menu>
+                                            <li><a href="#">Set/Change Primary Campus Connection</a></li>
+                                            <li><a href="#">Remove Primary Campus Connection</a></li>
+                                            <li><a href="#">Add to Static List</a></li>
+                                        </ul>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="checkbox">
+                                        <input type="checkbox" id="check4"/>
+                                        <label for="check4"></label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <a href="#">Student name</a>
+                                </td>
+                                <td>
+                                    <a href="#" class="risk-icon risk-r2"></a>
+                                </td>
+                                <td>
+                                    <a href="#" class="intent-icon stated"></a>
+                                </td>
+                                <td>1st Year/Freshman</td>
+                                <td>1</td>
+                                <td>07/28/2016 - Referral</td>
+                                <td class="drop-down-holder">
+                                    <span uib-dropdown>
+                                        <a href="javascript:void(0);" uib-dropdown-toggle class="table-more-menu-icon"></a>
+                                        <ul class="dropdown-menu" uib-dropdown-menu>
+                                            <li><a href="#">Set/Change Primary Campus Connection</a></li>
+                                            <li><a href="#">Remove Primary Campus Connection</a></li>
+                                            <li><a href="#">Add to Static List</a></li>
+                                        </ul>
+                                    </span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="select-holder">
+                    <select class="form-control">
+                        <option>25</option>
+                        <option>50</option>
+                        <option>75</option>
+                        <option>100</option>
+                    </select>
+                </div><span>Results per page</span>
+            </section>
+            <section class="section">
+                <h4>2) Table with column search</h4>
+                <div class="table-responsive">
+                    <table class="table  custom-table" ng-init="sortType = true">
+                        <thead>
+                            <tr>
+                                <th class="action">ID</th>
+                                <th>Campus Name</th>
+                                <th class="sortable" ng-click="sortType = !sortType" ng-class="sortType ? 'asc' : 'dsc'">Domain <span class="caret pull-right"></span></th>
+                                <th class="action">Rating</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="action">
+                                    <input type="text" placeholder="Search by ID" /> </td>
+                                <td>
+                                    <input type="text" placeholder="Search by Campus" /> </td>
+                                <td></td>
+                                <td class="action"></td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td><strong>Campus1</strong></td>
+                                <td>Campus.m.c</td>
+                                <td>60</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td><strong>Campus1</strong></td>
+                                <td>Campus.m.c</td>
+                                 <td>60</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            <section class="section">
+                <h4>3) Table/Single Text Row</h4>
+                <div class="table-responsive">
+                    <table class="table  custom-table table-hover" ng-init="sortType = true">
+                        <thead>
+                            <tr>
+                                <th class="action">ID</th>
+                                <th>Campus Name</th>
+                                <th class="sortable" ng-click="sortType = !sortType" ng-class="sortType ? 'asc' : 'dsc'">Domain <span class="caret pull-right"></span></th>
+                                <th class="action">Menu</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="action">1</td>
+                                <td><strong>Campus1</strong></td>
+                                <td>Campus.m.c</td>
+                                <td class="action">
+                                    <ul class="list-inline icons-list">
+                                        <li>
+                                            <a href="javascript:void(0);" class="icon send-icon" title="Send"></a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);" class="icon edit-icon" title="Edit"></a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);" class="icon refresh-icon" title="Refresh"></a>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td><strong>Campus1</strong></td>
+                                <td>Campus.m.c</td>
+                                <td>
+                                    <ul class="list-inline icons-list">
+                                        <li>
+                                            <a href="javascript:void(0);" class="icon send-icon"></a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);" class="icon edit-icon"></a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);" class="icon refresh-icon"></a>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td><strong>Campus1</strong></td>
+                                <td>Campus.m.c</td>
+                                <td>
+                                    <ul class="list-inline icons-list">
+                                        <li>
+                                            <a href="javascript:void(0);" class="icon send-icon"></a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);" class="icon edit-icon"></a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);" class="icon refresh-icon"></a>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
         </article>
     </div>
 </div>

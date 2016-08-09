@@ -1,9 +1,17 @@
-.search-result{
-    padding: 22px;
-    p{
-        margin: 0;
-        span{
-            font-size: 18px;
+.tables-page {
+    .search-result {
+        padding: 22px;
+        p {
+            margin: 0;
+            span {
+                font-size: 18px;
+            }
         }
+    }
+    .select-holder {
+        display: inline-block;
+        vertical-align: middle;
+        width: 80px;
+        margin-right: 8px;
     }
 }

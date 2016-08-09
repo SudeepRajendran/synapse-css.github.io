@@ -6,3 +6,11 @@
     background-position: center;
     background-size: $width $height;
 }
+
+@mixin border-radius($value){
+    -webkit-border-radius: $value;
+    -ms-border-radius: $value;
+    -moz-border-radius: $value;
+    -o-border-radius: $value;
+    border-radius: $value;
+}

@@ -6105,11 +6105,11 @@ h4 {
   background-position: center;
   background-size: 24px 24px; }
   .icon.send-icon {
-    background-image: url(../../images/icon/setup_icons/setup-table-action-sendlink-base.png); }
+    background-image: url(../../images/send_link_base.png); }
   .icon.edit-icon {
-    background-image: url(../../images/icon/setup_icons/setup-table-action-edit-base.png); }
+    background-image: url(../../images/edit_base.png); }
   .icon.refresh-icon {
-    background-image: url(../../images/icon/setup_icons/setup-table-action-renew-base.png); }
+    background-image: url(../../images/quick_renew_base.png); }
 
 .risk-icon {
   display: block;
@@ -6235,6 +6235,24 @@ h4 {
     background: url(../../images/icon/search_icons/checkbox-checked.png) no-repeat left center;
     background-size: 17px; }
 
+select.form-control {
+  -webkit-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -o-border-radius: 0px;
+  border-radius: 0px;
+  border: 1px solid #acacac;
+  color: #1e73d5;
+  background: url("../../images/icon/setup_icons/selector-arrow-base.png") no-repeat 97% center;
+  background-position: right 10px center;
+  background-color: #FFFFFF;
+  text-align: left;
+  font-weight: bold;
+  height: 34px;
+  padding-right: 30px;
+  -webkit-appearance: none;
+  appearance: none; }
+
 .dropdown-menu > li {
   margin: 8px 0; }
   .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
@@ -6257,11 +6275,16 @@ body {
 .section {
   margin-bottom: 60px; }
 
-.search-result {
+.tables-page .search-result {
   padding: 22px; }
-  .search-result p {
+  .tables-page .search-result p {
     margin: 0; }
-    .search-result p span {
+    .tables-page .search-result p span {
       font-size: 18px; }
+.tables-page .select-holder {
+  display: inline-block;
+  vertical-align: middle;
+  width: 80px;
+  margin-right: 8px; }
 
 /*# sourceMappingURL=styles.css.map */
