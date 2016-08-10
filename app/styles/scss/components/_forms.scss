@@ -1,9 +1,9 @@
 //Checkbox styling
-.checkbox {
+.checkbox, .checkbox-inline {
     input {
         display: none;
         +label {
-            padding-left: 20px;
+            padding-left: 25px;
             line-height: 20px;
             background: url(../../images/icon/search_icons/checkbox-unchecked.png) no-repeat left center;
             background-size: 17px;

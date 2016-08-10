@@ -1,6 +1,6 @@
 .tables-page {
     .search-result {
-        padding: 22px;
+        padding: 15px;
         p {
             margin: 0;
             span {
@@ -13,5 +13,10 @@
         vertical-align: middle;
         width: 80px;
         margin-right: 8px;
+    }
+    .table-optoins-holder{
+        > *{
+            margin: 0 5px;
+        }
     }
 }

@@ -8,4 +8,11 @@
          url('../../../fonts/HelveticaNeueLTStd-Lt/helveticaneueltstd-lt.svg#HelveticaNeueLTStd45Light') format('svg');
 }
 
-
+@for $i from 14 through 32{
+    .f-s-#{$i}{
+        font-size: #{$i}px;
+    }
+}
+label, .label{
+    font-weight: normal;
+}

@@ -1,6 +1,7 @@
 body{
     font-family: 'HelveticaNeueLTStd45Light', Helvetica, Arial, sans-serif;
     background: #F2F2F2;
+    color: #333;
 }
 .page{
     padding-top: 15px;
@@ -10,4 +11,19 @@ body{
 }
 .section{
     margin-bottom: 60px;
+}
+.padding{
+    @include padding(15px,15px,15px,15px);
+}
+.margin{
+    @include margin(15px,15px,15px,15px);
+}
+.margin-top{
+    @include margin(15px,0,0,0);
+}
+.margin-bottom{
+    @include margin(0,0,15px,0);
+}
+.no-margin{
+    @include margin(0,0,0,0);
 }
