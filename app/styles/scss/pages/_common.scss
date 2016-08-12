@@ -22,7 +22,7 @@ body{
     @include margin(15px,0,0,0);
 }
 .margin-bottom{
-    @include margin(0,0,15px,0);
+    margin-bottom: 15px;
 }
 .no-margin{
     @include margin(0,0,0,0);

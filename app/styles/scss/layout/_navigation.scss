@@ -38,18 +38,22 @@
                     color: $white-color;
                     background: $dark-blue-color;
                 }
-            }
-            &.active {
-                > a {
+                &.active {
                     color: $white-color;
                     background: $dark-blue-color;
-                    &:hover,
-                    &:focus {
-                        color: $white-color;
-                        background: $dark-blue-color;
-                    }
                 }
             }
+//            &.active {
+//                > a {
+//                    color: $white-color;
+//                    background: $dark-blue-color;
+//                    &:hover,
+//                    &:focus {
+//                        color: $white-color;
+//                        background: $dark-blue-color;
+//                    }
+//                }
+//            }
         }
         > .open {
             > a {

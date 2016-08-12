@@ -6051,10 +6051,7 @@ label, .label {
   .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
     color: #fff;
     background: #375b85; }
-.navbar-default .navbar-nav > li.active > a {
-  color: #fff;
-  background: #375b85; }
-  .navbar-default .navbar-nav > li.active > a:hover, .navbar-default .navbar-nav > li.active > a:focus {
+  .navbar-default .navbar-nav > li > a.active {
     color: #fff;
     background: #375b85; }
 .navbar-default .navbar-nav > .open > a {
@@ -6387,7 +6384,7 @@ body {
   margin: 15px 0 0 0; }
 
 .margin-bottom {
-  margin: 0 0 15px 0; }
+  margin-bottom: 15px; }
 
 .no-margin {
   margin: 0 0 0 0; }

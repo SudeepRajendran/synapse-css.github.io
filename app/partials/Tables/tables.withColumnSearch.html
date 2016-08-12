@@ -1,0 +1,66 @@
+<section class="section">
+    <h2>Table with column search</h2>
+    <div class="white-bg padding">
+        <div class="row">
+            <section class="col-md-12">
+                <blockquote> Search Results include: Survey Filters : 201516 Transition Two / Survey Cohort 4 </blockquote>
+            </section>
+        </div>
+        <div class="row">
+            <section class="col-md-5"> </section>
+            <section class="col-md-7 text-right table-optoins-holder">
+                <div class="checkbox-inline">
+                    <input type="checkbox" id="hide1">
+                    <label for="hide1">Hide Inactive</label>
+                </div> <a href="javascript:void(0);" class="btn btn-md btn-link">Clear Seach</a>
+                <div class="btn-group" uib-dropdown> <a href="javascript:void(0);" class="btn btn-md btn-warning" uib-dropdown-toggle>Bulk Action <span class="caret"></span></a>
+                    <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="single-button">
+                        <li role="menuitem"><a href="#">Add to a Static List</a></li>
+                        <li role="menuitem"><a href="#">Create Referral</a></li>
+                        <li role="menuitem"><a href="#">Make a Note</a></li>
+                    </ul>
+                </div> <a href="javascript:void(0);" class="btn btn-md btn-warning">Edit</a> </section>
+        </div>
+    </div>
+    <div class="table-responsive">
+        <table class="table  custom-table" ng-init="sortType = true">
+            <thead>
+                <tr>
+                    <th class="action">ID</th>
+                    <th>Campus Name</th>
+                    <th class="sortable" ng-click="sortType = !sortType" ng-class="sortType ? 'asc' : 'dsc'">Domain <span class="caret pull-right"></span></th>
+                    <th class="action">Rating</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="action">
+                        <input type="text" placeholder="Search by ID" /> </td>
+                    <td>
+                        <input type="text" placeholder="Search by Campus" /> </td>
+                    <td></td>
+                    <td class="action"></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td><strong>Campus1</strong></td>
+                    <td>Campus.m.c</td>
+                    <td>60</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td><strong>Campus1</strong></td>
+                    <td>Campus.m.c</td>
+                    <td>60</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="select-holder">
+        <select class="form-control">
+            <option>25</option>
+            <option>50</option>
+            <option>75</option>
+            <option>100</option>
+        </select>
+    </div><span>Results per page</span> </section>

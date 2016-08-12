@@ -1,0 +1,78 @@
+<section class="section">
+    <h2>List Table</h2>
+    <div class="table-responsive">
+        <table class="table  custom-table table-hover" ng-init="sortType = true">
+            <thead>
+                <tr>
+                    <th class="action">ID</th>
+                    <th>Campus Name</th>
+                    <th class="sortable" ng-click="sortType = !sortType" ng-class="sortType ? 'asc' : 'dsc'">Domain <span class="caret pull-right"></span></th>
+                    <th class="action">Menu</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="action">1</td>
+                    <td><strong>Campus1</strong></td>
+                    <td>Campus.m.c</td>
+                    <td class="action">
+                        <ul class="list-inline icons-list">
+                            <li>
+                                <a href="javascript:void(0);" class="icon send-icon" title="Send"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" class="icon edit-icon" title="Edit"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" class="icon refresh-icon" title="Refresh"></a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td><strong>Campus1</strong></td>
+                    <td>Campus.m.c</td>
+                    <td>
+                        <ul class="list-inline icons-list">
+                            <li>
+                                <a href="javascript:void(0);" class="icon send-icon" title="Send"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" class="icon edit-icon" title="Edit"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" class="icon refresh-icon" title="Refresh"></a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td><strong>Campus1</strong></td>
+                    <td>Campus.m.c</td>
+                    <td>
+                        <ul class="list-inline icons-list">
+                            <li>
+                                <a href="javascript:void(0);" class="icon send-icon" title="Send"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" class="icon edit-icon" title="Edit"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" class="icon refresh-icon" title="Refresh"></a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="select-holder">
+        <select class="form-control">
+            <option>25</option>
+            <option>50</option>
+            <option>75</option>
+            <option>100</option>
+        </select>
+    </div><span>Results per page</span> </section>
