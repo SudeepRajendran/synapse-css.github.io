@@ -60,6 +60,11 @@ angular.module('synapseCss').config(function($stateProvider, $urlRouterProvider)
     }).state('modals.search',{
         url:'/search',
         templateUrl: 'app/partials/Modals/modals.search.html'
+    }).state('forms',{
+        url:'/fomrs',
+        templateUrl: 'app/partials/Forms/forms.html'
+        //controller: 'formsController',
+        //controllerAs: 'FC'
     });
     
 });

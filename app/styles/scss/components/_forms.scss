@@ -1,16 +1,41 @@
-//Checkbox styling
-.checkbox, .checkbox-inline {
+//Checkbox and radio styling
+
+.checkbox,
+.checkbox-inline,.radio, .radio-inline {
+    padding: 0;
     input {
         display: none;
         +label {
             padding-left: 25px;
             line-height: 20px;
-            background: url(../../images/icon/search_icons/checkbox-unchecked.png) no-repeat left center;
             background-size: 17px;
+            background-repeat: no-repeat;
+            background-position: left center;
+        }
+    }
+}
+
+
+.checkbox,
+.checkbox-inline {
+    input {
+        +label {
+            background-image: url(../../images/icon/search_icons/checkbox-unchecked.png);
         }
         &:checked + label {
-            background: url(../../images/icon/search_icons/checkbox-checked.png) no-repeat left center;
-            background-size: 17px;
+            background-image: url(../../images/icon/search_icons/checkbox-checked.png);
+        }
+    }
+}
+
+.radio,
+.radio-inline {
+    input {
+        +label {
+            background-image: url(../../images/radio-button-off.png);
+        }
+        &:checked + label {
+            background-image: url(../../images/radio-button-on.png);
         }
     }
 }
@@ -18,17 +43,23 @@
 //select box styling
 select {
     &.form-control {
-        @include border-radius(0px);
-        border: 1px solid #acacac;
         color: #1e73d5;
-        background: url("../../images/icon/setup_icons/selector-arrow-base.png") no-repeat 97% center;
+        background: url("../../images/icon/setup_icons/selector-arrow-base.png") no-repeat 97% center #fff;
         background-position: right 10px center;
-        background-color: #FFFFFF;
-        text-align: left;
         font-weight: bold;
-        height: 34px;
         padding-right: 30px;
-        -webkit-appearance: none;
-        appearance: none;
     }
 }
+
+.form-control {
+     @include border-radius(0px);
+    -webkit-appearance: none;
+    appearance: none;
+    -moz-appearance: none;
+    height: 34px;
+    background-color: #FFFFFF;
+    text-align: left;
+    border: 1px solid #acacac;
+}
+
+
