@@ -19,20 +19,47 @@
                 <h4>Text Field</h4>
                 <article class="row">
                     <div class="col-md-3">
-                        <h5>i) Normal/Focus</h5>
+                        <section class="form-group">
+                        <label class="control-label">Normal/Focus</label>
                         <input type="text" class="form-control" placeholder="Write Something here"/>
+                            </section>
                     </div>
                     <div class="col-md-3">
-                        <h5>ii) Disabled</h5>
+                        <section class="form-group">
+                        <label class="control-label">Disabled</label>
                         <input type="text" class="form-control" placeholder="Write Something here" disabled/>
+                            </section>
                     </div>
                     <div class="col-md-3">
-                        <h5>iii) Readonly</h5>
+                        <section class="form-group">
+                        <label class="control-label">Readonly</label>
                         <input type="text" class="form-control" placeholder="Write Something here" readonly/>
+                            </section>
                     </div>
-                    <div class="col-md-3 has-error">
-                        <h5>iv) Error</h5>
+                    <div class="col-md-3">
+                        <section class="form-group  has-error">
+                        <label class="control-label">Error</label>
                         <input type="text" class="form-control" placeholder="Write Something here"/>
+                            </section>
+                    </div>
+                    <div class="col-md-3">
+                        <h5 class="f-s-18">Help Text 
+                            <span class="help-holder">
+                                <a href="javascript:void(0);" ng-click="isShown = !isShown" class="help-icon"></a>
+                                <div uib-collapse="!isShown">
+                                    <section class="help-pop">
+                                        <div class="left-help-icon-container"></div>
+                                        <div class="help-pop-body">
+                                            <h2 class="help-pop-title">Title</h2>
+                                            <article>Eiusmod hic quibusdam, litteris ut amet arbitror, ipsum ex iudicem, est malis probant. De dolor id summis. Nescius velit legam quo anim ne se aliqua 
+                                                praesentibus hic se labore occaecat imitarentur de excepteur ita illum. Quis 
+                                                reprehenderit offendit eram litteris non doctrina ad pariatur. Nulla fabulas qui </article>
+                                            <a href="javascript:void(0);" class="help-pop-close" ng-click="isShown = !isShown" >Close</a>
+                                        </div>
+                                    </section>
+                                </div>
+                            </span>
+                        </h5>
                     </div>
                 </article>
             </section>

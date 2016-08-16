@@ -40,7 +40,6 @@
 
 .table-more-menu-icon {
     @include bg-values(12px, 7px);
-    display: inline-block;
     height: 15px;
     width: 100%;
     background-image: url(../../images/icon/search_icons/table-menu-dropdown-arrow-base.png);
@@ -60,4 +59,11 @@
         @include bg-values(24px, 24px);
         background-image: url(../../images/export_over.png);
     }
+}
+
+//help icon
+.help-icon{
+    @include bg-values(24px, 24px);
+    background-image: url(../../images/help_base.png);
+    vertical-align: middle;
 }

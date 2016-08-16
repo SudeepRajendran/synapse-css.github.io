@@ -1,5 +1,5 @@
 @mixin bg-values($width,$height){
-    display: block;
+    display: inline-block;
     width: $width;
     height: $height;
     background-repeat: no-repeat;
