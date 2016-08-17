@@ -3,6 +3,9 @@ body{
     background: #F2F2F2;
     color: #333;
 }
+*{
+    outline: 0 none !important;
+}
 .page{
     padding-top: 15px;
 }
@@ -23,6 +26,9 @@ body{
 }
 .margin-bottom{
     margin-bottom: 15px;
+}
+.margin-bottom-8{
+    margin-bottom: 8px;
 }
 .no-margin{
     @include margin(0,0,0,0);

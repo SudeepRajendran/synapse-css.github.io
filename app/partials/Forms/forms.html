@@ -16,34 +16,40 @@
                 </article>
             </section>
             <section class="section">
-                <h4>Text Field</h4>
+                <h4>Text Inputs</h4>
                 <article class="row">
-                    <div class="col-md-3">
-                        <section class="form-group">
-                        <label class="control-label">Normal/Focus</label>
-                        <input type="text" class="form-control" placeholder="Write Something here"/>
-                            </section>
+                    <div class="clearfix">
+                        <div class="col-md-3">
+                            <section class="form-group">
+                                <label class="control-label">Static/Focus</label>
+                                <input type="text" class="form-control" placeholder="Write Something here" /> </section>
+                        </div>
+                        <div class="col-md-3">
+                            <section class="form-group">
+                                <label class="control-label">Disabled</label>
+                                <input type="text" class="form-control" placeholder="Write Something here" disabled/> </section>
+                        </div>
                     </div>
-                    <div class="col-md-3">
-                        <section class="form-group">
-                        <label class="control-label">Disabled</label>
-                        <input type="text" class="form-control" placeholder="Write Something here" disabled/>
-                            </section>
+                    <div class="clearfix">
+                        <div class="col-md-3">
+                            <section class="form-group">
+                                <label class="control-label">Readonly</label>
+                                <input type="text" class="form-control" placeholder="Write Something here" readonly/> </section>
+                        </div>
+                        <div class="col-md-3">
+                            <section class="form-group  has-error">
+                                <label class="control-label">Error <small>This is an Error Message</small></label>
+                                <input type="text" class="form-control" placeholder="Write Something here" /> </section>
+                        </div>
                     </div>
-                    <div class="col-md-3">
-                        <section class="form-group">
-                        <label class="control-label">Readonly</label>
-                        <input type="text" class="form-control" placeholder="Write Something here" readonly/>
-                            </section>
-                    </div>
-                    <div class="col-md-3">
-                        <section class="form-group  has-error">
-                        <label class="control-label">Error</label>
-                        <input type="text" class="form-control" placeholder="Write Something here"/>
-                            </section>
-                    </div>
-                    <div class="col-md-3">
-                        <h5 class="f-s-18">Help Text 
+                    <div class="clearfix">
+                        <div class="col-md-3">
+                            <section class="form-group">
+                                <label class="control-label">*Required</label>
+                                <input type="text" class="form-control" placeholder="Write Something here" /> </section>
+                        </div>
+                        <div class="col-md-3">
+                            <h5 class="f-s-18">Help Text 
                             <span class="help-holder">
                                 <a href="javascript:void(0);" ng-click="isShown = !isShown" class="help-icon"></a>
                                 <div uib-collapse="!isShown">
@@ -59,8 +65,53 @@
                                     </section>
                                 </div>
                             </span>
-                        </h5>
+                        </h5> </div>
                     </div>
+                </article>
+            </section>
+            <section class="section">
+                <h4>Buttons</h4>
+                <article class="row">
+                    <div class="col-md-12 margin-bottom">
+                        <h5 class="margin-bottom f-s-18">Button Types</h5>
+                        <div class="margin-bottom-8">
+                            <button class="btn btn-primary">Primary Button</button>
+                            <button class="btn btn-warning">Secondary Button</button>
+                        </div>
+                        <div>
+                            <button class="btn btn-primary" disabled>Primary Disabled Button</button>
+                            <button class="btn btn-warning" disabled>Secondary Disabled Button</button>
+                        </div>
+                    </div>
+                    <div class="col-md-12 margin-top margin-bottom">
+                        <h5 class=" margin-bottom f-s-18">Button Sizes</h5>
+                        <div class="margin-bottom-8">
+                            <button class="btn btn-lg btn-primary">Large Button</button>
+                            <button class="btn btn-lg btn-warning">Large Button</button>
+                        </div>
+                        <div class="margin-bottom-8">
+                            <button class="btn btn-md btn-primary">Medium Button</button>
+                            <button class="btn btn-md btn-warning">Medium Button</button>
+                        </div>
+                        <div class="margin-bottom-8">
+                            <button class="btn btn-sm btn-primary">Small Button</button>
+                            <button class="btn btn-sm btn-warning">Small Button</button>
+                        </div>
+                        <div>
+                            <button class="btn btn-xs btn-primary">Extra Small Button</button>
+                            <button class="btn btn-xs btn-warning">Extra Small Button</button>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <button class="btn btn-block btn-primary">Block Button</button>
+                        <button class="btn btn-block btn-warning">Block Button</button>
+                    </div>
+                </article>
+            </section>
+            <section class="section">
+                <h4>Date Fields</h4>
+                <article class="row">
+                    
                 </article>
             </section>
             <section class="section">
@@ -83,11 +134,11 @@
                 <article class="row">
                     <div class="col-md-6">
                         <div class="radio-inline">
-                            <input type="radio" id="check3" name="check"/>
+                            <input type="radio" id="check3" name="check" />
                             <label for="check3">Option 1</label>
                         </div>
                         <div class="radio-inline">
-                            <input type="radio" id="check4"  name="check"/>
+                            <input type="radio" id="check4" name="check" />
                             <label for="check4">Option 2</label>
                         </div>
                     </div>

@@ -5,7 +5,11 @@ angular.module('synapseCss').directive('closeOnClick',['$window', function($wind
         link: function(attrs, scope, element ){
            $(document).on('click',function(){
                 $('.collapse').removeClass('in');
-            })
+            });
+             $('.help-pop').click(function(e){
+                 e.preventDefault();
+                 e.stopPropagation();
+             });
         }
     }
 }])

@@ -62,6 +62,7 @@ select {
     background-color: #FFFFFF;
     text-align: left;
     border: 1px solid #acacac;
+    box-shadow: none;
     &:focus{
         box-shadow: none;
         border-color: #1e73d5;
@@ -75,6 +76,18 @@ select {
 .has-error{
     .form-control{
         border-color: #fd6a71;
+        &:focus{
+            border-color: #fd6a71;
+             box-shadow: none;
+        }
+    }
+    .control-label{
+        color: #333;
+        small{
+            color: #fd6a71;
+            font-size: 14px;
+            font-style: italic;
+        }
     }
 }
 
