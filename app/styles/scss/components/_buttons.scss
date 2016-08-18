@@ -1,4 +1,7 @@
 .btn{
     @include border-radius(3px);
-    
+    &.btn-primary:hover{
+        background: #1e73d5;
+        border-color: #1e73d5;
+    }
 }

@@ -33,7 +33,7 @@
                     <div class="clearfix">
                         <div class="col-md-3">
                             <section class="form-group">
-                                <label class="control-label">Readonly</label>
+                                <label class="control-label">Read-Only</label>
                                 <input type="text" class="form-control" placeholder="Write Something here" readonly/> </section>
                         </div>
                         <div class="col-md-3">
@@ -109,9 +109,18 @@
                 </article>
             </section>
             <section class="section">
+                <h4>Selection Toggle</h4>
+                <article class="row">
+                    <div class="col-md-12">
+                        <div class="btn-group"> <a href="javascript:void(0);" class="btn" ng-class="{'btn-primary': (FC.toggleBtnValue == 'true'), 'btn-default': (FC.toggleBtnValue == 'false' || FC.toggleBtnValue == '')}" ng-click="FC.toggleBtn(FC.toggleBtnValue,'trueBtn')">High</a> <a href="javascript:void(0);" class="btn" ng-class="{'btn-primary': (FC.toggleBtnValue =='false'), 'btn-default': (FC.toggleBtnValue =='true' || FC.toggleBtnValue == '')}" ng-click="FC.toggleBtn(FC.toggleBtnValue,'falseBtn')">Low</a> </div>
+                    </div>
+                </article>
+            </section>
+            <section class="section">
                 <h4>Date Fields</h4>
                 <article class="row">
-                    
+                    <div class="col-md-3">
+                        <input type="text" ng-model="FC.td" class="form-control" uib-datepicker-popup is-open="focus" ng-focus="focus=true" datepicker-options="FC.dateOptions" show-button-bar="false"/> </div>
                 </article>
             </section>
             <section class="section">

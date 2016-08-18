@@ -1,4 +1,5 @@
-angular.module('synapseCss').config(function($stateProvider, $urlRouterProvider){
+angular.module('synapseCss').config(function($stateProvider, $urlRouterProvider,uibDatepickerConfig){
+    uibDatepickerConfig.showWeeks = false;
     $urlRouterProvider.otherwise("tables/searchresults");
     $stateProvider
     .state('overview',{
@@ -61,10 +62,10 @@ angular.module('synapseCss').config(function($stateProvider, $urlRouterProvider)
         url:'/search',
         templateUrl: 'app/partials/Modals/modals.search.html'
     }).state('forms',{
-        url:'/fomrs',
-        templateUrl: 'app/partials/Forms/forms.html'
-        //controller: 'formsController',
-        //controllerAs: 'FC'
+        url:'/forms',
+        templateUrl: 'app/partials/Forms/forms.html',
+        controller: 'formsController',
+        controllerAs: 'FC'
     });
     
 });
