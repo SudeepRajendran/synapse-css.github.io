@@ -1437,7 +1437,7 @@ angular.module('ui.bootstrap.datepicker', ['ui.bootstrap.dateparser', 'ui.bootst
   monthColumns: 3,
   ngModelOptions: {},
   shortcutPropagation: false,
-  showWeeks: true,
+  //showWeeks: false,
   yearColumns: 5,
   yearRows: 4
 })
@@ -1784,7 +1784,7 @@ angular.module('ui.bootstrap.datepicker', ['ui.bootstrap.dateparser', 'ui.bootst
 
   this.init = function(ctrl) {
     angular.extend(ctrl, this);
-    scope.showWeeks = ctrl.showWeeks;
+    scope.showWeeks = false;
     ctrl.refreshView();
   };
 

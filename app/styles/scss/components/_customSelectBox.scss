@@ -1,0 +1,135 @@
+.sb-item a {
+  text-decoration: none;
+  outline: 0;
+  &:active, &:hover {
+    text-decoration: none;
+    outline: 0;
+  }
+}
+
+.sb-toggle {
+  text-decoration: none !important;
+  outline: 0;
+    color: #1e73d5 !important;
+    font-weight: 700;
+  &:active, &:hover {
+    text-decoration: none;
+    outline: 0;
+  }
+}
+
+.sb-item a, .sb-toggle {
+  display: block;
+  background-color: #fff;
+  padding: 0 10px;
+  font-size: 1em;
+  color: #555;
+  height: 34px;
+  line-height: 34px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.sb-container {
+  font-family: Helvetica,sans-serif;
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  outline: 0;
+  position: relative;
+  text-align: left;
+}
+
+.sb-container-multi {
+  .sb-item a:before {
+    content: '✓';
+    float: left;
+    color: #ddd;
+    font-size: 1em;
+    padding-right: 6px;
+  }
+  .sb-item-active a:before {
+    color: #666;
+  }
+}
+
+.sb-toggle {
+  border: 1px solid #acacac;
+  position: relative;
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 13px;
+    right: 10px;
+      width: 12px;
+      height: 7px;
+    background: url("../../images/icon/setup_icons/selector-arrow-base.png") no-repeat center;
+      
+  }
+}
+
+
+
+.sb-toggle:focus {
+  border: 1px solid #d0d0d0;
+}
+
+.sb-dropdown {
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  position: absolute;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  z-index: 100;
+  top: 30px;
+  left: 0;
+  width: 100%;
+  max-height: 198px;
+  overflow: auto;
+  margin: 0;
+  padding: 5px 0;
+    border-radius: 4px;
+  list-style: none;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  &::-webkit-scrollbar {
+    width: 7px;
+    height: 10px;
+  }
+  &::-webkit-scrollbar-track {
+    background: #eee;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #ccc;
+    &:hover {
+      background: #b3b3b3;
+    }
+  }
+}
+
+.sb-item:hover a {
+  background-color: #f5f5f5;
+  color: #428bca ;
+}
+
+.sb-item-active a {
+  background-color: #f5f5f5;
+  color: #428bca ;
+}
+
+.sb-item {
+  &:not(:last-child) {
+//    border-bottom: 1px solid #ddd;
+  }
+  &.sb-empty {
+    padding: 10px;
+    font-size: 14px;
+    color: #999;
+  }
+}

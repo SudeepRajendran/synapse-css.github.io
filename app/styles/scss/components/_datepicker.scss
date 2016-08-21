@@ -1,0 +1,86 @@
+.datepicker-holder {
+    .dropdown-menu {
+        border-radius: 4px;
+        box-shadow: 0 1px 4px 0 rgba(50, 50, 50, .75)!important;
+        padding: 0 !important;
+        font-size: 13px;
+        li {
+            margin: 0;
+            table {
+                background: #fff;
+                thead {
+                    background: #4674A8;
+                    width: 57px;
+                    color: #424242;
+                    th {
+                        color: #424242;
+                        font-weight: 700;
+                        padding: 0 5px!important;
+                        text-align: center;
+                        border: none;
+                        height: inherit;
+                    }
+                    tr {
+                        th {
+                            font-size: 10px;
+                            text-align: left;
+                            vertical-align: middle;
+                            text-transform: uppercase;
+                            color: #FFF;
+                            small {
+                                font-size: 100%;
+                            }
+                        }
+                    }
+                    .btn.btn-sm {
+                        line-height: 1.5;
+                        background-color: #4674A8 !important;
+                        border: #4674A8;
+                        color: #FEFEFE;
+                        padding: 0 5px;
+                        &.pull-left {
+                            padding-top: 10px;
+                            padding-left: 10px;
+                            padding-bottom: 9px;
+                        }
+                        &.pull-right {
+                            padding-top: 10px;
+                            padding-right: 11px!important;
+                            padding-bottom: 9px;
+                        }
+                        .glyphicon-chevron-right:before {
+                            content: url(../../images/icon/dashboard_icons/dash-module-link-arrow-clicked.png) !important;
+                        }
+                        .glyphicon-chevron-left:before {
+                            content: url(../../images/icon/dashboard_icons/dash-module-link-arrow-clicked-right.png)!important;
+                        }
+                    }
+                }
+                tbody {
+                    tr {
+                        td {
+                            text-align: left;
+                            padding: 0px;
+                            vertical-align: middle;
+                            border-bottom: 1px solid #F3F3F3;
+                            border-right: 1px solid #F3F3F3;
+                            font-family: helveticaneue;
+                            .btn{
+                                border: none;
+                                border-radius: 0;
+                                padding: 0 5px;
+                                height: 30px;
+                                &.active{
+                                    background: #646464;
+                                    span{
+                                        color: #fff;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

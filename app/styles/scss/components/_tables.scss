@@ -1,11 +1,14 @@
+table,
 .table {
+    th {
+        font-family: 'Lato', sans-serif;
+    }
     &.custom-table {
         thead {
             background: #eff5fc;
             th {
-                font-size: 10px;
-                font-family: 'Lato', sans-serif;
                 font-weight: 700;
+                 font-size: 10px;
                 color: #424242;
                 height: 32px;
                 text-align: left;
@@ -78,7 +81,7 @@
                         }
                     }
                 }
-                &.drop-down-holder{
+                &.drop-down-holder {
                     text-align: center;
                     vertical-align: middle;
                 }
@@ -99,6 +102,6 @@
     }
 }
 
-.table-responsive.with-dropdown{
+.table-responsive.with-dropdown {
     overflow: visible;
 }

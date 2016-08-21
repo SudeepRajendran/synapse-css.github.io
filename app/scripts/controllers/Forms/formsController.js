@@ -15,4 +15,5 @@ angular.module('synapseCss').controller('formsController',['$scope','$state', fu
     FC.dateOptions= {
                 showWeeks: 'false'
             };
+    FC.slectOptions= ['Option1','Option2', 'Option3'];
 }]);

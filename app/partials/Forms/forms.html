@@ -6,12 +6,7 @@
                 <h4>Dropdown</h4>
                 <article class="row">
                     <div class="col-md-3">
-                        <select class="form-control">
-                            <option>Select Option</option>
-                            <option>50</option>
-                            <option>75</option>
-                            <option>100</option>
-                        </select>
+                        <selectbox options="FC.slectOptions" value="valu1e"></selectbox>
                     </div>
                 </article>
             </section>
@@ -120,7 +115,10 @@
                 <h4>Date Fields</h4>
                 <article class="row">
                     <div class="col-md-3">
-                        <input type="text" ng-model="FC.td" class="form-control" uib-datepicker-popup is-open="focus" ng-focus="focus=true" datepicker-options="FC.dateOptions" show-button-bar="false"/> </div>
+                        <div class="datepicker-holder">
+                            <input type="text" ng-model="FC.td" class="form-control" uib-datepicker-popup is-open="focus" ng-focus="focus=true" datepicker-options="FC.dateOptions" show-button-bar="false" />
+                        </div>
+                    </div>
                 </article>
             </section>
             <section class="section">
