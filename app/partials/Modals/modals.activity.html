@@ -1,3 +1,288 @@
 <section class="section">
-    <h2>Activity</h2>
-</section>
+    <h2>Activity</h2> <a href="javascript:void(0);" class="btn btn-primary" ng-click="MC.openActivity();">Open Activity Modal</a> </section>
+<script type="text/ng-template" id="activityModal.html">
+    <div class="modal-header">
+        <h3 class="modal-title" id="modal-title">Activity modal!</h3>
+        <a href="javascript:void(0);" class="close-icon-circle pull-right" ng-click="cancel()"></a>
+    </div>
+    <div class="modal-body" id="modal-body">
+        <section class="vertical-tabs">
+            <uib-tabset active="activePill" vertical="true" type="pills">
+                <uib-tab index="0" heading="Email">
+                    <p class="fields_marked">*Fields marked with asterisks are required</p>
+                    <form>
+                        <div class="row">
+                            <article class="col-md-6">
+                                <div class="form-group">
+                                    <label class="control-label">*From</label>
+                                    <input type="text" class="form-control" /> </div>
+                            </article>
+                            <article class="col-md-6">
+                                <div class="form-group">
+                                    <label class="control-label">BCC</label>
+                                    <input type="text" class="form-control" /> </div>
+                            </article>
+                        </div>
+                        <div class="row">
+                            <article class="col-md-6">
+                                <div class="form-group">
+                                    <label class="control-label">*Subject</label>
+                                    <input type="text" class="form-control" /> </div>
+                            </article>
+                            <article class="col-md-6">
+                                <div class="form-group">
+                                    <label class="control-label">*Reason</label>
+                                    <selectbox options="slectOptions" value="value"></selectbox>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="row">
+                            <article class="col-md-12">
+                                <div class="form-group">
+                                    <textarea class="form-control" placeholder="You my add comments here..."></textarea>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="row">
+                            <article class="col-md-12">
+                                <label class="control-label form-group">Sharing Options</label>
+                            </article>
+                            <article class="col-md-4">
+                                <div class="radio">
+                                    <input type="radio" id="check" name="check" />
+                                    <label for="check">Private <small>Only you can see this.</small></label>
+                                </div>
+                            </article>
+                            <article class="col-md-4">
+                                <div class="radio">
+                                    <input type="radio" id="check1" name="check" />
+                                    <label for="check1">Public <small>Any one who can see the student can see this.</small></label>
+                                </div>
+                            </article>
+                            <article class="col-md-4">
+                                <div class="radio">
+                                    <input type="radio" id="check2" name="check" />
+                                    <label for="check2">Team <small>Select one or more teams who you want to see this.</small></label>
+                                </div>
+                            </article>
+                        </div>
+                    </form>
+                </uib-tab>
+                <uib-tab index="1" heading="Contact">
+                    <form>
+                        <div class="row">
+                            <article class="col-md-4">
+                                <div class="form-group">
+                                    <label class="control-label">Reason</label>
+                                    <selectbox options="slectOptions" value="value"></selectbox>
+                                </div>
+                            </article>
+                            <article class="col-md-4">
+                                <div class="form-group">
+                                    <label class="control-label">Contact Type</label>
+                                    <selectbox options="slectOptions" value="value"></selectbox>
+                                </div>
+                            </article>
+                            <article class="col-md-4">
+                                <div class="form-group">
+                                    <label class="control-label">Date of Contact</label>
+                                    <div class="datepicker-holder">
+                                        <input type="text" ng-model="FC.td" class="form-control" uib-datepicker-popup is-open="focus" ng-focus="focus=true" datepicker-options="FC.dateOptions" show-button-bar="false" /> </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="row">
+                            <article class="col-md-12">
+                                <div class="form-group">
+                                    <textarea class="form-control" placeholder="You my add comments here..."></textarea>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="row">
+                            <article class="col-md-12">
+                                <label class="control-label form-group">Details</label>
+                            </article>
+                            <article class="col-md-6">
+                                <div class="checkbox">
+                                    <input type="checkbox" id="cd1" />
+                                    <label for="cd1">Issue discussed with student</label>
+                                </div>
+                            </article>
+                            <article class="col-md-6">
+                                <div class="checkbox">
+                                    <input type="checkbox" id="cd2" />
+                                    <label for="cd2">High priority concern</label>
+                                </div>
+                            </article>
+                            <article class="col-md-6">
+                                <div class="checkbox">
+                                    <input type="checkbox" id="cd3" />
+                                    <label for="cd3">Issue may be revealed to student</label>
+                                </div>
+                            </article>
+                            <article class="col-md-6">
+                                <div class="checkbox">
+                                    <input type="checkbox" id="cd4" />
+                                    <label for="cd4">Student indicated intent to leave</label>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="row">
+                            <article class="col-md-12">
+                                <label class="control-label form-group">Sharing Options</label>
+                            </article>
+                            <article class="col-md-4">
+                                <div class="radio">
+                                    <input type="radio" id="check3" name="check" />
+                                    <label for="check3">Private <small>Only you can see this.</small></label>
+                                </div>
+                            </article>
+                            <article class="col-md-4">
+                                <div class="radio">
+                                    <input type="radio" id="check4" name="check" />
+                                    <label for="check4">Public <small>Any one who can see the student can see this.</small></label>
+                                </div>
+                            </article>
+                            <article class="col-md-4">
+                                <div class="radio">
+                                    <input type="radio" id="check5" name="check" />
+                                    <label for="check5">Team <small>Select one or more teams who you want to see this.</small></label>
+                                </div>
+                            </article>
+                        </div>
+                    </form>
+                </uib-tab>
+                <uib-tab index="2" heading="Referral">
+                    <form>
+                        <div class="row">
+                            <article class="col-md-4">
+                                <div class="form-group">
+                                    <label class="control-label">Reason</label>
+                                    <selectbox options="slectOptions" value="value"></selectbox>
+                                </div>
+                            </article>
+                            <article class="col-md-4">
+                                <div class="form-group">
+                                    <label class="control-label">Contact Type</label>
+                                    <selectbox options="slectOptions" value="value"></selectbox>
+                                </div>
+                            </article>
+                            <article class="col-md-4">
+                                <div class="form-group">
+                                    <label class="control-label">Interested Parties</label>
+                                    <selectbox options="slectOptions" value="value"></selectbox>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="row">
+                            <article class="col-md-12">
+                                <div class="form-group">
+                                    <textarea class="form-control" placeholder="You my add comments here..."></textarea>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="row">
+                            <article class="col-md-12">
+                                <label class="control-label form-group">Details</label>
+                            </article>
+                            <article class="col-md-6">
+                                <div class="checkbox">
+                                    <input type="checkbox" id="cd1" />
+                                    <label for="cd1">Issue discussed with student</label>
+                                </div>
+                            </article>
+                            <article class="col-md-6">
+                                <div class="checkbox">
+                                    <input type="checkbox" id="cd2" />
+                                    <label for="cd2">High priority concern</label>
+                                </div>
+                            </article>
+                            <article class="col-md-6">
+                                <div class="checkbox">
+                                    <input type="checkbox" id="cd3" />
+                                    <label for="cd3">Issue may be revealed to student</label>
+                                </div>
+                            </article>
+                            <article class="col-md-6">
+                                <div class="checkbox">
+                                    <input type="checkbox" id="cd4" />
+                                    <label for="cd4">Student indicated intent to leave</label>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="row">
+                            <article class="col-md-12">
+                                <label class="control-label form-group">Sharing Options</label>
+                            </article>
+                            <article class="col-md-4">
+                                <div class="radio">
+                                    <input type="radio" id="check3" name="check" />
+                                    <label for="check3">Private <small>Only you can see this.</small></label>
+                                </div>
+                            </article>
+                            <article class="col-md-4">
+                                <div class="radio">
+                                    <input type="radio" id="check4" name="check" />
+                                    <label for="check4">Public <small>Any one who can see the student can see this.</small></label>
+                                </div>
+                            </article>
+                            <article class="col-md-4">
+                                <div class="radio">
+                                    <input type="radio" id="check5" name="check" />
+                                    <label for="check5">Team <small>Select one or more teams who you want to see this.</small></label>
+                                </div>
+                            </article>
+                        </div>
+                    </form>
+                </uib-tab>
+                <uib-tab index="3" heading="Notes">
+                    <form>
+                        <div class="row">
+                            <article class="col-md-4">
+                                <div class="form-group">
+                                    <label class="control-label">Reason</label>
+                                    <selectbox options="slectOptions" value="value"></selectbox>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="row">
+                            <article class="col-md-12">
+                                <div class="form-group">
+                                    <textarea class="form-control" placeholder="You my add comments here..."></textarea>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="row">
+                            <article class="col-md-12">
+                                <label class="control-label form-group">Sharing Options</label>
+                            </article>
+                            <article class="col-md-4">
+                                <div class="radio">
+                                    <input type="radio" id="check3" name="check" />
+                                    <label for="check3">Private <small>Only you can see this.</small></label>
+                                </div>
+                            </article>
+                            <article class="col-md-4">
+                                <div class="radio">
+                                    <input type="radio" id="check4" name="check" />
+                                    <label for="check4">Public <small>Any one who can see the student can see this.</small></label>
+                                </div>
+                            </article>
+                            <article class="col-md-4">
+                                <div class="radio">
+                                    <input type="radio" id="check5" name="check" />
+                                    <label for="check5">Team <small>Select one or more teams who you want to see this.</small></label>
+                                </div>
+                            </article>
+                        </div>
+                    </form>
+                </uib-tab>
+                <uib-tab index="4" heading="Appointment">Appointment tab</uib-tab>
+            </uib-tabset>
+        </section>
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-primary" type="button" ng-click="cancel()">OK</button>
+        <button class="btn btn-warning" type="button" ng-click="cancel()">Cancel</button>
+    </div>
+</script>

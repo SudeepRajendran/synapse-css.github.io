@@ -6017,8 +6017,16 @@ body, .navbar-fixed-top, .navbar-fixed-bottom {
 .f-s-32 {
   font-size: 32px; }
 
-label, .label {
+label,
+.label {
   font-weight: normal; }
+
+.fields_marked {
+  font-size: 12px;
+  display: block;
+  font-style: italic;
+  color: #04101f;
+  margin: 0 0 10px 0; }
 
 .main-header .navbar-default {
   background: #4673a7;
@@ -6238,6 +6246,15 @@ h4 {
   background-image: url(../../images/help_base.png);
   vertical-align: middle; }
 
+.close-icon-circle {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 24px 24px;
+  background-image: url("../../images/close-base@2x.png"); }
+
 table th,
 .table th {
   font-family: 'Lato', sans-serif; }
@@ -6348,8 +6365,12 @@ table.table-hover tr:hover,
       line-height: 20px;
       background-size: 17px;
       background-repeat: no-repeat;
-      background-position: left center;
+      background-position: left 2px;
       cursor: pointer; }
+  .checkbox small,
+  .checkbox-inline small, .radio small, .radio-inline small {
+    display: block;
+    line-height: normal; }
 
 .checkbox input + label,
 .checkbox-inline input + label {
@@ -6405,6 +6426,10 @@ select.form-control {
     color: #fd6a71;
     font-size: 14px;
     font-style: italic; }
+
+textarea.form-control {
+  resize: none;
+  height: 100px; }
 
 .dropdown-menu > li {
   margin: 8px 0; }
@@ -6625,7 +6650,6 @@ blockquote {
   -webkit-box-sizing: border-box; }
 
 .sb-container {
-  font-family: Helvetica,sans-serif;
   display: inline-block;
   vertical-align: middle;
   width: 100%;
@@ -6698,6 +6722,64 @@ blockquote {
   padding: 10px;
   font-size: 14px;
   color: #999; }
+
+.modal-lg {
+  width: 810px !important; }
+
+.modal-body {
+  padding: 0;
+  overflow: hidden; }
+
+.modal-header {
+  border-radius: 8px 8px 0 0;
+  padding: 0 15px;
+  background: #F4F4F4;
+  height: 52px;
+  width: 100%;
+  border-bottom: 1px solid #CCC;
+  line-height: 52px; }
+  .modal-header .modal-title {
+    margin: 0;
+    line-height: 52px;
+    font-size: 16px;
+    display: inline-block; }
+  .modal-header .close-icon-circle {
+    position: relative;
+    top: 15px; }
+
+.modal-footer {
+  border-top: 1px solid #CCC;
+  background: none repeat scroll 0 0 #F4F4F4;
+  border-radius: 0 0 8px 8px; }
+  .modal-footer .btn {
+    min-width: 170px; }
+
+.vertical-tabs > div > * {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 -2px; }
+.vertical-tabs > div .nav {
+  width: 204px;
+  height: 570px;
+  background: #F4F4F4;
+  border-radius: 0; }
+  .vertical-tabs > div .nav li.active a {
+    background: #fff;
+    color: #4673a7; }
+  .vertical-tabs > div .nav li a {
+    border-radius: 0;
+    font-size: 13px;
+    color: #3F3F3F;
+    background: #F4F4F4;
+    border-bottom: 1px solid #DDD;
+    padding: 0 0 0 20px;
+    height: 45px;
+    line-height: 45px; }
+.vertical-tabs > div .tab-content {
+  width: 605px;
+  padding: 15px;
+  height: 570px;
+  overflow-y: scroll; }
 
 body {
   font-family: 'Open Sans', sans-serif;

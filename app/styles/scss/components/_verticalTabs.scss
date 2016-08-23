@@ -1,0 +1,39 @@
+.vertical-tabs {
+    > div {
+        > * {
+            display: inline-block;
+            vertical-align: top;
+            margin: 0 -2px;
+        }
+        .nav {
+            width: 204px;
+            height: 570px;
+            background: #F4F4F4;
+            border-radius: 0;
+            li {
+                &.active{
+                    a{
+                        background: #fff;
+                        color: #4673a7;
+                    }
+                }
+                a {
+                    border-radius: 0;
+                    font-size: 13px;
+                    color: #3F3F3F;
+                    background: #F4F4F4;
+                    border-bottom: 1px solid #DDD;
+                    padding: 0 0 0 20px;
+                    height: 45px;
+                    line-height: 45px;
+                }
+            }
+        }
+        .tab-content {
+            width: 605px;
+            padding: 15px;
+            height: 570px;
+            overflow-y: scroll;
+        }
+    }
+}

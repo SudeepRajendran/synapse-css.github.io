@@ -43,9 +43,12 @@ angular.module('synapseCss').config(function($stateProvider, $urlRouterProvider,
         templateUrl: 'app/partials/Modals/modals.html',
         controller: 'modalsController',
         controllerAs: 'MC'
+    }).state('modals.generic',{
+        url:'/generic',
+        templateUrl: 'app/partials/Modals/modals.generic.html'
     }).state('modals.activity',{
         url:'/activity',
-        templateUrl: 'app/partials/Modals/modals.activity.html'
+        templateUrl: 'app/partials/Modals/modals.activity.html',
     }).state('modals.confirmation',{
         url:'/confirmation',
         templateUrl: 'app/partials/Modals/modals.confirmation.html'

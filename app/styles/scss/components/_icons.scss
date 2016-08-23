@@ -67,3 +67,8 @@
     background-image: url(../../images/help_base.png);
     vertical-align: middle;
 }
+
+.close-icon-circle{
+     @include bg-values(24px, 24px);
+    background-image: url("../../images/close-base@2x.png");
+}

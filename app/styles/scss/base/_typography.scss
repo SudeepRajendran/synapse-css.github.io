@@ -1,10 +1,17 @@
-
-
-@for $i from 14 through 32{
-    .f-s-#{$i}{
+@for $i from 14 through 32 {
+    .f-s-#{$i} {
         font-size: #{$i}px;
     }
 }
-label, .label{
+
+label,
+.label {
     font-weight: normal;
+}
+.fields_marked{
+    font-size: 12px;
+    display: block;
+    font-style: italic;
+    color: #04101f;
+    margin: 0 0 10px 0;
 }

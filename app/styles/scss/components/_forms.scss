@@ -11,9 +11,13 @@
             line-height: 20px;
             background-size: 17px;
             background-repeat: no-repeat;
-            background-position: left center;
+            background-position: left 2px;
             cursor: pointer;
         }
+    }
+    small{
+        display: block;
+        line-height: normal;
     }
 }
 
@@ -88,6 +92,14 @@ select {
             font-size: 14px;
             font-style: italic;
         }
+    }
+}
+
+
+textarea{
+    &.form-control{
+        resize: none;
+        height: 100px;
     }
 }
 
