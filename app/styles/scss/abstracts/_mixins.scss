@@ -18,6 +18,24 @@
 @mixin margin($top,$right,$bottom,$left) {
     margin: $top $right $bottom $left;
 }
+
 @mixin padding($top,$right,$bottom,$left) {
     padding: $top $right $bottom $left;
+}
+
+@mixin thin-border-bottom ($color) {
+    border-bottom: 1px solid $color;
+}
+
+@mixin background-image-right ($url) {
+
+    background: url($icon-url-base+$url+"-base.png") no-repeat right;
+    
+    &:hover {
+         background: url($icon-url-base+$url+"-over.png") no-repeat right;
+    }
+    
+    &:clicked {
+         background: url($icon-url-base+$url+"-clicked.png") no-repeat right;
+    }
 }
