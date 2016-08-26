@@ -6727,8 +6727,11 @@ blockquote {
   width: 810px !important; }
 
 .modal-body {
-  padding: 0;
   overflow: hidden; }
+  .modal-body.modal-with-tabs {
+    padding: 0; }
+  .modal-body.message-modal {
+    padding: 25px; }
 
 .modal-header {
   border-radius: 8px 8px 0 0;
@@ -6753,6 +6756,30 @@ blockquote {
   border-radius: 0 0 8px 8px; }
   .modal-footer .btn {
     min-width: 170px; }
+
+.message-with-icon {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80px 80px;
+  background-position: left center;
+  display: block;
+  padding: 35px 0 35px 90px;
+  height: auto;
+  width: 100%; }
+  .message-with-icon.error-message {
+    background-image: url(../../images/icon/setup_icons/process-error-icon.png); }
+  .message-with-icon.succes-message {
+    background-image: url(../../images/icon/setup_icons/process-confirmation-icon.png); }
+
+.message-modal .modal-dialog {
+  width: 420px; }
+  .message-modal .modal-dialog .close-icon-circle {
+    position: relative;
+    bottom: 15px;
+    left: 15px; }
 
 .vertical-tabs > div > * {
   display: inline-block;

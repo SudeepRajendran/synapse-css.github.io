@@ -3,7 +3,12 @@
 }
 
 .modal-body {
-    padding: 0;
+    &.modal-with-tabs {
+        padding: 0;
+    }
+    &.message-modal {
+        padding: 25px;
+    }
     overflow: hidden;
 }
 
@@ -21,16 +26,43 @@
         font-size: 16px;
         display: inline-block;
     }
-    .close-icon-circle{
+    .close-icon-circle {
         position: relative;
-        top: 15px;;
+        top: 15px;
     }
 }
-.modal-footer{
+
+.modal-footer {
     border-top: 1px solid #CCC;
     background: none repeat scroll 0 0 #F4F4F4;
-    border-radius: 0 0 8px 8px ;
-    .btn{
+    border-radius: 0 0 8px 8px;
+    .btn {
         min-width: 170px;
+    }
+}
+
+.message-with-icon {
+    @include bg-values(80px, 80px);
+    background-position: left center;
+    display: block;
+    padding: 35px 0 35px 90px;
+    height: auto;
+    width: 100%;
+    &.error-message {
+        background-image: url(../../images/icon/setup_icons/process-error-icon.png);
+    }
+    &.succes-message {
+        background-image: url(../../images/icon/setup_icons/process-confirmation-icon.png);
+    }
+}
+
+.message-modal {
+    .modal-dialog {
+        width: 420px;
+        .close-icon-circle {
+            position: relative;
+            bottom: 15px;
+            left: 15px;
+        }
     }
 }

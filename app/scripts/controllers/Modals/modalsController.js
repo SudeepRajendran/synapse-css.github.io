@@ -32,6 +32,32 @@ angular.module('synapseCss').controller('modalsController', ['$scope', '$state',
             ,controller: 'ModalInstanceCtrl'
         });
     };
+    
+    MC.openConfirmation = function () {
+        var modalInstance = $uibModal.open({
+            templateUrl: 'confirmationModal.html'
+            , size: 'md'
+            ,controller: 'ModalInstanceCtrl'
+        });
+    };
+    
+    MC.openErrorModal = function () {
+        var modalInstance = $uibModal.open({
+            templateUrl: 'errorModal.html'
+            , size: 'md'
+            ,controller: 'ModalInstanceAutoCloseCtrl'
+            ,windowTopClass: 'message-modal'
+        });
+    };
+    
+    MC.openSuccessModal = function () {
+        var modalInstance = $uibModal.open({
+            templateUrl: 'successModal.html'
+            , size: 'md'
+            ,controller: 'ModalInstanceAutoCloseCtrl'
+            ,windowTopClass: 'message-modal'
+        });
+    };
 }]);
 
 angular.module('synapseCss').controller('ModalInstanceCtrl', function ($scope, $uibModalInstance) {
@@ -39,4 +65,11 @@ angular.module('synapseCss').controller('ModalInstanceCtrl', function ($scope, $
   $scope.cancel = function () {
     $uibModalInstance.dismiss('cancel');
   };
+});
+
+angular.module('synapseCss').controller('ModalInstanceAutoCloseCtrl', function ($scope, $uibModalInstance, $timeout) {
+    $timeout(function() {
+                $uibModalInstance.dismiss('cancel');
+            }, 1500)
+
 });

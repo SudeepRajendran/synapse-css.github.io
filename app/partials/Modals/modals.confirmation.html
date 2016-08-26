@@ -1,3 +1,34 @@
 <section class="section">
-    <h2>Confirmation/Error</h2>
-</section>
+    <h2>Confirmation/Error</h2> <a href="javascript:void(0);" class="btn btn-primary" ng-click="MC.openConfirmation();">Open Confirmation Modal</a> <a href="javascript:void(0);" class="btn btn-primary" ng-click="MC.openErrorModal();">Open Error Modal</a> <a href="javascript:void(0);" class="btn btn-primary" ng-click="MC.openSuccessModal();">Open Sucess Modal</a> </section>
+<!-- Confirmation modal -->
+<script type="text/ng-template" id="confirmationModal.html">
+    <div class="modal-header">
+        <h3 class="modal-title" id="modal-title">Cancel Appointment</h3>
+        <a href="javascript:void(0);" class="close-icon-circle pull-right" ng-click="cancel()"></a>
+    </div>
+    <div class="modal-body" id="modal-body">
+        <p>Your are canceling an appointment with Buffy Summers and two others.</p>
+        <p>Attendees will recieve an email.</p>
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-warning" type="button" ng-click="cancel()">Nevermind</button>
+        <button class="btn btn-primary" type="button" ng-click="cancel()">Cancel appointment</button>
+    </div>
+</script>
+
+
+<!-- Error modal -->
+<script type="text/ng-template" id="errorModal.html">
+    <div class="modal-body message-modal" id="modal-body">
+        <a href="javascript:void(0);" class="close-icon-circle pull-right" ng-click="cancel()"></a>
+        <p class="message-with-icon error-message"> Could not save file. Please try and save again. </p>
+    </div>
+</script>
+
+<!-- Success Modal -->
+<script type="text/ng-template" id="successModal.html">
+    <div class="modal-body message-modal" id="modal-body">
+        <a href="javascript:void(0);" class="close-icon-circle pull-right" ng-click="cancel()"></a>
+        <p class="message-with-icon succes-message"> Your appointment has been canceled! </p>
+    </div>
+</script>
