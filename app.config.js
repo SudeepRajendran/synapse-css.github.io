@@ -49,6 +49,9 @@ angular.module('synapseCss').config(function($stateProvider, $urlRouterProvider,
     }).state('modals.activity',{
         url:'/activity',
         templateUrl: 'app/partials/Modals/modals.activity.html',
+    }).state('modals.officeHours',{
+        url:'/officeHours',
+        templateUrl: 'app/partials/Modals/modals.officeHours.html'
     }).state('modals.confirmation',{
         url:'/confirmation',
         templateUrl: 'app/partials/Modals/modals.confirmation.html'

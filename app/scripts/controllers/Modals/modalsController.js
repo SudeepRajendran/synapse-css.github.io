@@ -1,14 +1,14 @@
 angular.module('synapseCss').controller('modalsController', ['$scope', '$state', '$uibModal', function ($scope, $state, $uibModal) {
     var MC = this;
     MC.menuItems = [{
-        name: 'Generic Modal Styles'
-        , link: 'modals.generic'
-    }, {
         name: 'Activity'
         , link: 'modals.activity'
     }, {
         name: 'Confirmation/Error'
         , link: 'modals.confirmation'
+    }, {
+        name: 'Office Hours'
+        , link: 'modals.officeHours'
     }, {
         name: 'Permissions'
         , link: 'modals.permissions'
@@ -56,6 +56,14 @@ angular.module('synapseCss').controller('modalsController', ['$scope', '$state',
             , size: 'md'
             ,controller: 'ModalInstanceAutoCloseCtrl'
             ,windowTopClass: 'message-modal'
+        });
+    };
+    
+    MC.openOfficeHours = function () {
+        var modalInstance = $uibModal.open({
+            templateUrl: 'officeHoursModal.html'
+            , size: 'lg'
+            ,controller: 'ModalInstanceCtrl'
         });
     };
 }]);

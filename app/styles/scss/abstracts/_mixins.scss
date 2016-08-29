@@ -23,6 +23,13 @@
     padding: $top $right $bottom $left;
 }
 
+@mixin ventorPrefix($property, $value){
+    -webkit-#{$property}: $value;
+    -ms-#{$property}: $value;
+    -o-#{$property}: $value;
+    #{$property}: $value;
+}
+
 @mixin thin-border-bottom ($color) {
     border-bottom: 1px solid $color;
 }

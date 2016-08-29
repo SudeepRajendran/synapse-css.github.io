@@ -5,11 +5,12 @@
 .modal-body {
     &.modal-with-tabs {
         padding: 0;
+        overflow: hidden;
     }
     &.message-modal {
         padding: 25px;
     }
-    overflow: hidden;
+    
 }
 
 .modal-header {

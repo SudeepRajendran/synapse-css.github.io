@@ -71,6 +71,13 @@ select {
         box-shadow: none;
         border-color: #1e73d5;
     }
+    &.timeInput{
+        width: 80px;
+        padding: 0 2px;
+        &::-webkit-input-placeholder{
+            font-size: 10px;
+        }
+    }
 }
 .control-label{
     colr: #333;
@@ -103,3 +110,8 @@ textarea{
     }
 }
 
+.form-group{
+    label{
+        color: #333;
+    }
+}

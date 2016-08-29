@@ -1,0 +1,106 @@
+<section class="section">
+    <h2>Office Hours</h2> <a href="javascript:void(0);" class="btn btn-primary" ng-click="MC.openOfficeHours();">Open Confirmation Modal</a> </section>
+<!-- Office hours modal -->
+<script type="text/ng-template" id="officeHoursModal.html">
+    <div class="modal-header">
+        <h3 class="modal-title" id="modal-title">Add Office Hours</h3>
+        <a href="javascript:void(0);" class="close-icon-circle pull-right" ng-click="cancel()"></a>
+    </div>
+    <div class="modal-body" id="modal-body">
+        <p class="fields_marked">*Fields marked with asterisks are required</p>
+        <form class="form-inline">
+            <section class="margin-bottom-18">
+                <div class="form-group">
+                    <label>*Start Tme</label>
+                    <input type="text" placeholder="hh:mm am/pm" class="form-control timeInput margin-left-8 margin-right-16" /> </div>
+                <div class="form-group">
+                    <label>End Tme</label>
+                    <input type="text" placeholder="hh:mm am/pm" class="form-control timeInput margin-left-8 margin-right-8" /> </div>
+                <div class="form-group">
+                    <label>in</label>
+                    <div class="inline-block width-125 margin-rightLeft-8">
+                        <selectbox options="slectOptions" value="value"></selectbox>
+                    </div>
+                    <label>appointment slots</label>
+                </div>
+            </section>
+            <section class="margin-bottom-18">
+                <div class="form-group">
+                    <label>*</label>
+                    <input type="text" placeholder="Location" class="form-control btn-block width-300 margin-right-12" /> </div>
+                <div class="form-group">
+                    <div class="radio-inline">
+                        <input type="radio" id="check3" name="check" value="onetime" ng-model="showVal"/>
+                        <label for="check3">One time</label>
+                    </div>
+                    <div class="radio-inline">
+                        <input type="radio" id="check4" name="check" value="series" ng-model="showVal"/>
+                        <label for="check4">Series</label>
+                    </div>
+                </div>
+            </section>
+            <div ng-show="showVal == 'series'">
+                <section class="margin-top-60 margin-bottom-60">
+                    <label class="f-s-18 margin-bottom-8">Repeat</label>
+                    <div>
+                        <div class="form-group">
+                            <div class="inline-block width-150 margin-right-8">
+                                <selectbox options="slectOptions" value="value1"></selectbox>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Repeat every</label>
+                            <input type="text" class="form-control width-60 margin-rightLeft-8" />
+                            <label>Day(s)</label>
+                        </div>
+                        <div class="form-group">
+                            <div class="checkbox-inline margin-left-20">
+                                <input type="checkbox" id="check" />
+                                <label for="check">Include Saturday and Sunday</label>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="margin-bottom-12">
+                    <label class="f-s-18 margin-bottom-8">Duration</label>
+                    <div class="">
+                        <div class="form-group">
+                            <label>Start: </label>
+                            <div class="inline-block width-150 margin-rightLeft-8">
+                                <selectbox options="slectOptions" value="value2"></selectbox>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="radio-inline">
+                                <input type="radio" id="check5" name="check1" />
+                                <label for="check5">No end date</label>
+                            </div>
+                            <div class="radio-inline">
+                                <input type="radio" id="check6" name="check1" />
+                                <label for="check6">End after:</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control width-60 margin-rightLeft-8" />
+                            <label>occurrences</label>
+                        </div>
+                    </div>
+                </section>
+                <section class="margin-bottom-18">
+                    <div class="form-group">
+                        <div class="radio-inline">
+                            <input type="radio" id="check7" name="check1" />
+                            <label for="check7">End by:</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control width-60 margin-rightLeft-8" /> </div>
+                </section>
+            </div>
+        </form>
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-warning" type="button" ng-click="cancel()">Nevermind</button>
+        <button class="btn btn-primary" type="button" ng-click="cancel()">Cancel appointment</button>
+    </div>
+</script>

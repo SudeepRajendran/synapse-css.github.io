@@ -1,36 +1,98 @@
-body{
+body {
     font-family: 'Open Sans', sans-serif;
     background: #F2F2F2;
     color: #333;
     font-weight: 400;
 }
-*{
+
+* {
     outline: 0 none !important;
 }
-.page{
+
+::-webkit-input-placeholder {
+    font-style: italic;
+    color: #BBB;
+    font-weight: 400
+}
+
+:-moz-placeholder {
+    font-style: italic;
+    color: #BBB;
+    font-weight: 400
+}
+
+::-moz-placeholder {
+    font-style: italic;
+    color: #BBB;
+    font-weight: 400
+}
+
+:-ms-input-placeholder {
+    font-style: italic;
+    color: #BBB
+}
+
+.view-descr .page {
     padding-top: 15px;
 }
-.white-bg{
+
+.white-bg {
     background: #fff;
 }
-.section{
+
+.section {
     margin-bottom: 60px;
 }
-.padding{
-    @include padding(15px,15px,15px,15px);
+
+.padding {
+    @include padding(15px, 15px, 15px, 15px);
 }
-.margin{
-    @include margin(15px,15px,15px,15px);
+
+.margin {
+    @include margin(15px, 15px, 15px, 15px);
 }
-.margin-top{
-    @include margin(15px,0,0,0);
+
+.margin-top {
+    @include margin(15px, 0, 0, 0);
 }
-.margin-bottom{
+
+.margin-bottom {
     margin-bottom: 15px;
 }
-.margin-bottom-8{
-    margin-bottom: 8px;
+
+
+.no-margin {
+    @include margin(0, 0, 0, 0);
 }
-.no-margin{
-    @include margin(0,0,0,0);
+
+
+@for $i from 12 through 60 {
+    $i : $i * 5;
+    .width-#{$i} {
+        width: #{$i}px !important;
+    }
 }
+.inline-block{
+    display: inline-block !important;
+}
+
+@for $i from 2 through 30 {
+    $i : $i * 2;
+    .margin-right-#{$i} {
+        margin-right: #{$i}px !important;
+    }
+    .margin-left-#{$i} {
+        margin-left: #{$i}px !important;
+    }
+    .margin-rightLeft-#{$i} {
+        margin-right: #{$i}px !important;
+        margin-left: #{$i}px !important;
+    }
+    .margin-top-#{$i} {
+        margin-top: #{$i}px !important;
+    }
+    .margin-bottom-#{$i} {
+        margin-bottom: #{$i}px !important;
+    }
+}
+
