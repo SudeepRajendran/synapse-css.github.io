@@ -1,4 +1,4 @@
-.modal-lg {
+h.modal-lg {
     width: 810px !important;
 }
 
@@ -66,4 +66,13 @@
             left: 15px;
         }
     }
+}
+
+.form-attendies-holder{
+    
+    height: 350px;
+    overflow-y: auto;
+    background: transparent;
+    border: 1px solid #ccc;
+    
 }

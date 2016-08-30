@@ -277,7 +277,71 @@
                         </div>
                     </form>
                 </uib-tab>
-                <uib-tab index="4" heading="Appointment">Appointment tab</uib-tab>
+                <uib-tab index="4" heading="Appointment">
+                    <p class="fields_marked">*Fields marked with asterisks are required</p>
+                    <form>
+                        <div class="row">
+                            <article class="col-md-6">
+                                <div class="form-group">
+                                    <label class="control-label">*Details</label>
+                                    <selectbox options="slectOptions" value="value"></selectbox>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label">*When</label>
+                                    <div>
+                                        <div class="datepicker-holder inline-block margin-right-8">
+                                            <input type="text" ng-model="FC.td" class="form-control" uib-datepicker-popup is-open="focus" ng-focus="focus=true" datepicker-options="FC.dateOptions" show-button-bar="false" placeholder="mm/dd/yyyy" /> </div>
+                                        <input type="text" class="form-control timeInput inline-block" placeholder="hh:mm am/pm" /> </div>
+                                    <div class="text-center margin-top-8 margin-bottom-8">
+                                        <label>to</label>
+                                    </div>
+                                    <div>
+                                        <div class="datepicker-holder inline-block margin-right-8">
+                                            <input type="text" ng-model="FC.td" class="form-control" uib-datepicker-popup is-open="focus1" ng-focus="focus1=true" datepicker-options="FC.dateOptions" show-button-bar="false" placeholder="mm/dd/yyyy" /> </div>
+                                        <input type="text" class="form-control timeInput inline-block" placeholder="hh:mm am/pm" /> </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label">*Where</label>
+                                    <input type="text" class="form-control" /> </div>
+                                <div class="form-group">
+                                    <label class="control-label">Description (Optional)</label>
+                                    <textarea class="form-control"></textarea>
+                                </div>
+                            </article>
+                            <article class="col-md-6">
+                                <div class="form-group">
+                                    <label class="control-label">*Attendees</label>
+                                    <input type="text" class="form-control inline-block width-250 margin-right-8" placeholder="enter student name, email or id"/><button class="btn btn-warning">add</button> </div>
+                                <div class="form-group">
+                                    <ul class="form-attendies-holder"></ul>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="row">
+                            <article class="col-md-12">
+                                <label class="control-label form-group">Sharing Options</label>
+                            </article>
+                            <article class="col-md-4">
+                                <div class="radio">
+                                    <input type="radio" id="check31" name="check" />
+                                    <label for="check31">Private <small>Only you can see this.</small></label>
+                                </div>
+                            </article>
+                            <article class="col-md-4">
+                                <div class="radio">
+                                    <input type="radio" id="check41" name="check" />
+                                    <label for="check41">Public <small>Any one who can see the student can see this.</small></label>
+                                </div>
+                            </article>
+                            <article class="col-md-4">
+                                <div class="radio">
+                                    <input type="radio" id="check51" name="check" />
+                                    <label for="check51">Team <small>Select one or more teams who you want to see this.</small></label>
+                                </div>
+                            </article>
+                        </div>
+                    </form>
+                </uib-tab>
             </uib-tabset>
         </section>
     </div>

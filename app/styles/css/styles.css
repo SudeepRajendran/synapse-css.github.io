@@ -6731,7 +6731,7 @@ blockquote {
   font-size: 14px;
   color: #999; }
 
-.modal-lg {
+h.modal-lg {
   width: 810px !important; }
 
 .modal-body.modal-with-tabs {
@@ -6788,6 +6788,12 @@ blockquote {
     bottom: 15px;
     left: 15px; }
 
+.form-attendies-holder {
+  height: 350px;
+  overflow-y: auto;
+  background: transparent;
+  border: 1px solid #ccc; }
+
 .vertical-tabs > div > * {
   display: inline-block;
   vertical-align: top;
@@ -6810,7 +6816,7 @@ blockquote {
     height: 45px;
     line-height: 45px; }
 .vertical-tabs > div .tab-content {
-  width: 605px;
+  width: 695px;
   padding: 15px;
   height: 570px;
   overflow-y: scroll; }
