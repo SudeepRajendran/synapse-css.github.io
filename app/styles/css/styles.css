@@ -6743,10 +6743,10 @@ h.modal-lg {
 .modal-header {
   border-radius: 8px 8px 0 0;
   padding: 0 15px;
-  background: #F4F4F4;
   height: 52px;
   width: 100%;
   border-bottom: 1px solid #CCC;
+  background: #F4F4F4;
   line-height: 52px; }
   .modal-header .modal-title {
     margin: 0;
@@ -6762,7 +6762,8 @@ h.modal-lg {
   background: none repeat scroll 0 0 #F4F4F4;
   border-radius: 0 0 8px 8px; }
   .modal-footer .btn {
-    min-width: 170px; }
+    min-width: 170px;
+    padding: 6px 22px; }
 
 .message-with-icon {
   display: inline-block;
@@ -6793,6 +6794,33 @@ h.modal-lg {
   overflow-y: auto;
   background: transparent;
   border: 1px solid #ccc; }
+
+.modal-top-field-holder {
+  border-bottom: 1px solid #CCC;
+  background: #F4F4F4;
+  height: 51px; }
+  .modal-top-field-holder .text-btn {
+    font-size: 9px;
+    font-weight: normal;
+    color: #4673A7;
+    display: inline-block;
+    margin: 10px 10px 0 15px;
+    width: 102px;
+    text-align: right; }
+
+.tabs-side-heading {
+  font-size: 18px;
+  color: #333;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #CCC;
+  margin: 0; }
+
+.option-list {
+  margin-top: 20px; }
+  .option-list li {
+    padding: 3px 0;
+    border-bottom: 1px solid #eee;
+    max-width: 240px; }
 
 .vertical-tabs > div > * {
   display: inline-block;
@@ -7019,6 +7047,96 @@ body {
 
 .width-300 {
   width: 300px !important; }
+
+.width-305 {
+  width: 305px !important; }
+
+.width-310 {
+  width: 310px !important; }
+
+.width-315 {
+  width: 315px !important; }
+
+.width-320 {
+  width: 320px !important; }
+
+.width-325 {
+  width: 325px !important; }
+
+.width-330 {
+  width: 330px !important; }
+
+.width-335 {
+  width: 335px !important; }
+
+.width-340 {
+  width: 340px !important; }
+
+.width-345 {
+  width: 345px !important; }
+
+.width-350 {
+  width: 350px !important; }
+
+.width-355 {
+  width: 355px !important; }
+
+.width-360 {
+  width: 360px !important; }
+
+.width-365 {
+  width: 365px !important; }
+
+.width-370 {
+  width: 370px !important; }
+
+.width-375 {
+  width: 375px !important; }
+
+.width-380 {
+  width: 380px !important; }
+
+.width-385 {
+  width: 385px !important; }
+
+.width-390 {
+  width: 390px !important; }
+
+.width-395 {
+  width: 395px !important; }
+
+.width-400 {
+  width: 400px !important; }
+
+.width-405 {
+  width: 405px !important; }
+
+.width-410 {
+  width: 410px !important; }
+
+.width-415 {
+  width: 415px !important; }
+
+.width-420 {
+  width: 420px !important; }
+
+.width-425 {
+  width: 425px !important; }
+
+.width-430 {
+  width: 430px !important; }
+
+.width-435 {
+  width: 435px !important; }
+
+.width-440 {
+  width: 440px !important; }
+
+.width-445 {
+  width: 445px !important; }
+
+.width-450 {
+  width: 450px !important; }
 
 .inline-block {
   display: inline-block !important; }

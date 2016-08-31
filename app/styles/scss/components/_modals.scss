@@ -10,16 +10,15 @@ h.modal-lg {
     &.message-modal {
         padding: 25px;
     }
-    
 }
 
 .modal-header {
     border-radius: 8px 8px 0 0;
     padding: 0 15px;
-    background: #F4F4F4;
     height: 52px;
     width: 100%;
     border-bottom: 1px solid #CCC;
+    background: #F4F4F4;
     line-height: 52px;
     .modal-title {
         margin: 0;
@@ -39,6 +38,7 @@ h.modal-lg {
     border-radius: 0 0 8px 8px;
     .btn {
         min-width: 170px;
+        padding: 6px 22px;
     }
 }
 
@@ -68,11 +68,41 @@ h.modal-lg {
     }
 }
 
-.form-attendies-holder{
-    
+.form-attendies-holder {
     height: 350px;
     overflow-y: auto;
     background: transparent;
     border: 1px solid #ccc;
-    
+}
+
+.modal-top-field-holder {
+    border-bottom: 1px solid #CCC;
+    background: #F4F4F4;
+    height: 51px;
+    .text-btn {
+        font-size: 9px;
+        font-weight: normal;
+        color: #4673A7;
+        display: inline-block;
+        margin: 10px 10px 0 15px;
+        width: 102px;
+        text-align: right
+    }
+}
+
+.tabs-side-heading {
+    font-size: 18px;
+    color: #333;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #CCC;
+    margin: 0;
+}
+
+.option-list {
+    margin-top: 20px;
+    li {
+        padding: 3px 0;
+        border-bottom: 1px solid #eee;
+        max-width: 240px;
+    }
 }

@@ -1,3 +1,62 @@
 <section class="section">
-    <h2>Permissions</h2>
-</section>
+    <h2>Permissions</h2><a href="javascript:void(0);" class="btn btn-primary" ng-click="MC.openPermission();">Open Permissions Modal</a> </section>
+<script type="text/ng-template" id="permissionModal.html">
+    <div class="modal-header">
+        <h3 class="modal-title" id="modal-title">Select attributes below to create a new permission set <p class="fields_marked inline-block margin-left-10">*Fields marked with asterisks are required</p></h3>
+        <a href="javascript:void(0);" class="close-icon-circle pull-right" ng-click="cancel()"></a>
+    </div>
+    <div class="modal-body modal-with-tabs" id="modal-body">
+        <div class="modal-top-field-holder clearfix">
+            <label class="width-205 padding">*Permission Set Name</label>
+            <input type="text" class="form-control inline-block width-430" placeholder="Permission Set Name" />
+            <a href="javascript:void(0);" class="icon refresh-icon pull-right margin-top-10 margin-right-16" title="Click Here to Clear Permission Parameters"></a> <a href="javascript:void(0);" class="text-btn  pull-right" title="Click Here to Clear Permission Parameters">CLEAR PERMISSION PARAMETERS</a> </div>
+        <section class="vertical-tabs">
+            <uib-tabset active="activePill" vertical="true" type="pills">
+                <uib-tab index="0" heading="Access level">
+                    <h4 class="tabs-side-heading">Access level</h4>
+                    <ul class="option-list list-unstyled">
+                        <li>
+                            <div class="radio-inline">
+                                <input type="radio" id="check3" name="check" />
+                                <label for="check3">Individual and Aggregate</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="radio-inline">
+                                <input type="radio" id="check1" name="check" />
+                                <label for="check1">Aggregate only</label>
+                            </div>
+                        </li>
+                    </ul>
+                </uib-tab>
+                <uib-tab index="1" heading="Risk/Intent to leave">
+                    <h4 class="tabs-side-heading">Risk and Intent to leave <small>(Aggregate only)</small></h4>
+                    <ul class="option-list list-unstyled">
+                        <li>
+                            <div class="checkbox-inline">
+                                <input type="checkbox" id="check32"  />
+                                <label for="check32">Risk Indicator</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="checkbox-inline">
+                                <input type="radio" id="check12" name="check" />
+                                <label for="check12">Intent to Leave</label>
+                            </div>
+                        </li>
+                    </ul>
+                </uib-tab>
+                <uib-tab index="2" heading="Profile Blocks"> Profile Blocks Content</uib-tab>
+                <uib-tab index="3" heading="Survey Blocks"> Survey Blocks Content</uib-tab>
+                <uib-tab index="4" heading="Courses"> Courses Content</uib-tab>
+                <uib-tab index="5" heading="Features"> Features Content</uib-tab>
+                <uib-tab index="6" heading="Institutional-Specific Questions"> Institutional-Specific Questions Content</uib-tab>
+                <uib-tab index="7" heading="Reports"> Reports Content</uib-tab>
+            </uib-tabset>
+        </section>
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-warning" type="button" ng-click="cancel()">nevermind</button>
+        <button class="btn btn-primary" type="button" ng-click="cancel()">Save this permission set</button>
+    </div>
+</script>

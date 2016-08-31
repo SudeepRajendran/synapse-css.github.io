@@ -30,16 +30,16 @@
                     <input type="text" placeholder="Location" class="form-control btn-block width-300 margin-right-12" /> </div>
                 <div class="form-group">
                     <div class="radio-inline">
-                        <input type="radio" id="check3" name="check" value="onetime" ng-model="showVal"/>
+                        <input type="radio" id="check3" name="check" value="onetime" ng-model="MC.showVal" checked="checked"/>
                         <label for="check3">One time</label>
                     </div>
                     <div class="radio-inline">
-                        <input type="radio" id="check4" name="check" value="series" ng-model="showVal"/>
+                        <input type="radio" checked="checked" id="check4" name="check" value="series" ng-model="MC.showVal"/>
                         <label for="check4">Series</label>
                     </div>
                 </div>
             </section>
-            <div ng-show="showVal == 'series'">
+            <div ng-show="MC.showVal == 'series'">
                 <section class="margin-top-60 margin-bottom-60">
                     <label class="f-s-18 margin-bottom-8">Repeat</label>
                     <div>

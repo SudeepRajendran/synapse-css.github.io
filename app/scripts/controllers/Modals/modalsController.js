@@ -66,6 +66,14 @@ angular.module('synapseCss').controller('modalsController', ['$scope', '$state',
             ,controller: 'ModalInstanceCtrl'
         });
     };
+    
+    MC.openPermission = function () {
+        var modalInstance = $uibModal.open({
+            templateUrl: 'permissionModal.html'
+            , size: 'lg'
+            ,controller: 'ModalInstanceCtrl'
+        });
+    };
 }]);
 
 angular.module('synapseCss').controller('ModalInstanceCtrl', function ($scope, $uibModalInstance) {
