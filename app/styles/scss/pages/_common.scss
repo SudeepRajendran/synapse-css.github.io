@@ -96,3 +96,8 @@ body {
     }
 }
 
+.ss-link-with-right-arrow {
+    @include background-image-right( $icon-url-dash-module-link-arrow);
+    padding-right: 20px;
+    cursor: pointer;
+}

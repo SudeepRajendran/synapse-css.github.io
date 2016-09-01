@@ -1,0 +1,156 @@
+.ss-menus-right {
+    display: inline-block;
+    float: right;
+    padding-right: 20px;
+    margin-top: 10px;
+    &.ss-link-with-right-arrow {
+        margin-top: 0;
+        margin-right: 20px;
+    }
+}
+.ss-faculty-dashboard-module {
+    @extend .ss-dashboard-module;
+    width: 570px;
+    & > h2 {
+        display: inline-block;
+        float: left;
+    }
+    & > .ss-menus-right{
+        a{
+            vertical-align: middle;
+        } 
+    } 
+}
+.ss-module-academic-updates {
+    margin-right: 30px;
+}
+.ss-faculty-dashboard-module.ss-module-todays-agenda {
+    & > h2 {
+        line-height: 12px;
+    }
+    & .ss-menus-right {
+        height: 43px;
+        text-align: right;
+        > p {
+            font-size: 11px;
+            display: inline-block;
+            float: left;
+            margin: 6px 0px 0px 10px;
+            & > span:first-child {
+                font-weight: 600;
+                color: $lima-color;
+            }
+        }
+        & > .ss-agenda-count {
+            font-size: 30px;
+            line-height: 30px;
+        }
+    }
+    .table-responsive {
+        clear: both;
+        & > .custom-table {
+            th {
+                padding: 0 0 0 10px;
+                height: 15px;
+                border-bottom: none;
+            }
+            tbody {
+                tr {
+                    padding: 0px;
+                    td {
+                        height: 45px;
+                        padding: 0 0 0 15px;
+                        .agenda-time-hour {
+                            display: inline-block;
+                            font-size: 24px;
+                            vertical-align: top;
+                            width: 32px;
+                            text-align: right;
+                        }
+                        .agenda-time-minutes {
+                            display: inline-block;
+                            line-height: 10px;
+                            padding-top: 8px;
+                            span {
+                                color: $davy-gray-color;
+                                &:last-child {
+                                    font-weight: bold;
+                                    color: $blue-color;
+                                    font-size: 10px;
+                                }
+                            }
+                        }
+                    }
+                    td:first-child {
+                        padding-left: 10px;
+                        width: 15%;
+                        background-color: $gray-light;
+                        border-top: 1px solid $white-color;
+                        border-left: 1px solid $white-color;
+                    }
+                    .Reason {
+                        color: $fordblack-color;
+                    }
+                    .Student-name {
+                        color: $lima-color;
+                        &:hover {
+                            color: $brand-warning;
+                            cursor: pointer;
+                        }
+                        &:clicked {
+                            color: $gray20-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.ss-faculty-dashboard-module.ss-module-referrals {
+    @extend .ss-faculty-dashboard-module.ss-module-todays-agenda;
+    margin: 20px 30px 0 0;
+    h2 {
+        line-height: 23px;
+    }
+    table {
+        margin-bottom: 0px;
+        border-bottom: 1px solid $border-color-light;
+    }
+}
+.ss-faculty-dashboard-module.ss-module-myteam-activities {
+    margin-top: 20px;
+    @extend .ss-coord-dashboard-module.ss-additional-setup;
+    h2 {
+        line-height: 12px;
+    }
+    .team-btn {
+        width: 184px;
+        height: 44px;
+        opacity: 0.4;
+        color: #fff;
+        background: #4673a7;
+        text-align: left;
+        padding-left: 15px;
+        border-radius: 0px;
+        .table-more-menu-icon {
+            width: 12px;
+            height: 20px;
+            float: right;
+        }
+    }
+    .team-menu {
+        width: 184px;
+    }
+    .row > .dropdown-calender {
+        padding: 0px;
+    }
+    .ss-module-content {
+        ul > li > a {
+            .count {
+                float: right;
+                padding-right: 20px;
+                color: $brand-warning;
+            }
+        }
+    }
+}

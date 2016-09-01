@@ -1,0 +1,49 @@
+.ss-coord-dashboard-module {
+    @extend .ss-dashboard-module;
+}
+.ss-coord-dashboard-module.ss-module-overview {
+    margin-right: 30px;
+    .ss-module-content {
+        padding: 30px 0;
+        .ss-module-count {
+            color: $brand-warning;
+            font-size: 70px;
+            line-height: .78em;
+        }
+        .ss-module-id {
+            font-size: 13px;
+            color: $gray60-color;
+            margin-bottom: 20px;
+            margin-top: 15px;
+            display: block;
+        }
+        .ss-module-action {
+            width: 155px;
+        }
+    }
+}
+.ss-coord-dashboard-module.ss-additional-setup {
+    .ss-module-content {
+        text-align: left;
+        & ul {
+            padding: 0;
+            & > li {
+                list-style-type: none;
+                height: 64px;
+                padding: 15px 20px;
+                @include thin-border-bottom( $border-color-light);
+                cursor: pointer;
+                & > a {
+                    display: inline-block;
+                    @include background-image-right( $icon-url-dash-module-link-arrow);
+                    font-size: 24px;
+                    width: 100%;
+                    
+                }
+            }
+            & > li:last-child {
+                border: none;
+            }
+        }
+    }
+}
