@@ -1,3 +1,65 @@
 <section class="section">
-    <h2>Risk</h2>
+   <div class="col-md-4 col-lg-4 col-sm-4 ss-faculty-dashboard-module ss-module-student-risk">
+      <div class="ss-student-header">
+         <span>
+            <h2 class="ss-help-icon">MY STUDENTS</h2>
+         </span>
+         <span>
+            <h2 class="ss-help-icon">PRIORITY<br>STUDENTS AT RISK</h2>
+         </span>
+      </div>
+      <div class="col-md-6 col-lg-6 col-sm-6 ss-my-students">
+         <ul>
+            <li>52<sup>%</sup><label>RED2</label></li>
+            <li>32<sup>%</sup><label>RED</label></li>
+            <li>23<sup>%</sup><label>YELLOW</label></li>
+            <li>55<sup>%</sup><label>GREEN</label></li>
+            <li>16<sup>%</sup><label>GRAY</label></li>
+         </ul>
+         <div class="total-student-chart">
+            <nvd3-pie-chart data="exampleData" id="exampleId" showlabels="false" x="xFunction()" y="yFunction()" tooltips="false" donut="true" donutratio="0.7" margin="{left:-22,top:-22,bottom:0,right:0}" donutlabelsoutside="false" color="colorFunction()" width="200" height="200" class="ng-isolate-scope">
+               <svg height="200" width="200">
+                  <g class="nvd3 nv-wrap nv-pieChart" transform="translate(-22,-22)">
+                     <g>
+                        <g class="nv-pieWrap">
+                           <g class="nvd3 nv-wrap nv-pie nv-chart-3923" transform="translate(0,0)">
+                              <g>
+                                 <g class="nv-pie" transform="translate(111,111)">
+                                    <g class="nv-slice" fill="#cccccc" stroke="#cccccc">
+                                       <path d="M5.437431788214248e-15,-88.8A88.8,88.8 0 1,1 -11.129591140510227,88.09978547672563L-9.738392247946448,77.08731229213491A77.69999999999999,77.69999999999999 0 1,0 4.757752814687467e-15,-77.69999999999999Z"></path>
+                                    </g>
+                                    <g class="nv-slice" fill="#95cd3c" stroke="#95cd3c">
+                                       <path d="M-11.129591140510227,88.09978547672563A88.8,88.8 0 0,1 -47.58141939413487,-74.97631978457896L-41.633741969868005,-65.60427981150657A77.69999999999999,77.69999999999999 0 0,0 -9.738392247946448,77.08731229213491Z"></path>
+                                    </g>
+                                    <g class="nv-slice" fill="#fec82a" stroke="#fec82a">
+                                       <path d="M-47.58141939413487,-74.97631978457896A88.8,88.8 0 0,1 -32.68946027839939,-82.56415194687672L-28.603277743599463,-72.24363295351712A77.69999999999999,77.69999999999999 0 0,0 -41.633741969868005,-65.60427981150657Z"></path>
+                                    </g>
+                                    <g class="nv-slice" fill="#f72d35" stroke="#f72d35">
+                                       <path d="M-32.68946027839939,-82.56415194687672A88.8,88.8 0 0,1 -16.639460735212346,-87.22710786470756L-14.559528143310802,-76.3237193816191A77.69999999999999,77.69999999999999 0 0,0 -28.603277743599463,-72.24363295351712Z"></path>
+                                    </g>
+                                    <g class="nv-slice" fill="#c70009" stroke="#c70009">
+                                       <path d="M-16.639460735212346,-87.22710786470756A88.8,88.8 0 0,1 -1.6312295364642742e-14,-88.8L-1.42732584440624e-14,-77.69999999999999A77.69999999999999,77.69999999999999 0 0,0 -14.559528143310802,-76.3237193816191Z"></path>
+                                    </g>
+                                 </g>
+                                 <g class="nv-pieLabels" transform="translate(111,111)"></g>
+                              </g>
+                           </g>
+                        </g>
+                        <g class="nv-legendWrap"></g>
+                     </g>
+                  </g>
+               </svg>
+            </nvd3-pie-chart>
+         </div>
+         <div class="total-students-center">
+            <span class="student-count">27133</span><span>Total Students</span>
+         </div>
+      </div>
+      <div class="col-md-6 col-lg-6 col-sm-6 ss-high-priority">
+         <p class="ss-high-priority-count">137</p>
+         <p class="ss-high-priority-content">
+            <span><b>High priority </b></span><span>students need<br/>to be contacted</span>
+         </p>
+      </div>
+   </div>
 </section>

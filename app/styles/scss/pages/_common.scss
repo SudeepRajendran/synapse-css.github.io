@@ -101,3 +101,7 @@ body {
     padding-right: 20px;
     cursor: pointer;
 }
+.ss-help-icon {
+    @include background-image-help($icon-url-help-base);
+    cursor: pointer;
+}

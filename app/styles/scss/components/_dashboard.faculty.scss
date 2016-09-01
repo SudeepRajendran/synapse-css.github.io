@@ -88,10 +88,10 @@
                         border-top: 1px solid $white-color;
                         border-left: 1px solid $white-color;
                     }
-                    .Reason {
+                    .reason{
                         color: $fordblack-color;
                     }
-                    .Student-name {
+                    .student-name {
                         color: $lima-color;
                         &:hover {
                             color: $brand-warning;
@@ -127,8 +127,8 @@
         width: 184px;
         height: 44px;
         opacity: 0.4;
-        color: #fff;
-        background: #4673a7;
+        color: $white-color;
+        background: $blue-color;
         text-align: left;
         padding-left: 15px;
         border-radius: 0px;

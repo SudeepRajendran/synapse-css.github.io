@@ -46,3 +46,15 @@
          background: url($icon-url-base+$url+"-clicked.png") no-repeat right;
     }
 }
+@mixin background-image-help ($url) {
+
+    background: url($icon-url-base+$url+"_base.png") no-repeat right;
+    
+    &:hover {
+         background: url($icon-url-base+$url+"_over.png") no-repeat right;
+    }
+    
+    &:clicked {
+         background: url($icon-url-base+$url+"_clicked.png") no-repeat right;
+    }
+}
