@@ -1,0 +1,28 @@
+.ss-dashboard-module {
+    background:$white-color;
+    height:240px;
+    width:370px;
+    padding:0px;
+    
+        h2 {
+            margin:10px 8px;
+            border-left: 1px solid $btn-default-border;
+            padding: 0 0 0 10px;
+            line-height: 23px;
+            font-size: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: $gray;
+            }
+    
+        .ss-module-content {
+            clear: both;
+            text-align: center;
+            border-top: 1px solid $light-shade-gray;
+            
+            &.ss-no-content {
+                font-size: 28px;
+                padding: 62px;
+            }
+        }
+}

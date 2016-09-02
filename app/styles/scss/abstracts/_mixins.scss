@@ -33,7 +33,6 @@
 @mixin thin-border-bottom ($color) {
     border-bottom: 1px solid $color;
 }
-
 @mixin background-image-right ($url) {
 
     background: url($icon-url-base+$url+"-base.png") no-repeat right;
@@ -44,5 +43,41 @@
     
     &:clicked {
          background: url($icon-url-base+$url+"-clicked.png") no-repeat right;
+    }
+}
+@mixin background-image-help ($url) {
+
+    background: url($icon-url-base+$url+"_base.png") no-repeat right;
+    
+    &:hover {
+         background: url($icon-url-base+$url+"_over.png") no-repeat right;
+    }
+    
+    &:clicked {
+         background: url($icon-url-base+$url+"_clicked.png") no-repeat right;
+    }
+}
+@mixin background-image-survey-key ($url) {
+
+    background: url($icon-url-base+$url+".png") no-repeat left;
+    
+    &:hover {
+         background: url($icon-url-base+$url+".png") no-repeat left;
+    }
+    
+    &:clicked {
+         background: url($icon-url-base+$url+".png") no-repeat left;
+    }
+}
+@mixin background-activities-icon ($url) {
+
+    background: url($icon-url-base+$url+".png") no-repeat left;
+    
+    &:hover {
+         background: url($icon-url-base+$url+".png") no-repeat left;
+    }
+    
+    &:clicked {
+         background: url($icon-url-base+$url+".png") no-repeat left;
     }
 }

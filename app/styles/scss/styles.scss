@@ -23,6 +23,11 @@
 @import "components/modals";
 @import "components/verticalTabs";
 
+@import "components/dashboard";
+@import "components/dashboard.coordinator";
+@import "components/dashboard.faculty";
+@import "components/dashboard-risk";
+@import "components/base";
+
 @import "pages/common";
 @import "pages/tables_page";
-@import "pages/_dashboard.coordinator";
