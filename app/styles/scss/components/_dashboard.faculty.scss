@@ -132,33 +132,33 @@
     .ss-module-content {
         ul > li {
             padding: 11px 10px 15px 20px;
-            .referral-icon {
-                float: left;
-                width: 40px;
-                height: 40px;
-                display: inline-block;
+            .referral-icon{
+                 float: left;
+                    width: 40px;
+                    height: 40px;
+                    display: inline-block;
                 @include background-activities-icon($icon-url-dash-module-activities-referrals-icon);
             }
-            .interaction-icon {
+            .interaction-icon{
                 @extend .referral-icon;
                 @include background-activities-icon($icon-url-dash-module-activities-interactions-icon);
             }
-            .login-icon {
+            .login-icon{
                 @extend .referral-icon;
                 @include background-activities-icon($icon-url-dash-module-activities-login-icon);
             }
             a {
-                width: 475px;
+            width: 475px;
+            float: right;
+            margin-right: 10px;
+            .count {
                 float: right;
-                margin-right: 10px;
-                .count {
-                    float: right;
-                    padding-right: 20px;
-                    color: $brand-warning;
-                    font-size: 30px;
-                }
+                padding-right: 20px;
+                color: $brand-warning;
+                font-size: 30px;
             }
         }
+    }
     }
 }
 .ss-faculty-dashboard-module.ss-module-student-risk {
