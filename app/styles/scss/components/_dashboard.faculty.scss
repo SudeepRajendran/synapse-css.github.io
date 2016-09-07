@@ -22,7 +22,7 @@
     }
 }
 .ss-module-academic-updates {
-    margin-right: 60px;
+    margin-right: 30px;
 }
 .ss-faculty-dashboard-module.ss-module-todays-agenda {
     & > h2 {
@@ -108,7 +108,7 @@
 }
 .ss-faculty-dashboard-module.ss-module-referrals {
     @extend .ss-faculty-dashboard-module.ss-module-todays-agenda;
-    margin: 20px 60px 0 0;
+    margin: 20px 30px 0 0;
     h2 {
         line-height: 23px;
     }
@@ -132,37 +132,37 @@
     .ss-module-content {
         ul > li {
             padding: 11px 10px 15px 20px;
-            .referral-icon{
-                 float: left;
-                    width: 40px;
-                    height: 40px;
-                    display: inline-block;
-                @include background-activities-icon($icon-url-dash-module-activities-referrals-icon);
+            .referral-icon {
+                float: left;
+                width: 40px;
+                height: 40px;
+                display: inline-block;
+                @include background-image-left($icon-url-dash-module-activities-referrals-icon);
             }
-            .interaction-icon{
+            .interaction-icon {
                 @extend .referral-icon;
-                @include background-activities-icon($icon-url-dash-module-activities-interactions-icon);
+                @include background-image-left($icon-url-dash-module-activities-interactions-icon);
             }
-            .login-icon{
+            .login-icon {
                 @extend .referral-icon;
-                @include background-activities-icon($icon-url-dash-module-activities-login-icon);
+                @include background-image-left($icon-url-dash-module-activities-login-icon);
             }
             a {
-            width: 475px;
-            float: right;
-            margin-right: 10px;
-            .count {
+                width: 475px;
                 float: right;
-                padding-right: 20px;
-                color: $brand-warning;
-                font-size: 30px;
+                margin-right: 10px;
+                .count {
+                    float: right;
+                    padding-right: 20px;
+                    color: $brand-warning;
+                    font-size: 30px;
+                }
             }
         }
     }
-    }
 }
 .ss-faculty-dashboard-module.ss-module-student-risk {
-    margin: 20px 60px 0 0;
+    margin: 20px 30px 0 0;
     .ss-student-header {
         height: 43px;
         border-bottom: 1px solid $light-shade-gray;
@@ -290,7 +290,7 @@
             padding: 0;
             li {
                 height: 81px;
-                padding: 12px 20px;
+                padding: 15px 20px;
                 border-bottom: 1px solid #F3F3F3;
                 cursor: pointer;
                 .cohort-name {
@@ -301,9 +301,10 @@
                 .survey-progress {
                     width: 530px;
                     .progress {
-                        width: 460px;
+                        width: 458px;
                         float: left;
                         margin: 0;
+                        height: 11px;
                     }
                     .survey-respond-percent {
                         width: 50px;
@@ -335,11 +336,11 @@
                 text-transform: uppercase;
                 margin-left: 15px;
                 padding: 1px 0px 0px 15px;
-                @include background-image-survey-key ($icon-url-dash-module-survey-key-responded-icon);
+                @include background-image-left ($icon-url-dash-module-survey-key-responded-icon);
             }
             span:last-child {
                 color: $gray20-color;
-                @include background-image-survey-key ($icon-url-dash-module-survey-key-notresponded-icon);
+                @include background-image-left ($icon-url-dash-module-survey-key-notresponded-icon);
             }
         }
     }

@@ -57,7 +57,7 @@
          background: url($icon-url-base+$url+"_clicked.png") no-repeat right;
     }
 }
-@mixin background-image-survey-key ($url) {
+@mixin background-image-left ($url) {
 
     background: url($icon-url-base+$url+".png") no-repeat left;
     
@@ -69,15 +69,33 @@
          background: url($icon-url-base+$url+".png") no-repeat left;
     }
 }
-@mixin background-activities-icon ($url) {
+@mixin background-print-icon ($url) {
 
-    background: url($icon-url-base+$url+".png") no-repeat left;
+    background: url($icon-image-url-base+$url+"_base.png") no-repeat left;
     
     &:hover {
-         background: url($icon-url-base+$url+".png") no-repeat left;
+         background: url($icon-image-url-base+$url+"_clicked.png") no-repeat left;
     }
     
     &:clicked {
-         background: url($icon-url-base+$url+".png") no-repeat left;
+         background: url($icon-image-url-base+$url+"_over.png") no-repeat left;
     }
+}
+@mixin background-studentprofile-icon ($url) {
+
+    background: url($icon-url-base+$url+"-base.png") no-repeat left;
+    
+    &:hover {
+         background: url($icon-url-base +$url+"-selected.png") no-repeat left;
+    }
+    
+}
+@mixin background-studentprofile-risk-icon ($url) {
+
+    background: url($icon-url-base+$url+".png") no-repeat;
+    
+    &:hover {
+         background: url($icon-url-base +$url+".png") no-repeat;
+    }
+    
 }

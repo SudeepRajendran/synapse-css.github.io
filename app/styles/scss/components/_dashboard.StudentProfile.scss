@@ -1,0 +1,228 @@
+.sub-menu {
+    width: 100%;
+    height: 70px;
+    background-color: #e3e3e3;
+    .back-button {
+        float: left;
+        @include background-studentprofile-risk-icon($icon-url-studentprofile-module-back-icon);
+        height: 30px;
+        padding-left: 35px;
+        margin-top: 20px;
+        padding-top: 5px;
+        margin-left: 5px;
+    }
+    .search-box {
+        float: right;
+        margin-top: 15px;
+        margin-right: 5px;
+        input {
+            width: 255px;
+            height: 38px;
+            padding-left: 5px;
+            @include background-studentprofile-risk-icon($icon-url-studentprofile-module-search-icon);
+            background-position: right;
+            background-color: #fff;
+            &:hover {
+                background-position: right;
+                background-color: #fff;
+            }
+        }
+    }
+}
+.student-profile-header {
+    padding: 26px 20px;
+    p {
+        display: inline-block;
+        font-size: 24px;
+    }
+    .studentname-header {
+        padding-left: 5px;
+    }
+    .student-profile-print {
+        float: right;
+        font-size: 14px;
+    }
+}
+.student-profile-container {
+    width: 100%;
+    height: 250px;
+    background-color: $white-color;
+    .student-profile-photo {
+        background-image: url(../../images/new-img.png);
+        height: 250px;
+        width: 250px;
+    }
+    .student-profile-info {
+        width: 500px;
+    }
+    .student-name {
+        font-size: 50px;
+        color: $gray20-color;
+        padding-top: 20px;
+        margin-bottom: 0;
+    }
+    .student-id {
+        font-size: 20px;
+        color: $brand-warning;
+    }
+    .student-details {
+        border-top: 1px solid $light-shade-gray;
+        p {
+            display: inline-block;
+            margin-top: 15px;
+        }
+        .email-id {
+            border-right: 1px solid $gray92-color;
+            font-size: 10px;
+            color: $gray60-color;
+            font-weight: bold;
+            float: left;
+            padding-right: 20px;
+            a {
+                font-size: 18px;
+                font-weight: 500;
+            }
+        }
+        .phone-no {
+            padding-left: 20px;
+            font-size: 10px;
+            color: $gray60-color;
+            font-weight: bold;
+            span {
+                font-size: 18px;
+                color: $black-color;
+                font-weight: 400;
+            }
+        }
+    }
+    .student-profile-risk-info {
+        padding: 0;
+        float: right;
+        margin-top: 40px;
+        margin-right: 40px;
+        width: 218px;
+        .risk-level-icon {
+            display: inline-block;
+            span {
+                @include background-studentprofile-risk-icon($icon-url-studentprofile-module-risk-level-icon);
+                height: 73px;
+                width: 73px;
+                display: inline-block;
+                margin: 0px 18px 15px 18px;
+            }
+        }
+        .leave-intent-icon {
+            display: inline-block;
+            border-left: 1px solid $gray94-color;
+            span {
+                @include background-studentprofile-risk-icon($icon-url-studentprofile-module-intent-level-icon);
+                height: 73px;
+                width: 73px;
+                display: inline-block;
+                margin: 0px 0px 15px 18px;
+            }
+        }
+        .student-details {
+            width: 225px;
+            .risk-update {
+                border-right: 1px solid $gray94-color;
+                font-size: 10px;
+                font-weight: bold;
+                padding-left: 9px;
+                padding-right: 9px;
+                text-align: center;
+                color: $gray60-color;
+                span {
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: $gray20-color;
+                }
+            }
+            .last-viewed {
+                font-size: 10px;
+                font-weight: bold;
+                padding-left: 9px;
+                text-align: center;
+                color: $gray60-color;
+                span {
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: $gray20-color;
+                }
+            }
+        }
+    }
+}
+.student-profile-status {
+    height: 32px;
+    width: 100%;
+    background-image: url(../../images/icon/student_view/survey-status-banner-bg-tile.png);
+    text-align: center;
+    background-color: $orange1-color;
+    line-height: 32px;
+    color: $white-color;
+    font-size: 16px;
+    span:first-child {
+        padding-right: 15px;
+    }
+}
+.ss-student-referral {
+    height: 172px;
+    width: 370px;
+    margin: 30px 30px 10px 0px;
+    h2 {
+        text-align: center;
+        border-left: none;
+        text-transform: none;
+        font-size: 18px;
+        font-weight: 500;
+        span {
+            @include background-studentprofile-icon($icon-url-studentprofile-module-referral-icon);
+            height: 20px;
+            width: 20px;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 7px;
+        }
+    }
+    .ss-content {
+        border-top: 1px solid $blue-color;
+        height: 88px;
+        text-align: center;
+        .ss-count {
+            font-size: 55px;
+            color: $gray20-color;
+            height: 55px;
+            cursor: pointer;
+        }
+        .ss-value {
+            font-size: 12px;
+            color: $brand-warning;
+            display: inline-block;
+        }
+        .ss-action {
+            height: 40px;
+            border-radius: 0px;
+            background-color: $gray43-color;
+            color: $white-color;
+            margin-top: 5px;
+        }
+    }
+}
+.ss-student-Appointment {
+    @extend .ss-student-referral;
+    h2 {
+        span {
+            @include background-studentprofile-icon($icon-url-studentprofile-module-appointment-icon);
+        }
+    }
+}
+.ss-student-contact {
+    @extend .ss-student-referral;
+    h2 {
+        span {
+            @include background-studentprofile-icon($icon-url-studentprofile-module-contact-icon);
+        }
+    }
+    margin-right: 0px;
+}

@@ -6928,7 +6928,7 @@ h.modal-lg {
     vertical-align: middle; }
 
 .ss-module-academic-updates {
-  margin-right: 60px; }
+  margin-right: 30px; }
 
 .ss-faculty-dashboard-module.ss-module-todays-agenda > h2, .ss-faculty-dashboard-module.ss-module-referrals > h2 {
   line-height: 12px; }
@@ -6990,7 +6990,7 @@ h.modal-lg {
         color: #333333; }
 
 .ss-faculty-dashboard-module.ss-module-referrals {
-  margin: 20px 60px 0 0; }
+  margin: 20px 30px 0 0; }
   .ss-faculty-dashboard-module.ss-module-referrals h2 {
     line-height: 23px; }
   .ss-faculty-dashboard-module.ss-module-referrals table {
@@ -7040,7 +7040,7 @@ h.modal-lg {
         font-size: 30px; }
 
 .ss-faculty-dashboard-module.ss-module-student-risk {
-  margin: 20px 60px 0 0; }
+  margin: 20px 30px 0 0; }
   .ss-faculty-dashboard-module.ss-module-student-risk .ss-student-header {
     height: 43px;
     border-bottom: 1px solid #ddd; }
@@ -7146,7 +7146,7 @@ h.modal-lg {
       padding: 0; }
       .ss-faculty-dashboard-module.ss-module-survey-completions .ss-survey-cohort ul li {
         height: 81px;
-        padding: 12px 20px;
+        padding: 15px 20px;
         border-bottom: 1px solid #F3F3F3;
         cursor: pointer; }
         .ss-faculty-dashboard-module.ss-module-survey-completions .ss-survey-cohort ul li .cohort-name {
@@ -7156,9 +7156,10 @@ h.modal-lg {
         .ss-faculty-dashboard-module.ss-module-survey-completions .ss-survey-cohort ul li .survey-progress {
           width: 530px; }
           .ss-faculty-dashboard-module.ss-module-survey-completions .ss-survey-cohort ul li .survey-progress .progress {
-            width: 460px;
+            width: 458px;
             float: left;
-            margin: 0; }
+            margin: 0;
+            height: 11px; }
           .ss-faculty-dashboard-module.ss-module-survey-completions .ss-survey-cohort ul li .survey-progress .survey-respond-percent {
             width: 50px;
             margin-top: -15px;
@@ -7194,99 +7195,204 @@ h.modal-lg {
       .ss-faculty-dashboard-module.ss-module-survey-completions .ss-survey-cohort .survey-legend span:last-child:clicked {
         background: url("../../images/icon/dashboard_icons/dash-module-survey-key-notresponded.png") no-repeat left; }
 
-.ss-faculty-dashboard-module.ss-module-student-risk {
-  margin-top: 20px; }
-  .ss-faculty-dashboard-module.ss-module-student-risk .ss-student-header {
-    height: 43px;
-    border-bottom: 1px solid #ddd; }
-    .ss-faculty-dashboard-module.ss-module-student-risk .ss-student-header span:first-child {
-      width: 50%;
+.sub-menu {
+  width: 100%;
+  height: 70px;
+  background-color: #e3e3e3; }
+  .sub-menu .back-button {
+    float: left;
+    background: url("../../images/icon/student_profile_icons/back-button-base.png") no-repeat;
+    height: 30px;
+    padding-left: 35px;
+    margin-top: 20px;
+    padding-top: 5px;
+    margin-left: 5px; }
+    .sub-menu .back-button:hover {
+      background: url("../../images/icon/student_profile_icons/back-button-base.png") no-repeat; }
+  .sub-menu .search-box {
+    float: right;
+    margin-top: 15px;
+    margin-right: 5px; }
+    .sub-menu .search-box input {
+      width: 255px;
+      height: 38px;
+      padding-left: 5px;
+      background: url("../../images/icon/search_icons/default-search-field-icon.png") no-repeat;
+      background-position: right;
+      background-color: #fff; }
+      .sub-menu .search-box input:hover {
+        background: url("../../images/icon/search_icons/default-search-field-icon.png") no-repeat; }
+      .sub-menu .search-box input:hover {
+        background-position: right;
+        background-color: #fff; }
+
+.student-profile-header {
+  padding: 26px 20px; }
+  .student-profile-header p {
+    display: inline-block;
+    font-size: 24px; }
+  .student-profile-header .studentname-header {
+    padding-left: 5px; }
+  .student-profile-header .student-profile-print {
+    float: right;
+    font-size: 14px; }
+
+.student-profile-container {
+  width: 100%;
+  height: 250px;
+  background-color: #fff; }
+  .student-profile-container .student-profile-photo {
+    background-image: url(../../images/new-img.png);
+    height: 250px;
+    width: 250px; }
+  .student-profile-container .student-profile-info {
+    width: 500px; }
+  .student-profile-container .student-name {
+    font-size: 50px;
+    color: #333333;
+    padding-top: 20px;
+    margin-bottom: 0; }
+  .student-profile-container .student-id {
+    font-size: 20px;
+    color: #666; }
+  .student-profile-container .student-details {
+    border-top: 1px solid #ddd; }
+    .student-profile-container .student-details p {
+      display: inline-block;
+      margin-top: 15px; }
+    .student-profile-container .student-details .email-id {
+      border-right: 1px solid #EBEBEB;
+      font-size: 10px;
+      color: #999;
+      font-weight: bold;
       float: left;
-      border-right: 1px solid #ddd; }
-      .ss-faculty-dashboard-module.ss-module-student-risk .ss-student-header span:first-child h2 {
-        width: 125px;
-        height: 24px; }
-    .ss-faculty-dashboard-module.ss-module-student-risk .ss-student-header span:last-child {
-      float: right;
-      width: 50%; }
-      .ss-faculty-dashboard-module.ss-module-student-risk .ss-student-header span:last-child h2 {
-        line-height: 12px;
-        width: 150px; }
-  .ss-faculty-dashboard-module.ss-module-student-risk .ss-my-students {
-    border-right: 1px solid #ddd;
-    height: 197px;
-    padding: 0px; }
-    .ss-faculty-dashboard-module.ss-module-student-risk .ss-my-students ul {
-      float: left;
-      width: 67px;
-      padding: 0px;
-      margin: 1px 0px; }
-      .ss-faculty-dashboard-module.ss-module-student-risk .ss-my-students ul li {
-        list-style: none;
-        width: 67px;
-        height: 37px;
-        font-size: 20px;
-        color: #666;
+      padding-right: 20px; }
+      .student-profile-container .student-details .email-id a {
+        font-size: 18px;
+        font-weight: 500; }
+    .student-profile-container .student-details .phone-no {
+      padding-left: 20px;
+      font-size: 10px;
+      color: #999;
+      font-weight: bold; }
+      .student-profile-container .student-details .phone-no span {
+        font-size: 18px;
+        color: #444;
+        font-weight: 400; }
+  .student-profile-container .student-profile-risk-info {
+    padding: 0;
+    float: right;
+    margin-top: 40px;
+    margin-right: 40px;
+    width: 218px; }
+    .student-profile-container .student-profile-risk-info .risk-level-icon {
+      display: inline-block; }
+      .student-profile-container .student-profile-risk-info .risk-level-icon span {
+        background: url("../../images/icon/student_profile_icons/risk-level-icon-y-lrg.png") no-repeat;
+        height: 73px;
+        width: 73px;
+        display: inline-block;
+        margin: 0px 18px 15px 18px; }
+        .student-profile-container .student-profile-risk-info .risk-level-icon span:hover {
+          background: url("../../images/icon/student_profile_icons/risk-level-icon-y-lrg.png") no-repeat; }
+    .student-profile-container .student-profile-risk-info .leave-intent-icon {
+      display: inline-block;
+      border-left: 1px solid #eee; }
+      .student-profile-container .student-profile-risk-info .leave-intent-icon span {
+        background: url("../../images/icon/student_profile_icons/leave-intent-leave-stated-lrg.png") no-repeat;
+        height: 73px;
+        width: 73px;
+        display: inline-block;
+        margin: 0px 0px 15px 18px; }
+        .student-profile-container .student-profile-risk-info .leave-intent-icon span:hover {
+          background: url("../../images/icon/student_profile_icons/leave-intent-leave-stated-lrg.png") no-repeat; }
+    .student-profile-container .student-profile-risk-info .student-details {
+      width: 225px; }
+      .student-profile-container .student-profile-risk-info .student-details .risk-update {
+        border-right: 1px solid #eee;
+        font-size: 10px;
+        font-weight: bold;
+        padding-left: 9px;
+        padding-right: 9px;
         text-align: center;
-        margin-bottom: 2px;
-        background-color: rgba(30, 115, 213, 0.05);
-        cursor: pointer; }
-        .ss-faculty-dashboard-module.ss-module-student-risk .ss-my-students ul li label {
-          display: block;
-          font-size: 10px;
-          color: #666;
-          margin-right: 5px;
-          margin-top: -5px;
-          margin-left: -5px;
-          text-align: center; }
-      .ss-faculty-dashboard-module.ss-module-student-risk .ss-my-students ul li:nth-child(1) {
-        border-left: 2px solid #c70009; }
-      .ss-faculty-dashboard-module.ss-module-student-risk .ss-my-students ul li:nth-child(2) {
-        border-left: 2px solid #f7352d; }
-      .ss-faculty-dashboard-module.ss-module-student-risk .ss-my-students ul li:nth-child(3) {
-        border-left: 2px solid #fec82a; }
-      .ss-faculty-dashboard-module.ss-module-student-risk .ss-my-students ul li:nth-child(4) {
-        border-left: 2px solid #95CD60; }
-      .ss-faculty-dashboard-module.ss-module-student-risk .ss-my-students ul li:nth-child(5) {
-        border-left: 2px solid #999; }
-    .ss-faculty-dashboard-module.ss-module-student-risk .ss-my-students .total-student-chart {
-      width: 217px;
-      height: 197px;
-      float: right;
-      padding: 11px 20px; }
-    .ss-faculty-dashboard-module.ss-module-student-risk .ss-my-students .total-students-center {
-      position: absolute;
-      left: 115px;
-      top: 60px; }
-      .ss-faculty-dashboard-module.ss-module-student-risk .ss-my-students .total-students-center .student-count {
-        font-size: 3.125em;
-        cursor: pointer; }
-      .ss-faculty-dashboard-module.ss-module-student-risk .ss-my-students .total-students-center span:last-child {
-        display: block;
-        margin-top: -8px;
-        padding-left: 12px; }
-  .ss-faculty-dashboard-module.ss-module-student-risk .ss-high-priority {
-    height: 197px;
-    position: relative; }
-    .ss-faculty-dashboard-module.ss-module-student-risk .ss-high-priority .ss-high-priority-count {
-      height: 137px;
-      text-align: center;
-      font-size: 7.5em;
-      margin-top: -11px;
+        color: #999; }
+        .student-profile-container .student-profile-risk-info .student-details .risk-update span {
+          font-size: 18px;
+          font-weight: 500;
+          color: #333333; }
+      .student-profile-container .student-profile-risk-info .student-details .last-viewed {
+        font-size: 10px;
+        font-weight: bold;
+        padding-left: 9px;
+        text-align: center;
+        color: #999; }
+        .student-profile-container .student-profile-risk-info .student-details .last-viewed span {
+          font-size: 18px;
+          font-weight: 500;
+          color: #333333; }
+
+.student-profile-status {
+  height: 32px;
+  width: 100%;
+  background-image: url(../../images/icon/student_view/survey-status-banner-bg-tile.png);
+  text-align: center;
+  background-color: #f48838;
+  line-height: 32px;
+  color: #fff;
+  font-size: 16px; }
+  .student-profile-status span:first-child {
+    padding-right: 15px; }
+
+.ss-student-referral, .ss-student-Appointment, .ss-student-contact {
+  height: 172px;
+  width: 370px;
+  margin: 30px 30px 10px 0px; }
+  .ss-student-referral h2, .ss-student-Appointment h2, .ss-student-contact h2 {
+    text-align: center;
+    border-left: none;
+    text-transform: none;
+    font-size: 18px;
+    font-weight: 500; }
+    .ss-student-referral h2 span, .ss-student-Appointment h2 span, .ss-student-contact h2 span {
+      background: url("../../images/icon/student_profile_icons/profile-module-icon-referrals-base.png") no-repeat left;
+      height: 20px;
+      width: 20px;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 7px; }
+      .ss-student-referral h2 span:hover, .ss-student-Appointment h2 span:hover, .ss-student-contact h2 span:hover {
+        background: url("../../images/icon/student_profile_icons/profile-module-icon-referrals-selected.png") no-repeat left; }
+  .ss-student-referral .ss-content, .ss-student-Appointment .ss-content, .ss-student-contact .ss-content {
+    border-top: 1px solid #4673a7;
+    height: 88px;
+    text-align: center; }
+    .ss-student-referral .ss-content .ss-count, .ss-student-Appointment .ss-content .ss-count, .ss-student-contact .ss-content .ss-count {
+      font-size: 55px;
+      color: #333333;
+      height: 55px;
       cursor: pointer; }
-    .ss-faculty-dashboard-module.ss-module-student-risk .ss-high-priority .ss-high-priority-content {
-      cursor: pointer;
-      background: url("../../images/icon/dashboard_icons/dash-module-priority-arrow-base.png") no-repeat right;
-      height: 60px;
-      border-top: 1px solid #F3F3F3;
-      text-align: right;
-      padding: 10px 30px; }
-      .ss-faculty-dashboard-module.ss-module-student-risk .ss-high-priority .ss-high-priority-content:hover {
-        background: url("../../images/icon/dashboard_icons/dash-module-priority-arrow-over.png") no-repeat right; }
-      .ss-faculty-dashboard-module.ss-module-student-risk .ss-high-priority .ss-high-priority-content:clicked {
-        background: url("../../images/icon/dashboard_icons/dash-module-priority-arrow-clicked.png") no-repeat right; }
-      .ss-faculty-dashboard-module.ss-module-student-risk .ss-high-priority .ss-high-priority-content span:first-child {
-        color: #c70009; }
+    .ss-student-referral .ss-content .ss-value, .ss-student-Appointment .ss-content .ss-value, .ss-student-contact .ss-content .ss-value {
+      font-size: 12px;
+      color: #666;
+      display: inline-block; }
+    .ss-student-referral .ss-content .ss-action, .ss-student-Appointment .ss-content .ss-action, .ss-student-contact .ss-content .ss-action {
+      height: 40px;
+      border-radius: 0px;
+      background-color: #6e6e6e;
+      color: #fff;
+      margin-top: 5px; }
+
+.ss-student-Appointment h2 span {
+  background: url("../../images/icon/student_profile_icons/profile-module-icon-appointments-base.png") no-repeat left; }
+  .ss-student-Appointment h2 span:hover {
+    background: url("../../images/icon/student_profile_icons/profile-module-icon-appointments-selected.png") no-repeat left; }
+
+.ss-student-contact {
+  margin-right: 0px; }
+  .ss-student-contact h2 span {
+    background: url("../../images/icon/student_profile_icons/profile-module-icon-contacts-base.png") no-repeat left; }
+    .ss-student-contact h2 span:hover {
+      background: url("../../images/icon/student_profile_icons/profile-module-icon-contacts-selected.png") no-repeat left; }
 
 a, a:hover, a:focus {
   text-decoration: none; }
@@ -7299,6 +7405,10 @@ body {
 
 * {
   outline: 0 none !important; }
+
+.container {
+  width: 1170px !important;
+  padding: 0; }
 
 ::-webkit-input-placeholder {
   font-style: italic;
@@ -8055,6 +8165,14 @@ body {
     background: url("../../images/icon/dashboard_icons/dash-module-link-arrow-over.png") no-repeat right; }
   .ss-link-with-right-arrow:clicked {
     background: url("../../images/icon/dashboard_icons/dash-module-link-arrow-clicked.png") no-repeat right; }
+
+.ss-print-icon {
+  background: url("../../images/print_base.png") no-repeat left;
+  padding: 5px 31px 5px 0px; }
+  .ss-print-icon:hover {
+    background: url("../../images/print_clicked.png") no-repeat left; }
+  .ss-print-icon:clicked {
+    background: url("../../images/print_over.png") no-repeat left; }
 
 .ss-help-icon {
   background: url("../../images/icon/Help/help_base.png") no-repeat right;

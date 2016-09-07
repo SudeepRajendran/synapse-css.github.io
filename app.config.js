@@ -22,6 +22,9 @@ angular.module('synapseCss').config(function($stateProvider, $urlRouterProvider,
     }).state('dashboards.faculty',{
         url:'/faculty',
         templateUrl: 'app/partials/Dashboards/dashboards.faculty.html'
+    }).state('dashboards.StudentProfile',{
+        url:'/StudentProfile',
+        templateUrl: 'app/partials/Dashboards/dashboards.StudentProfile.html'
     }).state('tables',{
         abstract: true,
         url:'/tables',

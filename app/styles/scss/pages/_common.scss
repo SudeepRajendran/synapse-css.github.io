@@ -8,7 +8,10 @@ body {
 * {
     outline: 0 none !important;
 }
-
+.container{
+    width: 1170px !important;
+    padding: 0;
+}
 ::-webkit-input-placeholder {
     font-style: italic;
     color: #BBB;
@@ -100,6 +103,10 @@ body {
     @include background-image-right( $icon-url-dash-module-link-arrow);
     padding-right: 20px;
     cursor: pointer;
+}
+.ss-print-icon{
+ @include background-print-icon($icon-url-student-dash-module-print-icon);
+ padding: 5px 31px 5px 0px;
 }
 .ss-help-icon {
     @include background-image-help($icon-url-help-base);
