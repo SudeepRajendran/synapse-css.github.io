@@ -21,10 +21,10 @@
             padding-left: 5px;
             @include background-studentprofile-risk-icon($icon-url-studentprofile-module-search-icon);
             background-position: right;
-            background-color: #fff;
+            background-color: $white-color;
             &:hover {
                 background-position: right;
-                background-color: #fff;
+                background-color: $white-color;
             }
         }
     }
@@ -363,6 +363,9 @@
                     }
                     tr:nth-child(even) {
                         background-color: $white-color;
+                    }
+                    tr:last-child{
+                        border-bottom:1px solid $gray94-color;
                     }
                     td {
                         height: 44px;

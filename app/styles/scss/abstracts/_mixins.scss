@@ -53,9 +53,6 @@
          background: url($icon-url-base+$url+"_over.png") no-repeat right;
     }
     
-    &:clicked {
-         background: url($icon-url-base+$url+"_clicked.png") no-repeat right;
-    }
 }
 @mixin background-image-left ($url) {
 
@@ -65,9 +62,6 @@
          background: url($icon-url-base+$url+".png") no-repeat left;
     }
     
-    &:clicked {
-         background: url($icon-url-base+$url+".png") no-repeat left;
-    }
 }
 @mixin background-print-icon ($url) {
 
@@ -77,9 +71,6 @@
          background: url($icon-image-url-base+$url+"_clicked.png") no-repeat left;
     }
     
-    &:clicked {
-         background: url($icon-image-url-base+$url+"_over.png") no-repeat left;
-    }
 }
 @mixin background-studentprofile-icon ($url) {
 
@@ -107,7 +98,4 @@
          background: url($icon-image-url-base+$url+"_over.png") no-repeat left;
     }
     
-    &:clicked {
-         background: url($icon-image-url-base+$url+"_clicked.png") no-repeat left;
-    }
 }

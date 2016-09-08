@@ -7015,19 +7015,13 @@ h.modal-lg {
       background: url("../../images/icon/dashboard_icons/dash-module-activities-referrals-icon.png") no-repeat left; }
       .ss-faculty-dashboard-module.ss-module-myteam-activities .ss-module-content ul > li .referral-icon:hover, .ss-faculty-dashboard-module.ss-module-myteam-activities .ss-module-content ul > li .interaction-icon:hover, .ss-faculty-dashboard-module.ss-module-myteam-activities .ss-module-content ul > li .login-icon:hover {
         background: url("../../images/icon/dashboard_icons/dash-module-activities-referrals-icon.png") no-repeat left; }
-      .ss-faculty-dashboard-module.ss-module-myteam-activities .ss-module-content ul > li .referral-icon:clicked, .ss-faculty-dashboard-module.ss-module-myteam-activities .ss-module-content ul > li .interaction-icon:clicked, .ss-faculty-dashboard-module.ss-module-myteam-activities .ss-module-content ul > li .login-icon:clicked {
-        background: url("../../images/icon/dashboard_icons/dash-module-activities-referrals-icon.png") no-repeat left; }
     .ss-faculty-dashboard-module.ss-module-myteam-activities .ss-module-content ul > li .interaction-icon {
       background: url("../../images/icon/dashboard_icons/dash-module-activities-interactions-icon.png") no-repeat left; }
       .ss-faculty-dashboard-module.ss-module-myteam-activities .ss-module-content ul > li .interaction-icon:hover {
         background: url("../../images/icon/dashboard_icons/dash-module-activities-interactions-icon.png") no-repeat left; }
-      .ss-faculty-dashboard-module.ss-module-myteam-activities .ss-module-content ul > li .interaction-icon:clicked {
-        background: url("../../images/icon/dashboard_icons/dash-module-activities-interactions-icon.png") no-repeat left; }
     .ss-faculty-dashboard-module.ss-module-myteam-activities .ss-module-content ul > li .login-icon {
       background: url("../../images/icon/dashboard_icons/dash-module-activities-login-icon.png") no-repeat left; }
       .ss-faculty-dashboard-module.ss-module-myteam-activities .ss-module-content ul > li .login-icon:hover {
-        background: url("../../images/icon/dashboard_icons/dash-module-activities-login-icon.png") no-repeat left; }
-      .ss-faculty-dashboard-module.ss-module-myteam-activities .ss-module-content ul > li .login-icon:clicked {
         background: url("../../images/icon/dashboard_icons/dash-module-activities-login-icon.png") no-repeat left; }
     .ss-faculty-dashboard-module.ss-module-myteam-activities .ss-module-content ul > li a {
       width: 475px;
@@ -7185,14 +7179,10 @@ h.modal-lg {
       background: url("../../images/icon/dashboard_icons/dash-module-survey-key-responded.png") no-repeat left; }
       .ss-faculty-dashboard-module.ss-module-survey-completions .ss-survey-cohort .survey-legend span:hover {
         background: url("../../images/icon/dashboard_icons/dash-module-survey-key-responded.png") no-repeat left; }
-      .ss-faculty-dashboard-module.ss-module-survey-completions .ss-survey-cohort .survey-legend span:clicked {
-        background: url("../../images/icon/dashboard_icons/dash-module-survey-key-responded.png") no-repeat left; }
     .ss-faculty-dashboard-module.ss-module-survey-completions .ss-survey-cohort .survey-legend span:last-child {
       color: #333333;
       background: url("../../images/icon/dashboard_icons/dash-module-survey-key-notresponded.png") no-repeat left; }
       .ss-faculty-dashboard-module.ss-module-survey-completions .ss-survey-cohort .survey-legend span:last-child:hover {
-        background: url("../../images/icon/dashboard_icons/dash-module-survey-key-notresponded.png") no-repeat left; }
-      .ss-faculty-dashboard-module.ss-module-survey-completions .ss-survey-cohort .survey-legend span:last-child:clicked {
         background: url("../../images/icon/dashboard_icons/dash-module-survey-key-notresponded.png") no-repeat left; }
 
 .sub-menu {
@@ -7411,8 +7401,6 @@ h.modal-lg {
       margin-right: 0px; }
       .ss-student-profile-activity .student-profile-activity-header .add-activity-icon:hover {
         background: url("../../images/add_over.png") no-repeat left; }
-      .ss-student-profile-activity .student-profile-activity-header .add-activity-icon:clicked {
-        background: url("../../images/add_clicked.png") no-repeat left; }
   .ss-student-profile-activity .table {
     margin-bottom: 0px; }
     .ss-student-profile-activity .table th span {
@@ -7503,6 +7491,8 @@ h.modal-lg {
         background-color: #F8F8F8; }
       .ss-student-profile .tab-right .ss-profile-data-table .table-responsive .table tr:nth-child(even), .ss-student-profile .tab-right .ss-profile-data-table-right .table-responsive .table tr:nth-child(even) {
         background-color: #fff; }
+      .ss-student-profile .tab-right .ss-profile-data-table .table-responsive .table tr:last-child, .ss-student-profile .tab-right .ss-profile-data-table-right .table-responsive .table tr:last-child {
+        border-bottom: 1px solid #eee; }
       .ss-student-profile .tab-right .ss-profile-data-table .table-responsive .table td, .ss-student-profile .tab-right .ss-profile-data-table-right .table-responsive .table td {
         height: 44px; }
       .ss-student-profile .tab-right .ss-profile-data-table .table-responsive .table .profile_heading, .ss-student-profile .tab-right .ss-profile-data-table-right .table-responsive .table .profile_heading {
@@ -8302,16 +8292,12 @@ body {
   padding: 5px 31px 5px 0px; }
   .ss-print-icon:hover {
     background: url("../../images/print_clicked.png") no-repeat left; }
-  .ss-print-icon:clicked {
-    background: url("../../images/print_over.png") no-repeat left; }
 
 .ss-help-icon {
   background: url("../../images/icon/Help/help_base.png") no-repeat right;
   cursor: pointer; }
   .ss-help-icon:hover {
     background: url("../../images/icon/Help/help_over.png") no-repeat right; }
-  .ss-help-icon:clicked {
-    background: url("../../images/icon/Help/help_clicked.png") no-repeat right; }
 
 .dropdown-btn {
   width: 184px;
@@ -8339,8 +8325,6 @@ body {
   color: #1E73D5; }
   .add-activity-icon:hover {
     background: url("../../images/add_solid_over.png") no-repeat left; }
-  .add-activity-icon:clicked {
-    background: url("../../images/add_solid_clicked.png") no-repeat left; }
   .add-activity-icon:hover {
     color: #333333; }
 
