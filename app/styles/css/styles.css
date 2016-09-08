@@ -6915,7 +6915,7 @@ h.modal-lg {
   float: right;
   padding-right: 20px;
   margin-top: 10px; }
-  .ss-menus-right.ss-link-with-right-arrow {
+  .ss-menus-right.ss-link-with-right-arrow, .ss-student-profile .tab-left .nav-stacked li a.ss-menus-right {
     margin-top: 0;
     margin-right: 20px; }
 
@@ -7346,7 +7346,7 @@ h.modal-lg {
 .ss-student-referral, .ss-student-Appointment, .ss-student-contact {
   height: 172px;
   width: 370px;
-  margin: 30px 30px 10px 0px; }
+  margin: 30px 30px 0px 0px; }
   .ss-student-referral h2, .ss-student-Appointment h2, .ss-student-contact h2 {
     text-align: center;
     border-left: none;
@@ -7393,6 +7393,137 @@ h.modal-lg {
     background: url("../../images/icon/student_profile_icons/profile-module-icon-contacts-base.png") no-repeat left; }
     .ss-student-contact h2 span:hover {
       background: url("../../images/icon/student_profile_icons/profile-module-icon-contacts-selected.png") no-repeat left; }
+
+.ss-student-profile-activity {
+  width: 1170px;
+  background-color: #fff;
+  margin-top: 40px; }
+  .ss-student-profile-activity .student-profile-activity-header {
+    height: 60px; }
+    .ss-student-profile-activity .student-profile-activity-header .activity-dropdown {
+      padding-top: 13px;
+      width: 200px;
+      float: left; }
+    .ss-student-profile-activity .student-profile-activity-header .add-activity-icon {
+      background: url("../../images/add_base.png") no-repeat left;
+      font-size: 16px;
+      margin-top: 10px;
+      margin-right: 0px; }
+      .ss-student-profile-activity .student-profile-activity-header .add-activity-icon:hover {
+        background: url("../../images/add_over.png") no-repeat left; }
+      .ss-student-profile-activity .student-profile-activity-header .add-activity-icon:clicked {
+        background: url("../../images/add_clicked.png") no-repeat left; }
+  .ss-student-profile-activity .table {
+    margin-bottom: 0px; }
+    .ss-student-profile-activity .table th span {
+      vertical-align: middle; }
+    .ss-student-profile-activity .table th .interaction-check {
+      display: inline-block;
+      float: right; }
+      .ss-student-profile-activity .table th .interaction-check .checkbox label {
+        font-size: 10px;
+        margin-right: 10px; }
+    .ss-student-profile-activity .table tbody td:first-child {
+      width: 200px; }
+    .ss-student-profile-activity .table tbody td .activity-date {
+      display: inline-block;
+      font-size: 24px;
+      vertical-align: top; }
+    .ss-student-profile-activity .table tbody td .activity-month {
+      display: inline-block;
+      line-height: 10px;
+      padding-top: 8px;
+      padding-left: 5px; }
+      .ss-student-profile-activity .table tbody td .activity-month span:first-child {
+        font-weight: bold;
+        color: #4673a7; }
+      .ss-student-profile-activity .table tbody td .activity-month span:last-child {
+        font-size: 10px; }
+    .ss-student-profile-activity .table tbody td .activity-note {
+      float: left; }
+      .ss-student-profile-activity .table tbody td .activity-note .appointment {
+        font-size: 18px;
+        cursor: pointer;
+        color: #1E73D5; }
+      .ss-student-profile-activity .table tbody td .activity-note .staff-name {
+        color: #333333;
+        font-size: 14px; }
+      .ss-student-profile-activity .table tbody td .activity-note .reason {
+        font-size: 13px;
+        color: #666; }
+      .ss-student-profile-activity .table tbody td .activity-note .see-all, .ss-student-profile-activity .table tbody td .activity-note .see-less {
+        color: #1E73D5;
+        font-size: 12px;
+        font-weight: 700;
+        cursor: pointer;
+        padding-left: 10px;
+        padding-right: 14px;
+        display: inline-block;
+        background: url("../../images/icon/student_profile_icons/more-arrow-base.png") no-repeat right; }
+        .ss-student-profile-activity .table tbody td .activity-note .see-all:hover, .ss-student-profile-activity .table tbody td .activity-note .see-less:hover {
+          background: url("../../images/icon/student_profile_icons/more-arrow-over.png") no-repeat right; }
+        .ss-student-profile-activity .table tbody td .activity-note .see-all:clicked, .ss-student-profile-activity .table tbody td .activity-note .see-less:clicked {
+          background: url("../../images/icon/student_profile_icons/more-arrow-clicked.png") no-repeat right; }
+      .ss-student-profile-activity .table tbody td .activity-note .description {
+        padding: 10px 0px; }
+      .ss-student-profile-activity .table tbody td .activity-note .see-less {
+        background: url("../../images/icon/student_profile_icons/less-arrow-base.png") no-repeat right;
+        padding-left: 0px; }
+        .ss-student-profile-activity .table tbody td .activity-note .see-less:hover {
+          background: url("../../images/icon/student_profile_icons/less-arrow-over.png") no-repeat right; }
+        .ss-student-profile-activity .table tbody td .activity-note .see-less:clicked {
+          background: url("../../images/icon/student_profile_icons/less-arrow-clicked.png") no-repeat right; }
+    .ss-student-profile-activity .table tbody td .new-activity-dropdown {
+      float: right; }
+
+.ss-student-profile {
+  background-color: #fff;
+  padding: 2px 0px 0px 2px;
+  margin-top: 30px; }
+  .ss-student-profile .tab-left {
+    width: 215px;
+    padding: 0px; }
+    .ss-student-profile .tab-left .nav-stacked li {
+      background-color: #F8F8F8;
+      border: 1px solid #ddd; }
+      .ss-student-profile .tab-left .nav-stacked li + li {
+        margin-top: 0px; }
+      .ss-student-profile .tab-left .nav-stacked li a {
+        border: 0px; }
+    .ss-student-profile .tab-left .nav-stacked .active {
+      border: 0px;
+      background-color: #fff; }
+  .ss-student-profile .tab-right {
+    width: 953px; }
+    .ss-student-profile .tab-right .ss-profile-data-table, .ss-student-profile .tab-right .ss-profile-data-table-right {
+      width: 410px;
+      padding: 0;
+      margin-right: 50px; }
+      .ss-student-profile .tab-right .ss-profile-data-table .table-responsive .table tr:nth-child(odd), .ss-student-profile .tab-right .ss-profile-data-table-right .table-responsive .table tr:nth-child(odd) {
+        background-color: #F8F8F8; }
+      .ss-student-profile .tab-right .ss-profile-data-table .table-responsive .table tr:nth-child(even), .ss-student-profile .tab-right .ss-profile-data-table-right .table-responsive .table tr:nth-child(even) {
+        background-color: #fff; }
+      .ss-student-profile .tab-right .ss-profile-data-table .table-responsive .table td, .ss-student-profile .tab-right .ss-profile-data-table-right .table-responsive .table td {
+        height: 44px; }
+      .ss-student-profile .tab-right .ss-profile-data-table .table-responsive .table .profile_heading, .ss-student-profile .tab-right .ss-profile-data-table-right .table-responsive .table .profile_heading {
+        color: #333333;
+        padding-top: 50px;
+        padding-bottom: 25px;
+        border-bottom: 2px solid #4673a7;
+        text-align: left;
+        font-size: 20px; }
+      .ss-student-profile .tab-right .ss-profile-data-table .table-responsive .table .profile_table_text, .ss-student-profile .tab-right .ss-profile-data-table-right .table-responsive .table .profile_table_text {
+        text-align: right;
+        font-size: 14px;
+        color: #333333;
+        font-weight: 600; }
+      .ss-student-profile .tab-right .ss-profile-data-table .table-responsive .table .profile_table_data, .ss-student-profile .tab-right .ss-profile-data-table-right .table-responsive .table .profile_table_data {
+        font-size: 14px;
+        color: #4673a7;
+        font-weight: 500;
+        padding-left: 10px; }
+    .ss-student-profile .tab-right .ss-profile-data-table-right {
+      margin-right: 0px; }
 
 a, a:hover, a:focus {
   text-decoration: none; }
@@ -8157,13 +8288,13 @@ body {
 .margin-bottom-60 {
   margin-bottom: 60px !important; }
 
-.ss-link-with-right-arrow {
+.ss-link-with-right-arrow, .ss-student-profile .tab-left .nav-stacked li a {
   background: url("../../images/icon/dashboard_icons/dash-module-link-arrow-base.png") no-repeat right;
   padding-right: 20px;
   cursor: pointer; }
-  .ss-link-with-right-arrow:hover {
+  .ss-link-with-right-arrow:hover, .ss-student-profile .tab-left .nav-stacked li a:hover {
     background: url("../../images/icon/dashboard_icons/dash-module-link-arrow-over.png") no-repeat right; }
-  .ss-link-with-right-arrow:clicked {
+  .ss-link-with-right-arrow:clicked, .ss-student-profile .tab-left .nav-stacked li a:clicked {
     background: url("../../images/icon/dashboard_icons/dash-module-link-arrow-clicked.png") no-repeat right; }
 
 .ss-print-icon {
@@ -8197,6 +8328,21 @@ body {
     width: 12px;
     height: 20px;
     float: right; }
+
+.add-activity-icon {
+  float: right;
+  background: url("../../images/add_solid_base.png") no-repeat left;
+  height: 40px;
+  padding-top: 10px;
+  padding-left: 32px;
+  margin-right: 12px;
+  color: #1E73D5; }
+  .add-activity-icon:hover {
+    background: url("../../images/add_solid_over.png") no-repeat left; }
+  .add-activity-icon:clicked {
+    background: url("../../images/add_solid_clicked.png") no-repeat left; }
+  .add-activity-icon:hover {
+    color: #333333; }
 
 .tables-page .search-result {
   padding: 15px; }

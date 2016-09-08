@@ -130,3 +130,15 @@ body {
             float: right;
         }
 }
+     .add-activity-icon{
+                    float: right;
+                    @include background-image-action-icon($icon-url-solid-add-icon);
+                    height: 40px;
+                    padding-top: 10px;
+                    padding-left: 32px;
+                    margin-right: 12px;
+                    color:$lima-color;
+                    &:hover{
+                        color:$gray20-color;
+                    }
+    }

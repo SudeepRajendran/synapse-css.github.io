@@ -8,9 +8,11 @@ $brand-primary: #4673a7 !default;
 $gray60-color: #999 !global;
 $primary-btn-font-size: 16px !default;
 $border-color-light: #F3F3F3;
+$whitesmoke-color:#F8F8F8;
 $lima-color:#1E73D5;
 $gray20-color:#333333;
 $gray43-color:#6e6e6e;
+$gray89-color:#e3e3e3;
 $davy-gray-color:#555555 !global;
 $fordblack-color:#888;
 $red-color:#FF0000;
@@ -27,6 +29,8 @@ $icon-url-base: "../../images/icon/";
 $icon-image-url-base:"../../images/";
 $icon-url-dash-module-link-arrow: "dashboard_icons/dash-module-link-arrow";
 $icon-url-help-base:"Help/help";
+$icon-url-add-icon:"add";
+$icon-url-solid-add-icon:"add_solid";
 $icon-url-dash-module-priority-arrow-base: "dashboard_icons/dash-module-priority-arrow";
 $icon-url-dash-module-activities-referrals-icon:"dashboard_icons/dash-module-activities-referrals-icon";
 $icon-url-dash-module-survey-key-notresponded-icon:"dashboard_icons/dash-module-survey-key-notresponded";
@@ -42,4 +46,6 @@ $icon-url-studentprofile-module-appointment-icon:"student_profile_icons/profile-
 $icon-url-studentprofile-module-contact-icon:"student_profile_icons/profile-module-icon-contacts";
 $icon-url-studentprofile-module-search-icon:"search_icons/default-search-field-icon";
 $icon-url-studentprofile-module-back-icon:"student_profile_icons/back-button-base";
+$icon-url-studentprofile-module-more-arrow-icon:"student_profile_icons/more-arrow";
+$icon-url-studentprofile-module-less-arrow-icon:"student_profile_icons/less-arrow";
 

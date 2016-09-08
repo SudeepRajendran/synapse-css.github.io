@@ -1,1 +1,1 @@
-var synapseCss = angular.module('synapseCss',['ui.router','ui.bootstrap','angularSelectbox']);
+var synapseCss = angular.module('synapseCss',['ui.router','ui.bootstrap','angularSelectbox','ngAnimate']);

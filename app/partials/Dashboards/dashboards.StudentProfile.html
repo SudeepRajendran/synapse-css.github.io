@@ -67,4 +67,163 @@
          <button type="submit"  class="btn btn-block btn-primary ss-action" title="Click here to Log a Contact">Log a Contact</button>
       </div>
    </div>
+   <div class="col-md-12 ss-student-profile-activity">
+      <div class="student-profile-activity-header">
+         <div class="activity-dropdown">
+            <selectbox options="DC.selectOptions" value=""></selectbox>
+         </div>
+         <a href="" class="add-activity-icon">
+         Add New Activity
+         </a>
+      </div>
+      <div class="table-responsive" >
+         <table class="table custom-table" >
+            <thead>
+               <tr>
+                  <th>DATE</th>
+                  <th>
+                     <span>TYPE</span>
+                     <div class="interaction-check">
+                        <span class="checkbox">
+                        <input type="checkbox" id="check">
+                        <label for="check">Show Interaction Contacts Only</label>
+                        </span>
+                     </div>
+                  </th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <td>
+                     <div class="activity-date">25</div>
+                     <div class="activity-month"><span>AUG</span><br/><span>2016</span></div>
+                  </td>
+                  <td>
+                     <div class="activity-note">
+                        <span class="appointment">Appointment </span>
+                        <span class="staff-name">Created by:faculty_org62 faculty</span><br>
+                        <span class="reason"><b>Reason:</b> Class attendance concern</span>
+                     </div>
+                     <div class="new-activity-dropdown" uib-dropdown>
+                        <a href="" class="add-activity-icon" uib-dropdown-toggle>Add New Activity</a>
+                        <ul class="dropdown-menu team-menu" uib-dropdown-menu role="menu" aria-labelledby="btn-append-to-single-button">
+                           <li role="menuitem"><a href="#">Contact</a></li>
+                           <li role="menuitem"><a href="#">Note</a></li>
+                           <li role="menuitem"><a href="#">Referral</a></li>
+                        </ul>
+                     </div>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <div class="activity-date">24</div>
+                     <div class="activity-month"><span>SEP</span><br/><span>2016</span></div>
+                  </td>
+                  <td>
+                     <div class="activity-note">
+                        <span class="appointment">Referral </span>
+                        <span class="staff-name">Created by:faculty_org62 faculty</span><br>
+                        <span class="reason"><b>Reason:</b> Class attendance concern</span>
+                        <a href="" class="see-all">See All</a>
+                     </div>
+                     <div class="new-activity-dropdown" uib-dropdown>
+                        <a href="" class="add-activity-icon" uib-dropdown-toggle>Add New Activity</a>
+                        <ul class="dropdown-menu team-menu" uib-dropdown-menu role="menu" aria-labelledby="btn-append-to-single-button">
+                           <li role="menuitem"><a href="#">Contact</a></li>
+                           <li role="menuitem"><a href="#">Note</a></li>
+                           <li role="menuitem"><a href="#">Referral</a></li>
+                        </ul>
+                     </div>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <div class="activity-date">26</div>
+                     <div class="activity-month"><span>OCT</span><br/><span>2016</span></div>
+                  </td>
+                  <td>
+                     <div class="activity-note">
+                        <span class="appointment">Contact </span>
+                        <span class="staff-name">created by:coordinator_org62 test</span><br>
+                        <span class="reason"><b>Reason:</b> Class attendance concern</span>
+                        <div class="description">Meet with student and discussed changelles with math course</div>
+                        <a href="" class="see-less">See Less</a>
+                     </div>
+                     <div class="new-activity-dropdown" uib-dropdown>
+                        <a href="" class="add-activity-icon" uib-dropdown-toggle>Add New Activity</a>
+                        <ul class="dropdown-menu team-menu" uib-dropdown-menu role="menu" aria-labelledby="btn-append-to-single-button">
+                           <li role="menuitem"><a href="#">Contact</a></li>
+                           <li role="menuitem"><a href="#">Note</a></li>
+                           <li role="menuitem"><a href="#">Referral</a></li>
+                        </ul>
+                     </div>
+                  </td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+   </div>
+</section>
+<section>
+   <div class="col-md-12 ss-student-profile">
+      <div class="col-md-3 tab-left">
+         <uib-tabset active="active" vertical="true" >
+            <uib-tab heading="Profile" select="selected(1)"></uib-tab>
+            <uib-tab heading="Campus Connections" select="selected(2)"></uib-tab>
+            <uib-tab heading="Groups" select="selected(3)"></uib-tab>
+            <uib-tab heading="Static Lists" select="selected(4)"></uib-tab>
+         </uib-tabset>
+      </div>
+      <div class="col-md-9 tab-right">
+         <div ng-show="selectedView===1">
+            <div class="col-md-12">
+               <div class="col-md-4 ss-profile-data-table">
+                  <div class="table-responsive" >
+                     <table class="table custom-table">
+                        <caption class="profile_heading">DEMOGRAPHIC</caption>
+                        <tbody>
+                           <tr>
+                              <td class="profile_table_text">Gender:</td>
+                              <td class="profile_table_data">Female</td>
+                           </tr>
+                           <tr>
+                              <td class="profile_table_text">Race Ethnicity:</td>
+                              <td class="profile_table_data">Unknown</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+               </div>
+               <div class="col-md-4 ss-profile-data-table-right">
+                  <div class="table-responsive" >
+                     <table class="table custom-table" >
+                        <caption class="profile_heading">ADMISSIONS</caption>
+                        <tbody>
+                           <tr>
+                              <td class="profile_table_text">StateInOut:</td>
+                              <td class="profile_table_data">Out-of-state</td>
+                           </tr>
+                           <tr>
+                              <td class="profile_table_text">InternationalStudent:</td>
+                              <td class="profile_table_data">Yes</td>
+                           </tr>
+                           <tr>
+                              <td class="profile_table_text">EnrollYear:</td>
+                              <td class="profile_table_data">2011</td>
+                           </tr>
+                           <tr>
+                              <td class="profile_table_text">EnrollTerm:</td>
+                              <td class="profile_table_data">Fall</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div ng-show="selectedView===2">
+            Campus Connections
+         </div>
+      </div>
+   </div>
 </section>

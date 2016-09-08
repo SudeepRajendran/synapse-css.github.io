@@ -99,3 +99,15 @@
     }
     
 }
+@mixin background-image-action-icon ($url) {
+
+    background: url($icon-image-url-base+$url+"_base.png") no-repeat left;
+    
+    &:hover {
+         background: url($icon-image-url-base+$url+"_over.png") no-repeat left;
+    }
+    
+    &:clicked {
+         background: url($icon-image-url-base+$url+"_clicked.png") no-repeat left;
+    }
+}
