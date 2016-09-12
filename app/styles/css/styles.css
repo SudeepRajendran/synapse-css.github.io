@@ -7480,9 +7480,9 @@ h.modal-lg {
       margin-right: 50px;
       margin-left: 12px; }
       .ss-student-profile .tab-right .ss-profile-data-table .table-responsive .table, .ss-student-profile .tab-right .ss-profile-data-table-right .table-responsive .table {
-        margin-bottom: 10px;
-        tr: nth-child(odd);
-          tr-background-color: #F8F8F8; }
+        margin-bottom: 10px; }
+        .ss-student-profile .tab-right .ss-profile-data-table .table-responsive .table tr:nth-child(odd), .ss-student-profile .tab-right .ss-profile-data-table-right .table-responsive .table tr:nth-child(odd) {
+          background-color: #F8F8F8; }
         .ss-student-profile .tab-right .ss-profile-data-table .table-responsive .table tr:nth-child(even), .ss-student-profile .tab-right .ss-profile-data-table-right .table-responsive .table tr:nth-child(even) {
           background-color: #fff; }
         .ss-student-profile .tab-right .ss-profile-data-table .table-responsive .table tr:last-child, .ss-student-profile .tab-right .ss-profile-data-table-right .table-responsive .table tr:last-child {
