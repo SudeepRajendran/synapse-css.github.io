@@ -75,6 +75,12 @@ angular.module('synapseCss').config(function($stateProvider, $urlRouterProvider,
         templateUrl: 'app/partials/Forms/forms.html',
         controller: 'formsController',
         controllerAs: 'FC'
-    });
+    }).state('studentprofile',{
+        url:'/studentprofile',
+        templateUrl: 'app/partials/Dashboards/dashboards.StudentProfile.html',
+        controller: 'dashboardsController',
+        controllerAs: 'DC'
+    })
+    ;
     
 });

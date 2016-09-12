@@ -9,31 +9,34 @@
         padding-left: 35px;
         margin-top: 20px;
         padding-top: 5px;
-        margin-left: 5px;
     }
     .search-box {
         float: right;
         margin-top: 15px;
-        margin-right: 5px;
+        position: relative;
         input {
             width: 255px;
             height: 38px;
             padding-left: 5px;
-            @include background-studentprofile-risk-icon($icon-url-studentprofile-module-search-icon);
-            background-position: right;
             background-color: $white-color;
-            &:hover {
-                background-position: right;
-                background-color: $white-color;
-            }
+        }
+        span {
+            @include background-image-left($icon-url-studentprofile-module-search-icon);
+            position: absolute;
+            right: 8px;
+            top: 12px;
+            width: 16px;
+            height: 16px;
+            display: inline-block;
         }
     }
 }
 .student-profile-header {
-    padding: 26px 20px;
+    padding: 20px 20px;
     p {
         display: inline-block;
         font-size: 24px;
+        @extend .anchor-tag;
     }
     .studentname-header {
         padding-left: 5px;
@@ -41,114 +44,113 @@
     .student-profile-print {
         float: right;
         font-size: 14px;
+        @extend .anchor-tag;
     }
 }
 .student-profile-container {
     width: 100%;
-    height: 250px;
+    height: 131px;
     background-color: $white-color;
     .student-profile-photo {
-        background-image: url(../../images/new-img.png);
-        height: 250px;
-        width: 250px;
+        background-image: url(../../images/student.png);
+        height: 130px;
+        width: 130px;
+        float: left;
     }
     .student-profile-info {
-        width: 500px;
-    }
-    .student-name {
-        font-size: 50px;
-        color: $gray20-color;
-        padding-top: 20px;
-        margin-bottom: 0;
-    }
-    .student-id {
-        font-size: 20px;
-        color: $brand-warning;
-    }
-    .student-details {
-        border-top: 1px solid $light-shade-gray;
+        width: 780px;
+        margin-left: 20px;
+        float: left;
         p {
-            display: inline-block;
-            margin-top: 15px;
+            margin-bottom: 0;
+        }
+        .student-name {
+            font-size: 1.88em;
+            color: $gray20-color;
+            padding-top: 14px;
+            margin-bottom: 0;
+        }
+        .student-id {
+            font-size: 1.13em;
+            color: $brand-warning;
         }
         .email-id {
-            border-right: 1px solid $gray92-color;
-            font-size: 10px;
-            color: $gray60-color;
-            font-weight: bold;
-            float: left;
-            padding-right: 20px;
-            a {
-                font-size: 18px;
-                font-weight: 500;
-            }
+            font-size: 1.13em;
+            color: $brand-warning;
+            @extend .anchor-tag;
         }
-        .phone-no {
-            padding-left: 20px;
-            font-size: 10px;
-            color: $gray60-color;
-            font-weight: bold;
-            span {
-                font-size: 18px;
-                color: $black-color;
-                font-weight: 400;
+        .student-details {
+            p {
+                display: inline-block;
+            }
+            .phone-no {
+                padding-right: 10px;
+                font-size: 1.13em;
+                color: $brand-warning;
+                span {
+                    font-size: 1.13em;
+                    color: $gray20-color;
+                    font-weight: 400;
+                }
+            }
+            .mobile-no {
+                @extend .phone-no;
+                border-left: 1px solid $light-shade-gray;
+                padding-left: 10px;
+                padding-right: 0;
             }
         }
     }
     .student-profile-risk-info {
-        padding: 0;
-        float: right;
-        margin-top: 40px;
-        margin-right: 40px;
-        width: 218px;
-        .risk-level-icon {
-            display: inline-block;
-            span {
-                @include background-studentprofile-risk-icon($icon-url-studentprofile-module-risk-level-icon);
-                height: 73px;
-                width: 73px;
+        float: left;
+        margin-top: 14px;
+        width: 240px;
+        .student-profile-icons {
+            width: 125px;
+            padding-bottom: 5px;
+            margin-left: 50px;
+            border-bottom: 1px solid $light-shade-gray;
+            .risk-level-icon {
                 display: inline-block;
-                margin: 0px 18px 15px 18px;
+                height: 42px;
+                span {
+                    @include background-studentprofile-risk-icon($icon-url-studentprofile-module-risk-level-icon);
+                    height: 42px;
+                    width: 42px;
+                    display: inline-block;
+                    margin: 0px 9px;
+                }
             }
-        }
-        .leave-intent-icon {
-            display: inline-block;
-            border-left: 1px solid $gray94-color;
-            span {
-                @include background-studentprofile-risk-icon($icon-url-studentprofile-module-intent-level-icon);
-                height: 73px;
-                width: 73px;
-                display: inline-block;
-                margin: 0px 0px 15px 18px;
+            .leave-intent-icon {
+                @extend .risk-level-icon;
+                border-left: 1px solid $gray94-color;
+                span {
+                    @include background-studentprofile-risk-icon($icon-url-studentprofile-module-intent-level-icon);
+                }
             }
         }
         .student-details {
-            width: 225px;
+            margin-left: 41px;
             .risk-update {
-                border-right: 1px solid $gray94-color;
-                font-size: 10px;
+                font-size: 0.75em;
                 font-weight: bold;
-                padding-left: 9px;
-                padding-right: 9px;
                 text-align: center;
                 color: $gray60-color;
-                span {
-                    font-size: 18px;
-                    font-weight: 500;
-                    color: $gray20-color;
-                }
+                display: inline-block;
+                padding-right: 10px;
             }
-            .last-viewed {
-                font-size: 10px;
-                font-weight: bold;
-                padding-left: 9px;
-                text-align: center;
-                color: $gray60-color;
-                span {
-                    font-size: 18px;
-                    font-weight: 500;
-                    color: $gray20-color;
-                }
+            .intent-level {
+                @extend .risk-update;
+                padding-left: 10px;
+                border-left: 1px solid $gray94-color;
+            }
+        }
+        .last-viewed {
+            text-align: center;
+            font-size: 1.13em;
+            color: $brand-warning;
+            span {
+                color: $gray20-color;
             }
         }
     }
@@ -159,77 +161,64 @@
     background-image: url(../../images/icon/student_view/survey-status-banner-bg-tile.png);
     text-align: center;
     background-color: $orange1-color;
-    line-height: 32px;
     color: $white-color;
     font-size: 16px;
     span:first-child {
         padding-right: 15px;
     }
 }
-.ss-student-referral {
-    height: 172px;
-    width: 370px;
-    margin: 30px 30px 0px 0px;
-    h2 {
-        text-align: center;
-        border-left: none;
-        text-transform: none;
-        font-size: 18px;
-        font-weight: 500;
-        span {
+.ss-student-profile-panel {
+    padding: 0;
+    margin-top: 15px;
+    .ss-student-referral {
+        height: 84px;
+        width: 370px;
+        margin-right: 30px;
+        h2 {
+            text-align: left;
+            border-left: none;
+            text-transform: none;
+            font-size: 1.13em;
+            font-weight: 500;
             @include background-studentprofile-icon($icon-url-studentprofile-module-referral-icon);
-            height: 20px;
-            width: 20px;
-            display: inline-block;
-            vertical-align: middle;
-            margin-right: 7px;
-        }
-    }
-    .ss-content {
-        border-top: 1px solid $blue-color;
-        height: 88px;
-        text-align: center;
-        .ss-count {
-            font-size: 55px;
+            padding-left: 25px;
             color: $gray20-color;
-            height: 55px;
-            cursor: pointer;
-        }
-        .ss-value {
-            font-size: 12px;
-            color: $brand-warning;
-            display: inline-block;
+            p {
+                display: inline-block;
+                color: $gray20-color;
+                float: right;
+                font-size: 2.25em;
+                padding-right: 25px;
+            }
         }
         .ss-action {
             height: 40px;
+            border: 0px;
             border-radius: 0px;
             background-color: $gray43-color;
             color: $white-color;
             margin-top: 5px;
+            font-size: 1em;
         }
     }
-}
-.ss-student-Appointment {
-    @extend .ss-student-referral;
-    h2 {
-        span {
+    .ss-student-Appointment {
+        @extend .ss-student-referral;
+        h2 {
             @include background-studentprofile-icon($icon-url-studentprofile-module-appointment-icon);
         }
     }
-}
-.ss-student-contact {
-    @extend .ss-student-referral;
-    h2 {
-        span {
+    .ss-student-contact {
+        @extend .ss-student-referral;
+        h2 {
             @include background-studentprofile-icon($icon-url-studentprofile-module-contact-icon);
         }
+        margin-right: 0px;
     }
-    margin-right: 0px;
 }
 .ss-student-profile-activity {
     width: 1170px;
     background-color: $white-color;
-    margin-top: 40px;
+    margin-top: 30px;
     .student-profile-activity-header {
         height: 60px;
         .activity-dropdown {
@@ -341,7 +330,9 @@
                 border: 1px solid $light-shade-gray;
                 a {
                     border: 0px;
-                    @extend .ss-link-with-right-arrow;
+                    margin-right: 20px;
+                    @include background-image-right($icon-url-studentprofile-modal-small-arrow-icon);
+                    cursor: pointer;
                 }
             }
             .active {
@@ -356,23 +347,25 @@
             width: 410px;
             padding: 0;
             margin-right: 50px;
+            margin-left: 12px;
             .table-responsive {
                 .table {
-                    tr:nth-child(odd) {
+                    margin-bottom: 10px;
+                    tr: nth-child(odd) {
                         background-color: $whitesmoke-color;
                     }
                     tr:nth-child(even) {
                         background-color: $white-color;
                     }
-                    tr:last-child{
-                        border-bottom:1px solid $gray94-color;
+                    tr:last-child {
+                        border-bottom: 1px solid $gray94-color;
                     }
                     td {
                         height: 44px;
                     }
                     .profile_heading {
                         color: $gray20-color;
-                        padding-top: 50px;
+                        padding-top: 42px;
                         padding-bottom: 25px;
                         border-bottom: 2px solid $blue-color;
                         text-align: left;
@@ -386,16 +379,84 @@
                     }
                     .profile_table_data {
                         font-size: 14px;
-                        color: $blue-color;
+                        color: $brand-warning;
                         font-weight: 500;
                         padding-left: 10px;
                     }
                 }
             }
         }
-        .ss-profile-data-table-right{
+        .ss-profile-data-table-right {
             @extend .ss-profile-data-table;
-            margin-right: 0px;
+            margin-right: 0;
+            margin-left: 0;
         }
     }
+}
+.ss-campus-connection-details-1 {
+    height: 159px;
+    width: 290px;
+    background-color: $whitesmoke-color;
+    margin: 20px 22px 0px 5px;
+    padding: 0px;
+    border-bottom: 1px solid $light-shade-gray;
+    border-right: 1px solid $light-shade-gray;
+    .heading {
+        height: 60px;
+        border-bottom: 1px solid $blue-color;
+        padding-top: 15px;
+        padding-left: 20px;
+        .direct-connection-name {
+            @extend .ellipsis;
+            font-size: 18px;
+            color: $gray20-color;
+            margin-bottom: 0;
+            line-height: 18px;
+        }
+        .role {
+            @extend .ellipsis;
+            font-size: 13px;
+            color: $brand-warning;
+        }
+    }
+    .content {
+        .meta-label {
+            @extend .ellipsis;
+            padding-top: 10px;
+            font-size: 10px;
+            font-weight: 700;
+            color: $gray60-color;
+            padding-left: 20px;
+            margin: 0;
+            a {
+                font-size: 13px;
+                font-weight: 400;
+                color: $lima-color;
+                &:hover {
+                    color: $brand-warning;
+                }
+            }
+        }
+        .phone-no {
+            @extend .meta-label;
+            span {
+                color: $black-color;
+                font-size: 13px;
+                font-weight: 400;
+            }
+        }
+    }
+}
+.ss-campus-connection-details-2 {
+    @extend .ss-campus-connection-details-1;
+    margin-left: 0px;
+}
+.ss-campus-connection-details-3 {
+    margin-right: 0px;
+    margin-left: 0px;
+    @extend .ss-campus-connection-details-1;
+}
+.ss-campus-connection-details-4 {
+    @extend .ss-campus-connection-details-1;
+    margin-bottom: 20px;
 }

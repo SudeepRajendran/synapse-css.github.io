@@ -1,228 +1,345 @@
 <section class="section">
    <div class="sub-menu">
-      <a class="back-button" href="">Back</a>
-      <div class="search-box">
-         <input type="text" placeholder="enter student name, email, or id">
-      </div>
-   </div>
-   <div class="student-profile-header">
-      <p class="ss-link-with-right-arrow">
-         <a href="">Dashboard</a>
-      </p>
-      <p class="studentname-header">
-         Catherine Galles
-      </p>
-      <div class="student-profile-print">
-         <span class="ss-print-icon"></span>
-         <a href="">Print</a>
-      </div>
-   </div>
-   <div class="student-profile-container">
-      <div class="student-profile-photo col-md-3 col-sm-3 col-xs-3"></div>
-      <div class="col-md-6 col-sm-6 col-xs-6 student-profile-info">
-         <p class="student-name ">Catherine Galles</p>
-         <p class="student-id">ID: 1223233</p>
-         <div class="student-details">
-            <p class="email-id">EMAIL:<br/><a href="#">cathy.galles@student.horizon.edu</a></p>
-            <p class="phone-no">PHONE:<br/><span>(555)334-3333</span></p>
-         </div>
-      </div>
-      <div class="student-profile-risk-info col-md-3 col-sm-3 col-xs-3">
-         <div class="risk-level-icon">
+      <div class="container">
+         <a class="back-button" href="">Back</a>
+         <div class="search-box">
+            <input type="text" placeholder="enter student name, email, or id">
             <span></span>
          </div>
-         <div class="leave-intent-icon">
-            <span></span>
+      </div>
+   </div>
+   <div class="container">
+      <div class="student-profile-header">
+         <p class="ss-link-with-right-arrow">
+            <a href="">Dashboard</a>
+         </p>
+         <p class="studentname-header">
+            Catherine Galles
+         </p>
+         <div class="student-profile-print">
+            <span class="ss-print-icon"></span>
+            <a href="">Print</a>
          </div>
-         <div class="student-details">
-            <p class="risk-update">RISK UPDATED:<br/><span>01/13/2016</span></p>
-            <p class="last-viewed">LAST VIEWED:<br/><span>09/06/2016</span></p>
+      </div>
+      <div class="student-profile-container">
+         <div class="student-profile-photo"></div>
+         <div class="student-profile-info">
+            <p class="student-name ">Catherine Galles</p>
+            <p class="student-id">ID: 1223233</p>
+            <p class="email-id">Email: <a href="#">cathy.galles@student.horizon.edu</a></p>
+            <div class="student-details">
+               <p class="phone-no">Phone:<span> (555) 334-3333</span></p>
+               <p class="mobile-no">Mobile:<span> (555) 334-3333</span></p>
+            </div>
          </div>
-      </div>
-   </div>
-   <div class="student-profile-status"><span>Spring Transition: <b>NOT RESPONDED</b></span>
-      <span>Launched on : 1/22/16 Closes on : 1/24/16</span>
-   </div>
-   <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4 ss-coord-dashboard-module ss-student-referral">
-      <h2><span></span>Open Referrals</h2>
-      <div class="ss-content">
-         <p class="ss-count">2</p>
-         <span class="ss-value">6 total referrals</span>
-         <button type="submit"  class="btn btn-block ss-action" title="Click here to Make a Referral">Make a Referral</button>
-      </div>
-   </div>
-   <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4 ss-coord-dashboard-module ss-student-Appointment">
-      <h2><span></span>Upcoming Appointments</h2>
-      <div class="ss-content">
-         <p class="ss-count">5</p>
-         <span class="ss-value"></span>
-         <button type="submit"  class="btn btn-block btn-primary ss-action" title="Click here to Book an Appointment">Book an Appointment</button>
-      </div>
-   </div>
-   <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4 ss-coord-dashboard-module ss-student-contact">
-      <h2><span></span>Contacts</h2>
-      <div class="ss-content">
-         <p class="ss-count">3</p>
-         <span class="ss-value"></span>
-         <button type="submit"  class="btn btn-block btn-primary ss-action" title="Click here to Log a Contact">Log a Contact</button>
-      </div>
-   </div>
-   <div class="col-md-12 ss-student-profile-activity">
-      <div class="student-profile-activity-header">
-         <div class="activity-dropdown">
-            <selectbox options="DC.selectOptions" value=""></selectbox>
-         </div>
-         <a href="" class="add-activity-icon">
-         Add New Activity
-         </a>
-      </div>
-      <div class="table-responsive" >
-         <table class="table custom-table" >
-            <thead>
-               <tr>
-                  <th>DATE</th>
-                  <th>
-                     <span>TYPE</span>
-                     <div class="interaction-check">
-                        <span class="checkbox">
-                        <input type="checkbox" id="check">
-                        <label for="check">Show Interaction Contacts Only</label>
-                        </span>
-                     </div>
-                  </th>
-               </tr>
-            </thead>
-            <tbody>
-               <tr>
-                  <td>
-                     <div class="activity-date">25</div>
-                     <div class="activity-month"><span>AUG</span><br/><span>2016</span></div>
-                  </td>
-                  <td>
-                     <div class="activity-note">
-                        <span class="appointment">Appointment </span>
-                        <span class="staff-name">Created by:faculty_org62 faculty</span><br>
-                        <span class="reason"><b>Reason:</b> Class attendance concern</span>
-                     </div>
-                     <div class="new-activity-dropdown" uib-dropdown>
-                        <a href="" class="add-activity-icon" uib-dropdown-toggle>Add New Activity</a>
-                        <ul class="dropdown-menu team-menu" uib-dropdown-menu role="menu" aria-labelledby="btn-append-to-single-button">
-                           <li role="menuitem"><a href="#">Contact</a></li>
-                           <li role="menuitem"><a href="#">Note</a></li>
-                           <li role="menuitem"><a href="#">Referral</a></li>
-                        </ul>
-                     </div>
-                  </td>
-               </tr>
-               <tr>
-                  <td>
-                     <div class="activity-date">24</div>
-                     <div class="activity-month"><span>SEP</span><br/><span>2016</span></div>
-                  </td>
-                  <td>
-                     <div class="activity-note">
-                        <span class="appointment">Referral </span>
-                        <span class="staff-name">Created by:faculty_org62 faculty</span><br>
-                        <span class="reason"><b>Reason:</b> Class attendance concern</span>
-                        <a href="" class="see-all">See All</a>
-                     </div>
-                     <div class="new-activity-dropdown" uib-dropdown>
-                        <a href="" class="add-activity-icon" uib-dropdown-toggle>Add New Activity</a>
-                        <ul class="dropdown-menu team-menu" uib-dropdown-menu role="menu" aria-labelledby="btn-append-to-single-button">
-                           <li role="menuitem"><a href="#">Contact</a></li>
-                           <li role="menuitem"><a href="#">Note</a></li>
-                           <li role="menuitem"><a href="#">Referral</a></li>
-                        </ul>
-                     </div>
-                  </td>
-               </tr>
-               <tr>
-                  <td>
-                     <div class="activity-date">26</div>
-                     <div class="activity-month"><span>OCT</span><br/><span>2016</span></div>
-                  </td>
-                  <td>
-                     <div class="activity-note">
-                        <span class="appointment">Contact </span>
-                        <span class="staff-name">created by:coordinator_org62 test</span><br>
-                        <span class="reason"><b>Reason:</b> Class attendance concern</span>
-                        <div class="description">Meet with student and discussed changelles with math course</div>
-                        <a href="" class="see-less">See Less</a>
-                     </div>
-                     <div class="new-activity-dropdown" uib-dropdown>
-                        <a href="" class="add-activity-icon" uib-dropdown-toggle>Add New Activity</a>
-                        <ul class="dropdown-menu team-menu" uib-dropdown-menu role="menu" aria-labelledby="btn-append-to-single-button">
-                           <li role="menuitem"><a href="#">Contact</a></li>
-                           <li role="menuitem"><a href="#">Note</a></li>
-                           <li role="menuitem"><a href="#">Referral</a></li>
-                        </ul>
-                     </div>
-                  </td>
-               </tr>
-            </tbody>
-         </table>
-      </div>
-   </div>
-</section>
-<section>
-   <div class="col-md-12 ss-student-profile">
-      <div class="col-md-3 tab-left">
-         <uib-tabset active="active" vertical="true" >
-            <uib-tab heading="Profile" select="selected(1)"></uib-tab>
-            <uib-tab heading="Campus Connections" select="selected(2)"></uib-tab>
-            <uib-tab heading="Groups" select="selected(3)"></uib-tab>
-            <uib-tab heading="Static Lists" select="selected(4)"></uib-tab>
-         </uib-tabset>
-      </div>
-      <div class="col-md-9 tab-right">
-         <div ng-show="selectedView===1">
-            <div class="col-md-12">
-               <div class="col-md-4 ss-profile-data-table">
-                  <div class="table-responsive" >
-                     <table class="table custom-table">
-                        <caption class="profile_heading">DEMOGRAPHIC</caption>
-                        <tbody>
-                           <tr>
-                              <td class="profile_table_text">Gender:</td>
-                              <td class="profile_table_data">Female</td>
-                           </tr>
-                           <tr>
-                              <td class="profile_table_text">Race Ethnicity:</td>
-                              <td class="profile_table_data">Unknown</td>
-                           </tr>
-                        </tbody>
-                     </table>
-                  </div>
+         <div class="student-profile-risk-info">
+            <div class="student-profile-icons">
+               <div class="risk-level-icon">
+                  <span></span>
                </div>
-               <div class="col-md-4 ss-profile-data-table-right">
-                  <div class="table-responsive" >
-                     <table class="table custom-table" >
-                        <caption class="profile_heading">ADMISSIONS</caption>
-                        <tbody>
-                           <tr>
-                              <td class="profile_table_text">StateInOut:</td>
-                              <td class="profile_table_data">Out-of-state</td>
-                           </tr>
-                           <tr>
-                              <td class="profile_table_text">InternationalStudent:</td>
-                              <td class="profile_table_data">Yes</td>
-                           </tr>
-                           <tr>
-                              <td class="profile_table_text">EnrollYear:</td>
-                              <td class="profile_table_data">2011</td>
-                           </tr>
-                           <tr>
-                              <td class="profile_table_text">EnrollTerm:</td>
-                              <td class="profile_table_data">Fall</td>
-                           </tr>
-                        </tbody>
-                     </table>
+               <div class="leave-intent-icon">
+                  <span></span>
+               </div>
+            </div>
+            <div class="student-details">
+               <p class="risk-update">RISK<br/>INDICATOR</p>
+               <p class="intent-level">INTENT<br/>TO LEAVE</p>
+            </div>
+            <p class="last-viewed">Last Viewed: <span>11/12/2016</span></p>
+         </div>
+      </div>
+      <div class="student-profile-status"><span>Spring Transition: <b>NOT RESPONDED</b></span>
+         <span>Launched on : 1/22/16 Closes on : 1/24/16</span>
+      </div>
+      <div class="col-md-12 ss-student-profile-panel">
+         <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4 ss-coord-dashboard-module ss-student-referral">
+            <h2>
+               Open Referrals
+               <p>3</p>
+            </h2>
+            <button type="submit"  class="btn btn-block ss-action" title="Click here to Make a Referral">Make a Referral</button>
+         </div>
+         <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4 ss-coord-dashboard-module ss-student-Appointment">
+            <h2>
+               Upcoming Appointments
+               <p>5</p>
+            </h2>
+            <button type="submit"  class="btn btn-block btn-primary ss-action" title="Click here to Book an Appointment">Book an Appointment</button>
+         </div>
+         <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4 ss-coord-dashboard-module ss-student-contact">
+            <h2>
+               Contacts
+               <p>2</p>
+            </h2>
+            <button type="submit"  class="btn btn-block btn-primary ss-action" title="Click here to Log a Contact">Log a Contact</button>
+         </div>
+      </div>
+      <div class="col-md-12 ss-student-profile-activity">
+         <div class="student-profile-activity-header">
+            <div class="activity-dropdown">
+               <selectbox options="DC.selectOptions" value=""></selectbox>
+            </div>
+            <a href="" class="add-activity-icon">
+            Add New Activity
+            </a>
+         </div>
+         <div class="table-responsive" >
+            <table class="table custom-table" >
+               <thead>
+                  <tr>
+                     <th>DATE</th>
+                     <th>
+                        <span>TYPE</span>
+                        <div class="interaction-check">
+                           <span class="checkbox">
+                           <input type="checkbox" id="check">
+                           <label for="check">Show Interaction Contacts Only</label>
+                           </span>
+                        </div>
+                     </th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>
+                        <div class="activity-date">25</div>
+                        <div class="activity-month"><span>AUG</span><br/><span>2016</span></div>
+                     </td>
+                     <td>
+                        <div class="activity-note">
+                           <span class="appointment">Appointment </span>
+                           <span class="staff-name">Created by:faculty_org62 faculty</span><br>
+                           <span class="reason"><b>Reason:</b> Class attendance concern</span>
+                        </div>
+                        <div class="new-activity-dropdown" uib-dropdown>
+                           <a href="" class="add-activity-icon" uib-dropdown-toggle>Add New Activity</a>
+                           <ul class="dropdown-menu team-menu" uib-dropdown-menu role="menu" aria-labelledby="btn-append-to-single-button">
+                              <li role="menuitem"><a href="#">Contact</a></li>
+                              <li role="menuitem"><a href="#">Note</a></li>
+                              <li role="menuitem"><a href="#">Referral</a></li>
+                           </ul>
+                        </div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <div class="activity-date">24</div>
+                        <div class="activity-month"><span>SEP</span><br/><span>2016</span></div>
+                     </td>
+                     <td>
+                        <div class="activity-note">
+                           <span class="appointment">Referral </span>
+                           <span class="staff-name">Created by:faculty_org62 faculty</span><br>
+                           <span class="reason"><b>Reason:</b> Class attendance concern</span>
+                           <a href="" class="see-all">See All</a>
+                        </div>
+                        <div class="new-activity-dropdown" uib-dropdown>
+                           <a href="" class="add-activity-icon" uib-dropdown-toggle>Add New Activity</a>
+                           <ul class="dropdown-menu team-menu" uib-dropdown-menu role="menu" aria-labelledby="btn-append-to-single-button">
+                              <li role="menuitem"><a href="#">Contact</a></li>
+                              <li role="menuitem"><a href="#">Note</a></li>
+                              <li role="menuitem"><a href="#">Referral</a></li>
+                           </ul>
+                        </div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <div class="activity-date">26</div>
+                        <div class="activity-month"><span>OCT</span><br/><span>2016</span></div>
+                     </td>
+                     <td>
+                        <div class="activity-note">
+                           <span class="appointment">Contact </span>
+                           <span class="staff-name">created by:coordinator_org62 test</span><br>
+                           <span class="reason"><b>Reason:</b> Class attendance concern</span>
+                           <div class="description">Meet with student and discussed changelles with math course</div>
+                           <a href="" class="see-less">See Less</a>
+                        </div>
+                        <div class="new-activity-dropdown" uib-dropdown>
+                           <a href="" class="add-activity-icon" uib-dropdown-toggle>Add New Activity</a>
+                           <ul class="dropdown-menu team-menu" uib-dropdown-menu role="menu" aria-labelledby="btn-append-to-single-button">
+                              <li role="menuitem"><a href="#">Contact</a></li>
+                              <li role="menuitem"><a href="#">Note</a></li>
+                              <li role="menuitem"><a href="#">Referral</a></li>
+                           </ul>
+                        </div>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+      </div>
+   </div>
+   <div class="container">
+      <div class="col-md-12 ss-student-profile">
+         <div class="col-md-3 tab-left">
+            <uib-tabset active="active" vertical="true" >
+               <uib-tab heading="Profile" select="selected(1)"></uib-tab>
+               <uib-tab heading="Campus Connections" select="selected(2)"></uib-tab>
+               <uib-tab heading="Groups" select="selected(3)"></uib-tab>
+               <uib-tab heading="Static Lists" select="selected(4)"></uib-tab>
+            </uib-tabset>
+         </div>
+         <div class="col-md-9 tab-right">
+            <div ng-show="selectedView===1">
+               <div class="col-md-12">
+                  <div class="col-md-4 ss-profile-data-table">
+                     <div class="table-responsive" >
+                        <table class="table custom-table">
+                           <caption class="profile_heading">DEMOGRAPHIC</caption>
+                           <tbody>
+                              <tr>
+                                 <td class="profile_table_text">Gender:</td>
+                                 <td class="profile_table_data">Female</td>
+                              </tr>
+                              <tr>
+                                 <td class="profile_table_text">Race Ethnicity:</td>
+                                 <td class="profile_table_data">Unknown</td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                     <div class="table-responsive" >
+                        <table class="table custom-table">
+                           <caption class="profile_heading">General Information</caption>
+                           <tbody>
+                              <tr>
+                                 <td class="profile_table_text">Primary Academic Major:</td>
+                                 <td class="profile_table_data">General Studies</td>
+                              </tr>
+                              <tr>
+                                 <td class="profile_table_text">Entry Type:</td>
+                                 <td class="profile_table_data">New matric (summer 2012 / fall 2012 cohort)</td>
+                              </tr>
+                              <tr>
+                                 <td class="profile_table_text">Entry Year:</td>
+                                 <td class="profile_table_data">2012</td>
+                              </tr>
+                              <tr>
+                                 <td class="profile_table_text">Pre-Fall Lauch:</td>
+                                 <td class="profile_table_data">No</td>
+                              </tr>
+                              <tr>
+                                 <td class="profile_table_text">Total Number Of Credits Earned To Date:</td>
+                                 <td class="profile_table_data">15</td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                  </div>
+                  <div class="col-md-4 ss-profile-data-table-right">
+                     <div class="table-responsive" >
+                        <table class="table custom-table" >
+                           <caption class="profile_heading">ADMISSIONS</caption>
+                           <tbody>
+                              <tr>
+                                 <td class="profile_table_text">StateInOut:</td>
+                                 <td class="profile_table_data">Out-of-state</td>
+                              </tr>
+                              <tr>
+                                 <td class="profile_table_text">InternationalStudent:</td>
+                                 <td class="profile_table_data">Yes</td>
+                              </tr>
+                              <tr>
+                                 <td class="profile_table_text">EnrollYear:</td>
+                                 <td class="profile_table_data">2011</td>
+                              </tr>
+                              <tr>
+                                 <td class="profile_table_text">EnrollTerm:</td>
+                                 <td class="profile_table_data">Fall</td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                     <div class="table-responsive" >
+                        <table class="table custom-table" >
+                           <caption class="profile_heading">Pre-College Characteristics</caption>
+                           <tbody>
+                              <tr>
+                                 <td class="profile_table_text">ACT Composite:</td>
+                                 <td class="profile_table_data">23</td>
+                              </tr>
+                              <tr>
+                                 <td class="profile_table_text">ACT English:</td>
+                                 <td class="profile_table_data">18</td>
+                              </tr>
+                              <tr>
+                                 <td class="profile_table_text">ACT Math:</td>
+                                 <td class="profile_table_data">28</td>
+                              </tr>
+                              <tr>
+                                 <td class="profile_table_text">ACT Reading:</td>
+                                 <td class="profile_table_data">24</td>
+                              </tr>
+                              <tr>
+                                 <td class="profile_table_text">ACT Science:</td>
+                                 <td class="profile_table_data">20</td>
+                              </tr>
+                              <tr>
+                                 <td class="profile_table_text">High School Cumulative GPA:</td>
+                                 <td class="profile_table_data">3.98</td>
+                              </tr>
+                              <tr>
+                                 <td class="profile_table_text">High School Percentile Rank:</td>
+                                 <td class="profile_table_data">87</td>
+                              </tr>
+                              <tr>
+                                 <td class="profile_table_text"># of High Schools Attended:</td>
+                                 <td class="profile_table_data">1 High School</td>
+                              </tr>
+                              <tr>
+                                 <td class="profile_table_text">HS Grad Year:</td>
+                                 <td class="profile_table_data">2012</td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
                   </div>
                </div>
             </div>
-         </div>
-         <div ng-show="selectedView===2">
-            Campus Connections
+            <div ng-show="selectedView===2">
+               <div class="col-md-4  ss-campus-connection-details-1">
+                  <div class="heading">
+                     <p class="direct-connection-name">Adam Parker</p>
+                     <p class="role">Academic Advisor(Primary)</p>
+                  </div>
+                  <div class="content">
+                     <p class="meta-label">EMAIL:<br><a href="#">cathy.galles@student.horizon.edu</a></p>
+                     <p class="phone-no">PHONE:<br><span>(212)333-2122</span></p>
+                  </div>
+               </div>
+               <div class=" col-md-4  ss-campus-connection-details-2">
+                  <div class="heading">
+                     <p class="direct-connection-name">Gerard Fernandz</p>
+                     <p class="role">Peer Advisor</p>
+                  </div>
+                  <div class="content">
+                     <p class="meta-label">EMAIL:<br><a href="#">g.fernandz@student.horizon.edu</a></p>
+                     <p class="phone-no">PHONE:<br><span>(212)333-2122</span></p>
+                  </div>
+               </div>
+               <div class=" col-md-4  ss-campus-connection-details-3">
+                  <div class="heading">
+                     <p class="direct-connection-name">Joyce Summer</p>
+                     <p class="role">Academic Advisor</p>
+                  </div>
+                  <div class="content">
+                     <p class="meta-label">EMAIL:<br><a href="#">joyces@student.horizon.edu</a></p>
+                     <p class="phone-no">PHONE:<br><span>(212)333-2122</span></p>
+                  </div>
+               </div>
+               <div class=" col-md-4  ss-campus-connection-details-4">
+                  <div class="heading">
+                     <p class="direct-connection-name">Kathy Williams Kathy Williams Kathy Williams</p>
+                     <p class="role">Academic Advisor Academic Advisor Academic Advisor</p>
+                  </div>
+                  <div class="content">
+                     <p class="meta-label">EMAIL:<br><a href="#">kathy@student1234567890123456.horizon.edu</a></p>
+                     <p class="phone-no">PHONE:<br><span>(212)333-2122</span></p>
+                  </div>
+               </div>
+            </div>
          </div>
       </div>
    </div>

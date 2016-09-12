@@ -6915,7 +6915,7 @@ h.modal-lg {
   float: right;
   padding-right: 20px;
   margin-top: 10px; }
-  .ss-menus-right.ss-link-with-right-arrow, .ss-student-profile .tab-left .nav-stacked li a.ss-menus-right {
+  .ss-menus-right.ss-link-with-right-arrow {
     margin-top: 0;
     margin-right: 20px; }
 
@@ -7195,29 +7195,31 @@ h.modal-lg {
     height: 30px;
     padding-left: 35px;
     margin-top: 20px;
-    padding-top: 5px;
-    margin-left: 5px; }
+    padding-top: 5px; }
     .sub-menu .back-button:hover {
       background: url("../../images/icon/student_profile_icons/back-button-base.png") no-repeat; }
   .sub-menu .search-box {
     float: right;
     margin-top: 15px;
-    margin-right: 5px; }
+    position: relative; }
     .sub-menu .search-box input {
       width: 255px;
       height: 38px;
       padding-left: 5px;
-      background: url("../../images/icon/search_icons/default-search-field-icon.png") no-repeat;
-      background-position: right;
       background-color: #fff; }
-      .sub-menu .search-box input:hover {
-        background: url("../../images/icon/search_icons/default-search-field-icon.png") no-repeat; }
-      .sub-menu .search-box input:hover {
-        background-position: right;
-        background-color: #fff; }
+    .sub-menu .search-box span {
+      background: url("../../images/icon/search_icons/default-search-field-icon.png") no-repeat left;
+      position: absolute;
+      right: 8px;
+      top: 12px;
+      width: 16px;
+      height: 16px;
+      display: inline-block; }
+      .sub-menu .search-box span:hover {
+        background: url("../../images/icon/search_icons/default-search-field-icon.png") no-repeat left; }
 
 .student-profile-header {
-  padding: 26px 20px; }
+  padding: 20px 20px; }
   .student-profile-header p {
     display: inline-block;
     font-size: 24px; }
@@ -7229,97 +7231,88 @@ h.modal-lg {
 
 .student-profile-container {
   width: 100%;
-  height: 250px;
+  height: 131px;
   background-color: #fff; }
   .student-profile-container .student-profile-photo {
-    background-image: url(../../images/new-img.png);
-    height: 250px;
-    width: 250px; }
+    background-image: url(../../images/student.png);
+    height: 130px;
+    width: 130px;
+    float: left; }
   .student-profile-container .student-profile-info {
-    width: 500px; }
-  .student-profile-container .student-name {
-    font-size: 50px;
-    color: #333333;
-    padding-top: 20px;
-    margin-bottom: 0; }
-  .student-profile-container .student-id {
-    font-size: 20px;
-    color: #666; }
-  .student-profile-container .student-details {
-    border-top: 1px solid #ddd; }
-    .student-profile-container .student-details p {
-      display: inline-block;
-      margin-top: 15px; }
-    .student-profile-container .student-details .email-id {
-      border-right: 1px solid #EBEBEB;
-      font-size: 10px;
-      color: #999;
-      font-weight: bold;
-      float: left;
-      padding-right: 20px; }
-      .student-profile-container .student-details .email-id a {
-        font-size: 18px;
-        font-weight: 500; }
-    .student-profile-container .student-details .phone-no {
-      padding-left: 20px;
-      font-size: 10px;
-      color: #999;
-      font-weight: bold; }
-      .student-profile-container .student-details .phone-no span {
-        font-size: 18px;
-        color: #444;
-        font-weight: 400; }
-  .student-profile-container .student-profile-risk-info {
-    padding: 0;
-    float: right;
-    margin-top: 40px;
-    margin-right: 40px;
-    width: 218px; }
-    .student-profile-container .student-profile-risk-info .risk-level-icon {
+    width: 780px;
+    margin-left: 20px;
+    float: left; }
+    .student-profile-container .student-profile-info p {
+      margin-bottom: 0; }
+    .student-profile-container .student-profile-info .student-name {
+      font-size: 1.88em;
+      color: #333333;
+      padding-top: 14px;
+      margin-bottom: 0; }
+    .student-profile-container .student-profile-info .student-id {
+      font-size: 1.13em;
+      color: #666; }
+    .student-profile-container .student-profile-info .email-id {
+      font-size: 1.13em;
+      color: #666; }
+    .student-profile-container .student-profile-info .student-details p {
       display: inline-block; }
-      .student-profile-container .student-profile-risk-info .risk-level-icon span {
-        background: url("../../images/icon/student_profile_icons/risk-level-icon-y-lrg.png") no-repeat;
-        height: 73px;
-        width: 73px;
+    .student-profile-container .student-profile-info .student-details .phone-no, .student-profile-container .student-profile-info .student-details .mobile-no {
+      padding-right: 10px;
+      font-size: 1.13em;
+      color: #666; }
+      .student-profile-container .student-profile-info .student-details .phone-no span, .student-profile-container .student-profile-info .student-details .mobile-no span {
+        font-size: 1.13em;
+        color: #333333;
+        font-weight: 400; }
+    .student-profile-container .student-profile-info .student-details .mobile-no {
+      border-left: 1px solid #ddd;
+      padding-left: 10px;
+      padding-right: 0; }
+  .student-profile-container .student-profile-risk-info {
+    float: left;
+    margin-top: 14px;
+    width: 240px; }
+    .student-profile-container .student-profile-risk-info .student-profile-icons {
+      width: 125px;
+      padding-bottom: 5px;
+      margin-left: 50px;
+      border-bottom: 1px solid #ddd; }
+      .student-profile-container .student-profile-risk-info .student-profile-icons .risk-level-icon, .student-profile-container .student-profile-risk-info .student-profile-icons .leave-intent-icon {
         display: inline-block;
-        margin: 0px 18px 15px 18px; }
-        .student-profile-container .student-profile-risk-info .risk-level-icon span:hover {
-          background: url("../../images/icon/student_profile_icons/risk-level-icon-y-lrg.png") no-repeat; }
-    .student-profile-container .student-profile-risk-info .leave-intent-icon {
-      display: inline-block;
-      border-left: 1px solid #eee; }
-      .student-profile-container .student-profile-risk-info .leave-intent-icon span {
-        background: url("../../images/icon/student_profile_icons/leave-intent-leave-stated-lrg.png") no-repeat;
-        height: 73px;
-        width: 73px;
-        display: inline-block;
-        margin: 0px 0px 15px 18px; }
-        .student-profile-container .student-profile-risk-info .leave-intent-icon span:hover {
-          background: url("../../images/icon/student_profile_icons/leave-intent-leave-stated-lrg.png") no-repeat; }
+        height: 42px; }
+        .student-profile-container .student-profile-risk-info .student-profile-icons .risk-level-icon span, .student-profile-container .student-profile-risk-info .student-profile-icons .leave-intent-icon span {
+          background: url("../../images/icon/student_profile_icons/risk-level-icon-r1-lrg-42.png") no-repeat;
+          height: 42px;
+          width: 42px;
+          display: inline-block;
+          margin: 0px 9px; }
+          .student-profile-container .student-profile-risk-info .student-profile-icons .risk-level-icon span:hover, .student-profile-container .student-profile-risk-info .student-profile-icons .leave-intent-icon span:hover {
+            background: url("../../images/icon/student_profile_icons/risk-level-icon-r1-lrg-42.png") no-repeat; }
+      .student-profile-container .student-profile-risk-info .student-profile-icons .leave-intent-icon {
+        border-left: 1px solid #eee; }
+        .student-profile-container .student-profile-risk-info .student-profile-icons .leave-intent-icon span {
+          background: url("../../images/icon/student_profile_icons/leave-intent-leave-stated-lrg-42.png") no-repeat; }
+          .student-profile-container .student-profile-risk-info .student-profile-icons .leave-intent-icon span:hover {
+            background: url("../../images/icon/student_profile_icons/leave-intent-leave-stated-lrg-42.png") no-repeat; }
     .student-profile-container .student-profile-risk-info .student-details {
-      width: 225px; }
-      .student-profile-container .student-profile-risk-info .student-details .risk-update {
-        border-right: 1px solid #eee;
-        font-size: 10px;
+      margin-left: 41px; }
+      .student-profile-container .student-profile-risk-info .student-details .risk-update, .student-profile-container .student-profile-risk-info .student-details .intent-level {
+        font-size: 0.75em;
         font-weight: bold;
-        padding-left: 9px;
-        padding-right: 9px;
         text-align: center;
-        color: #999; }
-        .student-profile-container .student-profile-risk-info .student-details .risk-update span {
-          font-size: 18px;
-          font-weight: 500;
-          color: #333333; }
-      .student-profile-container .student-profile-risk-info .student-details .last-viewed {
-        font-size: 10px;
-        font-weight: bold;
-        padding-left: 9px;
-        text-align: center;
-        color: #999; }
-        .student-profile-container .student-profile-risk-info .student-details .last-viewed span {
-          font-size: 18px;
-          font-weight: 500;
-          color: #333333; }
+        color: #999;
+        display: inline-block;
+        padding-right: 10px; }
+      .student-profile-container .student-profile-risk-info .student-details .intent-level {
+        padding-left: 10px;
+        border-left: 1px solid #eee; }
+    .student-profile-container .student-profile-risk-info .last-viewed {
+      text-align: center;
+      font-size: 1.13em;
+      color: #666; }
+      .student-profile-container .student-profile-risk-info .last-viewed span {
+        color: #333333; }
 
 .student-profile-status {
   height: 32px;
@@ -7327,67 +7320,58 @@ h.modal-lg {
   background-image: url(../../images/icon/student_view/survey-status-banner-bg-tile.png);
   text-align: center;
   background-color: #f48838;
-  line-height: 32px;
   color: #fff;
   font-size: 16px; }
   .student-profile-status span:first-child {
     padding-right: 15px; }
 
-.ss-student-referral, .ss-student-Appointment, .ss-student-contact {
-  height: 172px;
-  width: 370px;
-  margin: 30px 30px 0px 0px; }
-  .ss-student-referral h2, .ss-student-Appointment h2, .ss-student-contact h2 {
-    text-align: center;
-    border-left: none;
-    text-transform: none;
-    font-size: 18px;
-    font-weight: 500; }
-    .ss-student-referral h2 span, .ss-student-Appointment h2 span, .ss-student-contact h2 span {
+.ss-student-profile-panel {
+  padding: 0;
+  margin-top: 15px; }
+  .ss-student-profile-panel .ss-student-referral, .ss-student-profile-panel .ss-student-Appointment, .ss-student-profile-panel .ss-student-contact {
+    height: 84px;
+    width: 370px;
+    margin-right: 30px; }
+    .ss-student-profile-panel .ss-student-referral h2, .ss-student-profile-panel .ss-student-Appointment h2, .ss-student-profile-panel .ss-student-contact h2 {
+      text-align: left;
+      border-left: none;
+      text-transform: none;
+      font-size: 1.13em;
+      font-weight: 500;
       background: url("../../images/icon/student_profile_icons/profile-module-icon-referrals-base.png") no-repeat left;
-      height: 20px;
-      width: 20px;
-      display: inline-block;
-      vertical-align: middle;
-      margin-right: 7px; }
-      .ss-student-referral h2 span:hover, .ss-student-Appointment h2 span:hover, .ss-student-contact h2 span:hover {
+      padding-left: 25px;
+      color: #333333; }
+      .ss-student-profile-panel .ss-student-referral h2:hover, .ss-student-profile-panel .ss-student-Appointment h2:hover, .ss-student-profile-panel .ss-student-contact h2:hover {
         background: url("../../images/icon/student_profile_icons/profile-module-icon-referrals-selected.png") no-repeat left; }
-  .ss-student-referral .ss-content, .ss-student-Appointment .ss-content, .ss-student-contact .ss-content {
-    border-top: 1px solid #4673a7;
-    height: 88px;
-    text-align: center; }
-    .ss-student-referral .ss-content .ss-count, .ss-student-Appointment .ss-content .ss-count, .ss-student-contact .ss-content .ss-count {
-      font-size: 55px;
-      color: #333333;
-      height: 55px;
-      cursor: pointer; }
-    .ss-student-referral .ss-content .ss-value, .ss-student-Appointment .ss-content .ss-value, .ss-student-contact .ss-content .ss-value {
-      font-size: 12px;
-      color: #666;
-      display: inline-block; }
-    .ss-student-referral .ss-content .ss-action, .ss-student-Appointment .ss-content .ss-action, .ss-student-contact .ss-content .ss-action {
+      .ss-student-profile-panel .ss-student-referral h2 p, .ss-student-profile-panel .ss-student-Appointment h2 p, .ss-student-profile-panel .ss-student-contact h2 p {
+        display: inline-block;
+        color: #333333;
+        float: right;
+        font-size: 2.25em;
+        padding-right: 25px; }
+    .ss-student-profile-panel .ss-student-referral .ss-action, .ss-student-profile-panel .ss-student-Appointment .ss-action, .ss-student-profile-panel .ss-student-contact .ss-action {
       height: 40px;
+      border: 0px;
       border-radius: 0px;
       background-color: #6e6e6e;
       color: #fff;
-      margin-top: 5px; }
-
-.ss-student-Appointment h2 span {
-  background: url("../../images/icon/student_profile_icons/profile-module-icon-appointments-base.png") no-repeat left; }
-  .ss-student-Appointment h2 span:hover {
-    background: url("../../images/icon/student_profile_icons/profile-module-icon-appointments-selected.png") no-repeat left; }
-
-.ss-student-contact {
-  margin-right: 0px; }
-  .ss-student-contact h2 span {
-    background: url("../../images/icon/student_profile_icons/profile-module-icon-contacts-base.png") no-repeat left; }
-    .ss-student-contact h2 span:hover {
-      background: url("../../images/icon/student_profile_icons/profile-module-icon-contacts-selected.png") no-repeat left; }
+      margin-top: 5px;
+      font-size: 1em; }
+  .ss-student-profile-panel .ss-student-Appointment h2 {
+    background: url("../../images/icon/student_profile_icons/profile-module-icon-appointments-base.png") no-repeat left; }
+    .ss-student-profile-panel .ss-student-Appointment h2:hover {
+      background: url("../../images/icon/student_profile_icons/profile-module-icon-appointments-selected.png") no-repeat left; }
+  .ss-student-profile-panel .ss-student-contact {
+    margin-right: 0px; }
+    .ss-student-profile-panel .ss-student-contact h2 {
+      background: url("../../images/icon/student_profile_icons/profile-module-icon-contacts-base.png") no-repeat left; }
+      .ss-student-profile-panel .ss-student-contact h2:hover {
+        background: url("../../images/icon/student_profile_icons/profile-module-icon-contacts-selected.png") no-repeat left; }
 
 .ss-student-profile-activity {
   width: 1170px;
   background-color: #fff;
-  margin-top: 40px; }
+  margin-top: 30px; }
   .ss-student-profile-activity .student-profile-activity-header {
     height: 60px; }
     .ss-student-profile-activity .student-profile-activity-header .activity-dropdown {
@@ -7477,7 +7461,14 @@ h.modal-lg {
       .ss-student-profile .tab-left .nav-stacked li + li {
         margin-top: 0px; }
       .ss-student-profile .tab-left .nav-stacked li a {
-        border: 0px; }
+        border: 0px;
+        margin-right: 20px;
+        background: url("../../images/icon/setup_icons/modal-small-arrow-base.png") no-repeat right;
+        cursor: pointer; }
+        .ss-student-profile .tab-left .nav-stacked li a:hover {
+          background: url("../../images/icon/setup_icons/modal-small-arrow-over.png") no-repeat right; }
+        .ss-student-profile .tab-left .nav-stacked li a:clicked {
+          background: url("../../images/icon/setup_icons/modal-small-arrow-clicked.png") no-repeat right; }
     .ss-student-profile .tab-left .nav-stacked .active {
       border: 0px;
       background-color: #fff; }
@@ -7486,34 +7477,87 @@ h.modal-lg {
     .ss-student-profile .tab-right .ss-profile-data-table, .ss-student-profile .tab-right .ss-profile-data-table-right {
       width: 410px;
       padding: 0;
-      margin-right: 50px; }
-      .ss-student-profile .tab-right .ss-profile-data-table .table-responsive .table tr:nth-child(odd), .ss-student-profile .tab-right .ss-profile-data-table-right .table-responsive .table tr:nth-child(odd) {
-        background-color: #F8F8F8; }
-      .ss-student-profile .tab-right .ss-profile-data-table .table-responsive .table tr:nth-child(even), .ss-student-profile .tab-right .ss-profile-data-table-right .table-responsive .table tr:nth-child(even) {
-        background-color: #fff; }
-      .ss-student-profile .tab-right .ss-profile-data-table .table-responsive .table tr:last-child, .ss-student-profile .tab-right .ss-profile-data-table-right .table-responsive .table tr:last-child {
-        border-bottom: 1px solid #eee; }
-      .ss-student-profile .tab-right .ss-profile-data-table .table-responsive .table td, .ss-student-profile .tab-right .ss-profile-data-table-right .table-responsive .table td {
-        height: 44px; }
-      .ss-student-profile .tab-right .ss-profile-data-table .table-responsive .table .profile_heading, .ss-student-profile .tab-right .ss-profile-data-table-right .table-responsive .table .profile_heading {
-        color: #333333;
-        padding-top: 50px;
-        padding-bottom: 25px;
-        border-bottom: 2px solid #4673a7;
-        text-align: left;
-        font-size: 20px; }
-      .ss-student-profile .tab-right .ss-profile-data-table .table-responsive .table .profile_table_text, .ss-student-profile .tab-right .ss-profile-data-table-right .table-responsive .table .profile_table_text {
-        text-align: right;
-        font-size: 14px;
-        color: #333333;
-        font-weight: 600; }
-      .ss-student-profile .tab-right .ss-profile-data-table .table-responsive .table .profile_table_data, .ss-student-profile .tab-right .ss-profile-data-table-right .table-responsive .table .profile_table_data {
-        font-size: 14px;
-        color: #4673a7;
-        font-weight: 500;
-        padding-left: 10px; }
+      margin-right: 50px;
+      margin-left: 12px; }
+      .ss-student-profile .tab-right .ss-profile-data-table .table-responsive .table, .ss-student-profile .tab-right .ss-profile-data-table-right .table-responsive .table {
+        margin-bottom: 10px;
+        tr: nth-child(odd);
+          tr-background-color: #F8F8F8; }
+        .ss-student-profile .tab-right .ss-profile-data-table .table-responsive .table tr:nth-child(even), .ss-student-profile .tab-right .ss-profile-data-table-right .table-responsive .table tr:nth-child(even) {
+          background-color: #fff; }
+        .ss-student-profile .tab-right .ss-profile-data-table .table-responsive .table tr:last-child, .ss-student-profile .tab-right .ss-profile-data-table-right .table-responsive .table tr:last-child {
+          border-bottom: 1px solid #eee; }
+        .ss-student-profile .tab-right .ss-profile-data-table .table-responsive .table td, .ss-student-profile .tab-right .ss-profile-data-table-right .table-responsive .table td {
+          height: 44px; }
+        .ss-student-profile .tab-right .ss-profile-data-table .table-responsive .table .profile_heading, .ss-student-profile .tab-right .ss-profile-data-table-right .table-responsive .table .profile_heading {
+          color: #333333;
+          padding-top: 42px;
+          padding-bottom: 25px;
+          border-bottom: 2px solid #4673a7;
+          text-align: left;
+          font-size: 20px; }
+        .ss-student-profile .tab-right .ss-profile-data-table .table-responsive .table .profile_table_text, .ss-student-profile .tab-right .ss-profile-data-table-right .table-responsive .table .profile_table_text {
+          text-align: right;
+          font-size: 14px;
+          color: #333333;
+          font-weight: 600; }
+        .ss-student-profile .tab-right .ss-profile-data-table .table-responsive .table .profile_table_data, .ss-student-profile .tab-right .ss-profile-data-table-right .table-responsive .table .profile_table_data {
+          font-size: 14px;
+          color: #666;
+          font-weight: 500;
+          padding-left: 10px; }
     .ss-student-profile .tab-right .ss-profile-data-table-right {
-      margin-right: 0px; }
+      margin-right: 0;
+      margin-left: 0; }
+
+.ss-campus-connection-details-1, .ss-campus-connection-details-2, .ss-campus-connection-details-3, .ss-campus-connection-details-4 {
+  height: 159px;
+  width: 290px;
+  background-color: #F8F8F8;
+  margin: 20px 22px 0px 5px;
+  padding: 0px;
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd; }
+  .ss-campus-connection-details-1 .heading, .ss-campus-connection-details-2 .heading, .ss-campus-connection-details-3 .heading, .ss-campus-connection-details-4 .heading {
+    height: 60px;
+    border-bottom: 1px solid #4673a7;
+    padding-top: 15px;
+    padding-left: 20px; }
+    .ss-campus-connection-details-1 .heading .direct-connection-name, .ss-campus-connection-details-2 .heading .direct-connection-name, .ss-campus-connection-details-3 .heading .direct-connection-name, .ss-campus-connection-details-4 .heading .direct-connection-name {
+      font-size: 18px;
+      color: #333333;
+      margin-bottom: 0;
+      line-height: 18px; }
+    .ss-campus-connection-details-1 .heading .role, .ss-campus-connection-details-2 .heading .role, .ss-campus-connection-details-3 .heading .role, .ss-campus-connection-details-4 .heading .role {
+      font-size: 13px;
+      color: #666; }
+  .ss-campus-connection-details-1 .content .meta-label, .ss-campus-connection-details-2 .content .meta-label, .ss-campus-connection-details-3 .content .meta-label, .ss-campus-connection-details-4 .content .meta-label, .ss-campus-connection-details-1 .content .phone-no, .ss-campus-connection-details-2 .content .phone-no, .ss-campus-connection-details-3 .content .phone-no, .ss-campus-connection-details-4 .content .phone-no, .ss-campus-connection-details-1 .content .student-profile-container .student-profile-info .student-details .mobile-no, .student-profile-container .student-profile-info .student-details .ss-campus-connection-details-1 .content .mobile-no, .ss-campus-connection-details-2 .content .student-profile-container .student-profile-info .student-details .mobile-no, .student-profile-container .student-profile-info .student-details .ss-campus-connection-details-2 .content .mobile-no, .ss-campus-connection-details-3 .content .student-profile-container .student-profile-info .student-details .mobile-no, .student-profile-container .student-profile-info .student-details .ss-campus-connection-details-3 .content .mobile-no, .ss-campus-connection-details-4 .content .student-profile-container .student-profile-info .student-details .mobile-no, .student-profile-container .student-profile-info .student-details .ss-campus-connection-details-4 .content .mobile-no {
+    padding-top: 10px;
+    font-size: 10px;
+    font-weight: 700;
+    color: #999;
+    padding-left: 20px;
+    margin: 0; }
+    .ss-campus-connection-details-1 .content .meta-label a, .ss-campus-connection-details-2 .content .meta-label a, .ss-campus-connection-details-3 .content .meta-label a, .ss-campus-connection-details-4 .content .meta-label a, .ss-campus-connection-details-1 .content .phone-no a, .ss-campus-connection-details-2 .content .phone-no a, .ss-campus-connection-details-3 .content .phone-no a, .ss-campus-connection-details-4 .content .phone-no a, .ss-campus-connection-details-1 .content .student-profile-container .student-profile-info .student-details .mobile-no a, .student-profile-container .student-profile-info .student-details .ss-campus-connection-details-1 .content .mobile-no a, .ss-campus-connection-details-2 .content .student-profile-container .student-profile-info .student-details .mobile-no a, .student-profile-container .student-profile-info .student-details .ss-campus-connection-details-2 .content .mobile-no a, .ss-campus-connection-details-3 .content .student-profile-container .student-profile-info .student-details .mobile-no a, .student-profile-container .student-profile-info .student-details .ss-campus-connection-details-3 .content .mobile-no a, .ss-campus-connection-details-4 .content .student-profile-container .student-profile-info .student-details .mobile-no a, .student-profile-container .student-profile-info .student-details .ss-campus-connection-details-4 .content .mobile-no a {
+      font-size: 13px;
+      font-weight: 400;
+      color: #1E73D5; }
+      .ss-campus-connection-details-1 .content .meta-label a:hover, .ss-campus-connection-details-2 .content .meta-label a:hover, .ss-campus-connection-details-3 .content .meta-label a:hover, .ss-campus-connection-details-4 .content .meta-label a:hover, .ss-campus-connection-details-1 .content .phone-no a:hover, .ss-campus-connection-details-2 .content .phone-no a:hover, .ss-campus-connection-details-3 .content .phone-no a:hover, .ss-campus-connection-details-4 .content .phone-no a:hover, .ss-campus-connection-details-1 .content .student-profile-container .student-profile-info .student-details .mobile-no a:hover, .student-profile-container .student-profile-info .student-details .ss-campus-connection-details-1 .content .mobile-no a:hover, .ss-campus-connection-details-2 .content .student-profile-container .student-profile-info .student-details .mobile-no a:hover, .student-profile-container .student-profile-info .student-details .ss-campus-connection-details-2 .content .mobile-no a:hover, .ss-campus-connection-details-3 .content .student-profile-container .student-profile-info .student-details .mobile-no a:hover, .student-profile-container .student-profile-info .student-details .ss-campus-connection-details-3 .content .mobile-no a:hover, .ss-campus-connection-details-4 .content .student-profile-container .student-profile-info .student-details .mobile-no a:hover, .student-profile-container .student-profile-info .student-details .ss-campus-connection-details-4 .content .mobile-no a:hover {
+        color: #666; }
+  .ss-campus-connection-details-1 .content .phone-no span, .ss-campus-connection-details-2 .content .phone-no span, .ss-campus-connection-details-3 .content .phone-no span, .ss-campus-connection-details-4 .content .phone-no span, .ss-campus-connection-details-1 .content .student-profile-container .student-profile-info .student-details .mobile-no span, .student-profile-container .student-profile-info .student-details .ss-campus-connection-details-1 .content .mobile-no span, .ss-campus-connection-details-2 .content .student-profile-container .student-profile-info .student-details .mobile-no span, .student-profile-container .student-profile-info .student-details .ss-campus-connection-details-2 .content .mobile-no span, .ss-campus-connection-details-3 .content .student-profile-container .student-profile-info .student-details .mobile-no span, .student-profile-container .student-profile-info .student-details .ss-campus-connection-details-3 .content .mobile-no span, .ss-campus-connection-details-4 .content .student-profile-container .student-profile-info .student-details .mobile-no span, .student-profile-container .student-profile-info .student-details .ss-campus-connection-details-4 .content .mobile-no span {
+    color: #444;
+    font-size: 13px;
+    font-weight: 400; }
+
+.ss-campus-connection-details-2 {
+  margin-left: 0px; }
+
+.ss-campus-connection-details-3 {
+  margin-right: 0px;
+  margin-left: 0px; }
+
+.ss-campus-connection-details-4 {
+  margin-bottom: 20px; }
 
 a, a:hover, a:focus {
   text-decoration: none; }
@@ -8278,13 +8322,13 @@ body {
 .margin-bottom-60 {
   margin-bottom: 60px !important; }
 
-.ss-link-with-right-arrow, .ss-student-profile .tab-left .nav-stacked li a {
+.ss-link-with-right-arrow {
   background: url("../../images/icon/dashboard_icons/dash-module-link-arrow-base.png") no-repeat right;
   padding-right: 20px;
   cursor: pointer; }
-  .ss-link-with-right-arrow:hover, .ss-student-profile .tab-left .nav-stacked li a:hover {
+  .ss-link-with-right-arrow:hover {
     background: url("../../images/icon/dashboard_icons/dash-module-link-arrow-over.png") no-repeat right; }
-  .ss-link-with-right-arrow:clicked, .ss-student-profile .tab-left .nav-stacked li a:clicked {
+  .ss-link-with-right-arrow:clicked {
     background: url("../../images/icon/dashboard_icons/dash-module-link-arrow-clicked.png") no-repeat right; }
 
 .ss-print-icon {
@@ -8327,6 +8371,17 @@ body {
     background: url("../../images/add_solid_over.png") no-repeat left; }
   .add-activity-icon:hover {
     color: #333333; }
+
+.anchor-tag a, .student-profile-header p a, .student-profile-header .student-profile-print a, .student-profile-container .student-profile-info .email-id a {
+  color: #1E73D5; }
+  .anchor-tag a:hover, .student-profile-header p a:hover, .student-profile-header .student-profile-print a:hover, .student-profile-container .student-profile-info .email-id a:hover {
+    color: #666; }
+
+.ellipsis, .ss-campus-connection-details-1 .heading .direct-connection-name, .ss-campus-connection-details-2 .heading .direct-connection-name, .ss-campus-connection-details-3 .heading .direct-connection-name, .ss-campus-connection-details-4 .heading .direct-connection-name, .ss-campus-connection-details-1 .heading .role, .ss-campus-connection-details-2 .heading .role, .ss-campus-connection-details-3 .heading .role, .ss-campus-connection-details-4 .heading .role, .ss-campus-connection-details-1 .content .meta-label, .ss-campus-connection-details-2 .content .meta-label, .ss-campus-connection-details-3 .content .meta-label, .ss-campus-connection-details-4 .content .meta-label, .ss-campus-connection-details-1 .content .phone-no, .ss-campus-connection-details-2 .content .phone-no, .ss-campus-connection-details-3 .content .phone-no, .ss-campus-connection-details-4 .content .phone-no, .ss-campus-connection-details-1 .content .student-profile-container .student-profile-info .student-details .mobile-no, .student-profile-container .student-profile-info .student-details .ss-campus-connection-details-1 .content .mobile-no, .ss-campus-connection-details-2 .content .student-profile-container .student-profile-info .student-details .mobile-no, .student-profile-container .student-profile-info .student-details .ss-campus-connection-details-2 .content .mobile-no, .ss-campus-connection-details-3 .content .student-profile-container .student-profile-info .student-details .mobile-no, .student-profile-container .student-profile-info .student-details .ss-campus-connection-details-3 .content .mobile-no, .ss-campus-connection-details-4 .content .student-profile-container .student-profile-info .student-details .mobile-no, .student-profile-container .student-profile-info .student-details .ss-campus-connection-details-4 .content .mobile-no {
+  white-space: nowrap;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis; }
 
 .tables-page .search-result {
   padding: 15px; }
